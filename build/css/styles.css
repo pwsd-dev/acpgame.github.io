@@ -738,6 +738,22 @@ input:focus {
   width: calc(66.66666666666667% - 0px);
 }
 
+.battle-of-corporations {
+  background-color: #1c1c1c;
+}
+
+.battle-of-corporations-block {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.battle-of-corporations-block-content .page__title-h3 {
+  color: #ffffff;
+}
+
 @media screen and (max-width: 920px) {
   .wrapper {
     padding-left: 15px;
