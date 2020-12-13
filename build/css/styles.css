@@ -659,6 +659,32 @@ input:focus {
   border: 1px solid #1c1c1c;
 }
 
+.games {
+  background-color: #ffffff;
+}
+
+.games-block {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.games-block-content-format .page__title-h3,
+.games-block-content-format .page__text {
+  color: #1c1c1c;
+}
+
+.games-block-content-format-slider {
+  text-align: center;
+}
+
+.games-block-content-format-slider .page__btn {
+  color: #1c1c1c;
+  border: 1px solid #1c1c1c;
+}
+
 @media screen and (max-width: 920px) {
   .wrapper {
     padding-left: 15px;
