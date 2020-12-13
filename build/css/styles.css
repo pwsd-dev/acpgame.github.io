@@ -711,6 +711,33 @@ input:focus {
   margin-top: 30px;
 }
 
+.corporate-games {
+  background-color: #ffffff;
+}
+
+.corporate-games-block {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.corporate-games-block-content {
+  background-color: #ffed5c;
+}
+
+.corporate-games-block-content .page__title-h3,
+.corporate-games-block-content .page__text {
+  color: #1c1c1c;
+}
+
+.corporate-games-block-content .page__btn {
+  border: 1px solid #1c1c1c;
+  color: #1c1c1c;
+  width: calc(66.66666666666667% - 0px);
+}
+
 @media screen and (max-width: 920px) {
   .wrapper {
     padding-left: 15px;
