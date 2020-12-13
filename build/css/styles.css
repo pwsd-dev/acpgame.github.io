@@ -636,6 +636,29 @@ input:focus {
   margin-right: 0px;
 }
 
+.video {
+  background-color: #ffed5c;
+}
+
+.video-block {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.video-block-content .page__title-h3,
+.video-block-content .page__text,
+.video-block-content .page__btn {
+  color: #1c1c1c;
+}
+
+.video-block-content .page__btn {
+  width: calc(73.33333333333334% - 0px);
+  border: 1px solid #1c1c1c;
+}
+
 @media screen and (max-width: 920px) {
   .wrapper {
     padding-left: 15px;
