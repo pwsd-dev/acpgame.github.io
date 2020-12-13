@@ -685,6 +685,32 @@ input:focus {
   border: 1px solid #1c1c1c;
 }
 
+.kids {
+  background-color: #ffffff;
+}
+
+.kids-block {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.kids-block-content {
+  background-color: #1c1c1c;
+}
+
+.kids-block-content .page__title-h3 {
+  color: #ffffff;
+  padding: 40px 0 30px;
+}
+
+.kids-block-content .page__btn {
+  width: calc(66.66666666666667% - 0px);
+  margin-top: 30px;
+}
+
 @media screen and (max-width: 920px) {
   .wrapper {
     padding-left: 15px;
