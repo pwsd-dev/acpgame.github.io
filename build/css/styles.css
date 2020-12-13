@@ -616,6 +616,26 @@ input:focus {
   font-family: "Dincondensedc";
 }
 
+.emotions-block {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.emotions-block-content .page__btn {
+  width: calc(73.33333333333334% - 0px);
+}
+
+.emotions-block-img {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 @media screen and (max-width: 920px) {
   .wrapper {
     padding-left: 15px;
