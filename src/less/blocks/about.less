@@ -1,0 +1,38 @@
+.about {
+    padding-top: 50px;
+    background-color: @color_white;
+    .page__text {
+        color: @color_dark;
+    }
+    &-block {
+        .row-flex();
+
+        &-description {
+            .shift-right(1.25);
+            .page__title-h3 {
+                padding-bottom: 10px;
+            }
+
+            .page__btn {
+                .size(4);
+                border: 1px solid @color_dark;
+                color: @color_dark;
+                margin-top: 50px;
+            }
+        }
+
+        &-experience {
+            .row-flex();
+            
+            &__item {
+                
+                .size(2.5);
+                
+                span {
+                    font-family: "@{Dincondensedc}";
+                    //font-size: 100px;
+                }
+            }
+        }
+    }
+}

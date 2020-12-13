@@ -371,6 +371,7 @@ input:focus {
   font-size: 38px;
   line-height: 45px;
   color: #1c1c1c;
+  text-transform: uppercase;
 }
 
 .page__subtitle {
@@ -402,9 +403,9 @@ input:focus {
   -webkit-box-align: center;
           align-items: center;
   text-decoration: none;
-  border-radius: 5px;
-  height: 68px;
-  font-size: 20px;
+  border-radius: 2px;
+  height: 55px;
+  font-size: 15px;
   letter-spacing: 1px;
   line-height: 30px;
   font-family: "Noah-Bold";
@@ -565,6 +566,54 @@ input:focus {
 
 .banner-block__slogan .page__btn {
   width: calc(43.333333333333336% - 0px);
+}
+
+.about {
+  padding-top: 50px;
+  background-color: #ffffff;
+}
+
+.about .page__text {
+  color: #1c1c1c;
+}
+
+.about-block {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.about-block-description {
+  margin-right: calc(20.833333333333336% + 0px);
+}
+
+.about-block-description .page__title-h3 {
+  padding-bottom: 10px;
+}
+
+.about-block-description .page__btn {
+  width: calc(66.66666666666667% - 0px);
+  border: 1px solid #1c1c1c;
+  color: #1c1c1c;
+  margin-top: 50px;
+}
+
+.about-block-experience {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.about-block-experience__item {
+  width: calc(41.66666666666667% - 0px);
+}
+
+.about-block-experience__item span {
+  font-family: "Dincondensedc";
 }
 
 @media screen and (max-width: 920px) {
