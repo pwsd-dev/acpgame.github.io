@@ -2,9 +2,10 @@
     background-color: @color_white;
     &-block {
         .row-flex();
-        &-content {
+        flex-wrap: nowrap;
+        &__content {
             background-color: @color_dark;
-
+            .size(3);
             .page__title-h3 {
                 color: @color_white;
                 padding: 40px 0 30px;
@@ -14,12 +15,13 @@
                 .size(4);
                 margin-top: 30px;
             }
+            .page__img{
 
-            &__img { 
+            }
 
-                &_right {
-                    
-                }
+            &-img { 
+                .size(3);
+                .shift-left(-.25);
             }
         }
     }

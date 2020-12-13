@@ -2,6 +2,7 @@
 <html lang="ru"> 
 	<head>
 		<meta charset="utf-8">
+		<base href="build/">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 		<title>Acpgame</title>
@@ -95,20 +96,18 @@
 				<div class="wrapper">
 					<div class="emotions-block">
 						<div class="emotions-block-content">
-							<h3 class="page__title-h3">Свежие эмоции</h3>
-							<p class="page__text">Мы стараемся фотоотчетами   </p>
-							<p class="page__text">передать атмосферу наших</p>
-							<p class="page__text">мероприятий.</p>
-							<p class="page__text">Удается нам это или нет, вы</p>
-							<p class="page__text">сможете решить сами.</p>
+							<div class="emotions-block-content__text">
+								<h3 class="page__title-h3">Свежие эмоции</h3>
+								<p class="page__text">Мы стараемся фотоотчетами передать атмосферу наших мероприятий. Удается нам это или нет, вы сможете решить сами.</p>
+							</div>
 							<div class="page__btn">Смотреть все фото</div>
 						</div>
 						<div class="emotions-block-img">
 							<div class="emotions-block-img__big"><img src="assets/img/img-emotions-big.png"></div>
-						</div>
-						<div class="emotions-block-img-column">
-							<div class="emotions-block-img__small_1"><img src="assets/img/img-emotions-small-1.png"></div>
-							<div class="emotions-block-img__small_2"><img src="assets/img/img-emotions-small-2.png"></div>
+							<div class="emotions-block-img-column">
+								<div class="emotions-block-img__small_1"><img src="assets/img/img-emotions-small-1.png"></div>
+								<div class="emotions-block-img__small_2"><img src="assets/img/img-emotions-small-2.png"></div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -118,10 +117,7 @@
 					<div class="video-block">
 						<div class="video-block-content">
 							<h3 class="page__title-h3">Смотрите видео</h3>
-							<p class="page__text">Сложно передать всю   </p>
-							<p class="page__text">эмоциональную составляющую</p>
-							<p class="page__text">наших мероприятий, но нам это</p>
-							<p class="page__text">удалось.</p>
+							<p class="page__text">Сложно передать всю эмоциональную составляющую наших мероприятий, но нам это удалось.</p>
 							<div class="page__btn">Смотреть все видео</div>
 						</div>
 						<div class="video-block-img"><img src="assets/img/img-video.png"></div>
@@ -131,7 +127,7 @@
 			<section class="games">
 				<div class="wrapper">
 					<div class="games-block">
-						<div class="games-block-img"><img src="assets/img/img-games.png"></div>
+						<div class="games-block-img"><img class="page__img" src="assets/img/img-games.png"></div>
 						<div class="games-block-content">
 							<div class="games-block-content-format">
 								<h3 class="page__title-h3">Формат игр</h3>
@@ -151,8 +147,8 @@
 			<section class="kids">
 				<div class="wrapper">
 					<div class="kids-block">
-						<div class="kids-block-content">
-							<div class="kids-block-content__img"><img src="assets/img/img-kids-1.png"></div>
+						<div class="kids-block__content">
+							<div class="page__img"><img src="assets/img/img-kids-1.png"></div>
 							<h3 class="page__title-h3">Для детей</h3>
 							<p class="page__text">Не знаете чем удивить детей сотрудников компании?</p>
 							<p class="page__text">Какой формат выбрать для празднования</p>
@@ -160,14 +156,14 @@
 							<p class="page__text">Мы представляем эксклюзив.</p>
 							<div class="page__btn">Подробнее</div>
 						</div>
-						<div class="kids-block-content__img_right"><img src="assets/img/img-kids-2.png"></div>
+						<div class="kids-block__content-img"><img src="assets/img/img-kids-2.png"></div>
 					</div>
 				</div>
 			</section>
 			<section class="corporate-games">
 				<div class="wrapper">
 					<div class="corporate-games-block">
-						<div class="corporate-games-block-img"></div>
+						<div class="corporate-games-block-img"><img src="assets/img/img-corporate-games.png"></div>
 						<div class="corporate-games-block-content">
 							<h3 class="page__title-h3">Корпоративные игры</h3>
 							<p class="page__text">Тим-билдинги, клиентские мероприятия </p>
@@ -175,6 +171,37 @@
 							<div class="page__btn">Подробнее</div>
 						</div>
 					</div>
+				</div>
+			</section>
+			<section class="battle-of-corporations">
+				<div class="wrapper">
+					<div class="battle-of-corporations-block">
+						<div class="battle-of-corporations-block-content">
+							<h3 class="page__title-h3">Битва корпораций</h3>
+							<p class="page__text">Неформальная площадка для  </p>
+							<p class="page__text">интеллектуального батла и общения между</p>
+							<p class="page__text">компаниями.</p>
+							<div class="page__btn">Подробнее</div>
+						</div>
+						<div class="battle-of-corporations-block-img"><img src="assets/img/img-fight-corporates.png"></div>
+					</div>
+				</div>
+			</section>
+			<section class="tourslet">
+				<div class="wrapper">
+					<div class="tourslet-block">
+						<div class="tourslet-block-img"><img src="assets/img/img-tour.png"></div>
+						<div class="tourslet-block-content">
+							<h3 class="page__title-h3">Турслет</h3>
+							<p class="page__text">Мы представляем наш спец.проект для </p>
+							<p class="page__text">любителей природы и душевных компаний.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="trust">
+				<div class="wrapper">
+					<div class="trust-block"></div>
 				</div>
 			</section>
 		</main>

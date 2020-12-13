@@ -4,11 +4,27 @@
         .row-flex();
 
         &-img {
-
+            .shift-left(-1);
+            .size(4.5);
+            text-align: right;
+            position: relative;
+            .page__img{
+                z-index: 10;
+                position: relative;
+            }
+            &::after{
+                content: '';
+                height: 100%;
+                width: 100%;
+                background: yellow;
+                position: absolute;
+                left: 5%;
+                top: 0;
+            }
         }
 
         &-content {
-
+            .size(2.5);
             &-format {
                 .page__title-h3, .page__text {
                     color: @color_dark;
