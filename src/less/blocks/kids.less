@@ -1,26 +1,39 @@
 .kids {
     background-color: @color_white;
+    padding-bottom: 60px;
     &-block {
         .row-flex();
         flex-wrap: nowrap;
         &__content {
+            padding-left: 120px;
+            padding-bottom: 60px;
             background-color: @color_dark;
-            .size(3);
+            z-index: 40;
+            .size(4.3);
             .page__title-h3 {
                 color: @color_white;
                 padding: 40px 0 30px;
             }
 
-            .page__btn {
+            .page__text {
                 .size(4);
+                padding-bottom: 20px;
+            }
+
+            .page__btn {
+                .size(3.6);
                 margin-top: 30px;
+                padding-top: 5px;
+                padding-bottom: 5px;
             }
             .page__img{
-
+                padding-top: 97px;
             }
 
             &-img { 
-                .size(3);
+                padding-top: 109px;
+                z-index: 50;
+                .size(6.3);
                 .shift-left(-.25);
             }
         }

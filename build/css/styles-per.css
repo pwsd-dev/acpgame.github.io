@@ -785,6 +785,7 @@ input:focus {
 
 .kids {
   background-color: #ffffff;
+  padding-bottom: 60px;
 }
 
 .kids-block {
@@ -797,8 +798,11 @@ input:focus {
 }
 
 .kids-block__content {
+  padding-left: 120px;
+  padding-bottom: 60px;
   background-color: #1c1c1c;
-  width: 46.9%;
+  z-index: 40;
+  width: 68.56666667%;
 }
 
 .kids-block__content .page__title-h3 {
@@ -806,13 +810,26 @@ input:focus {
   padding: 40px 0 30px;
 }
 
-.kids-block__content .page__btn {
+.kids-block__content .page__text {
   width: 63.56666667%;
+  padding-bottom: 20px;
+}
+
+.kids-block__content .page__btn {
+  width: 56.9%;
   margin-top: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.kids-block__content .page__img {
+  padding-top: 97px;
 }
 
 .kids-block__content-img {
-  width: 46.9%;
+  padding-top: 109px;
+  z-index: 50;
+  width: 101.9%;
   margin-left: -2.61666667%;
 }
 
@@ -826,9 +843,25 @@ input:focus {
   flex-wrap: wrap;
   margin-left: -1.55%;
   margin-right: -1.55%;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.corporate-games-block-img {
+  position: relative;
+  z-index: 80;
+  width: 51.9%;
+}
+
+.corporate-games-block-img .page__img {
+  position: relative;
+  z-index: 80;
 }
 
 .corporate-games-block-content {
+  position: relative;
+  width: 56.9%;
+  z-index: 60;
   background-color: #ffed5c;
 }
 

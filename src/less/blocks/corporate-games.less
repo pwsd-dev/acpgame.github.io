@@ -2,7 +2,23 @@
     background-color: @color_white;
     &-block {
         .row-flex();
+        flex-wrap: nowrap;
+        position: relative;
+        &-img {
+            position: relative;
+            z-index: 80;
+            .size(3.8);
+            
+            .page__img {
+                position: relative;
+                z-index: 80;
+            }
+        }
+
         &-content {
+            position: relative;
+            .size(3.6);
+            z-index: 60;
             background-color: @color_yellow;
 
             .page__title-h3, .page__text {
@@ -14,6 +30,8 @@
                 color: @color_dark;
                 .size(4);
             }
+
+            
         }
     }
 }
