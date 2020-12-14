@@ -512,7 +512,7 @@ input:focus {
 
 .header-block-social__facebook {
   background-image: url(../assets/icons/sprite.png);
-  background-position: 0px 0px;
+  background-position: -51px 0px;
   width: 41px;
   height: 41px;
   margin-left: 37px;
@@ -523,7 +523,7 @@ input:focus {
 
 .header-block-social__instagram {
   background-image: url(../assets/icons/sprite.png);
-  background-position: -51px 0px;
+  background-position: 0px 0px;
   width: 41px;
   height: 41px;
   position: relative;
@@ -617,6 +617,11 @@ input:focus {
   font-family: "Dincondensedc";
 }
 
+.emotions {
+  padding-top: 110px;
+  padding-bottom: 100px;
+}
+
 .emotions-block {
   display: -webkit-box;
   display: flex;
@@ -641,11 +646,18 @@ input:focus {
 }
 
 .emotions-block-content .page__btn {
-  width: calc(73.33333333333334% - 0px);
+  margin-top: 40px;
+  width: calc(45.00000000000001% - 0px);
 }
 
 .emotions-block-content__text {
   width: calc(33.333333333333336% - 0px);
+}
+
+.emotions-block-content__text .page__title-h3 {
+  padding-top: 30px;
+  color: #ffffff;
+  padding-bottom: 26px;
 }
 
 .emotions-block-img {
@@ -657,7 +669,7 @@ input:focus {
 .video {
   background-color: #ffed5c;
   position: relative;
-  z-index: -2;
+  padding: 140px 0 80px;
 }
 
 .video-block {
@@ -666,12 +678,27 @@ input:focus {
   flex-wrap: wrap;
   margin-left: 0px;
   margin-right: 0px;
+  flex-wrap: nowrap;
+}
+
+.video-block-content {
+  width: calc(33.333333333333336% - 0px);
 }
 
 .video-block-content .page__title-h3,
 .video-block-content .page__text,
 .video-block-content .page__btn {
   color: #1c1c1c;
+  width: calc(16.666666666666668% - 0px);
+}
+
+.video-block-content .page__title-h3 {
+  padding: 30px 0 30px;
+}
+
+.video-block-content .page__text {
+  width: calc(66.66666666666667% - 0px);
+  padding-bottom: 150px;
 }
 
 .video-block-content .page__btn {
@@ -681,6 +708,8 @@ input:focus {
 
 .games {
   background-color: #ffffff;
+  padding-top: 160px;
+  padding-bottom: 87px;
 }
 
 .games-block {
@@ -689,46 +718,69 @@ input:focus {
   flex-wrap: wrap;
   margin-left: 0px;
   margin-right: 0px;
+  flex-wrap: nowrap;
 }
 
 .games-block-img {
   margin-left: calc(-16.666666666666668% + 0px);
-  width: calc(75% - 0px);
+  width: calc(133.33333333333334% - 0px);
   text-align: right;
   position: relative;
+  padding-top: 50px;
+  /*&::after{
+                content: '';
+                height: 100%;
+                width: 100%;
+                background: yellow;
+                position: absolute;
+                left: 5%;
+                top: 0;
+            }*/
 }
 
 .games-block-img .page__img {
-  z-index: 10;
+  z-index: 30;
   position: relative;
 }
 
-.games-block-img::after {
-  content: '';
-  height: 100%;
-  width: 100%;
-  background: yellow;
-  position: absolute;
-  left: 5%;
-  top: 0;
+.games-block-content {
+  width: calc(100% - 0px);
+  margin-right: calc(-8.333333333333334% + 0px);
+  z-index: 20;
 }
 
-.games-block-content {
-  width: calc(41.66666666666667% - 0px);
+.games-block-content-format .page__text {
+  width: calc(58.333333333333336% - 0px);
+  padding: 4px 0 70px;
 }
 
 .games-block-content-format .page__title-h3,
 .games-block-content-format .page__text {
   color: #1c1c1c;
+  padding-left: 150px;
 }
 
 .games-block-content-format-slider {
   text-align: center;
+  background-color: #ffed5c;
+  padding: 115px 120px 60px 40px;
+}
+
+.games-block-content-format-slider p {
+  color: #ffffff;
+  font-family: "Dincondensedc";
+  font-size: 84px;
 }
 
 .games-block-content-format-slider .page__btn {
+  width: calc(50% - 0px);
   color: #1c1c1c;
   border: 1px solid #1c1c1c;
+  margin-top: 40px;
+  margin-left: 106px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 18px;
 }
 
 .kids {
@@ -821,6 +873,49 @@ input:focus {
 
 .tourslet-block-content .page__text {
   color: #1c1c1c;
+}
+
+.trust {
+  background-color: #ffffff;
+}
+
+.next-section {
+  background-color: #ededed;
+}
+
+.next-section .page__title-h2 {
+  color: #1c1c1c;
+  text-align: center;
+  padding: 130px 0 13px;
+}
+
+.next-section .page__title-h3 {
+  text-align: center;
+  font-size: 50px;
+  line-height: 50px;
+  padding-bottom: 160px;
+}
+
+.footer-block {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.footer-block a {
+  text-decoration: none;
+  font-family: "Noah-Bold";
+  font-size: 14px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.footer-block__about {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
 }
 
 @media screen and (max-width: 920px) {

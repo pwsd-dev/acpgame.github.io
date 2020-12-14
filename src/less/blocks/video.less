@@ -1,13 +1,26 @@
 .video {
     background-color: @color_yellow;
     position: relative;
-    z-index: -2;
+    padding: 140px 0 80px;
+    //z-index: -2;
     &-block {
         .row-flex();
+        flex-wrap: nowrap;
         &-content {
-
+            
+            .size(2);
             .page__title-h3, .page__text, .page__btn { 
                 color: @color_dark;
+                .size(1);
+            }
+
+            .page__title-h3 {
+                padding: 30px 0 30px;
+            }
+
+            .page__text {
+                .size(4);
+                padding-bottom: 150px;
             }
 
             .page__btn {

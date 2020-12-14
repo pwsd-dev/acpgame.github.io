@@ -1,18 +1,22 @@
 .games {
     background-color: @color_white;
+    padding-top: 160px;
+    padding-bottom: 87px;
     &-block {
         .row-flex();
-
+        flex-wrap: nowrap;
         &-img {
             .shift-left(-1);
-            .size(4.5);
+            //.shift-right();
+            .size(8);
             text-align: right;
             position: relative;
+            padding-top: 50px;
             .page__img{
-                z-index: 10;
+                z-index: 30;
                 position: relative;
             }
-            &::after{
+            /*&::after{
                 content: '';
                 height: 100%;
                 width: 100%;
@@ -20,20 +24,53 @@
                 position: absolute;
                 left: 5%;
                 top: 0;
-            }
+            }*/
         }
 
         &-content {
-            .size(2.5);
+            .size(6);
+            .shift-right(-0.5);
+            z-index: 20;
+            
             &-format {
+                
+
+                .page__text {
+                    .size(3.5);
+                    padding: 4px 0 70px;
+                }
+
                 .page__title-h3, .page__text {
                     color: @color_dark;
+                    padding-left: 150px;
+                    
                 }
+
+                .page__title-h3 {
+                    
+                }
+
                 &-slider {
                     text-align: center;
+                    background-color: @color_yellow;
+                    padding: 115px 120px 60px 40px;
+
+
+                    p {
+                        color: @color_white;
+                        font-family: "@{Dincondensedc}";
+                        font-size: 84px;
+                    }
+
                     .page__btn {
+                        .size(3);
                         color: @color_dark;
                         border: 1px solid @color_dark;
+                        margin-top: 40px;
+                        margin-left: 106px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        font-size: 18px;
                     }
                 }
             }
