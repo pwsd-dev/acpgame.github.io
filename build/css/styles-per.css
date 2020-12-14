@@ -367,7 +367,7 @@ input:focus {
 }
 
 .page__title-h3 {
-  font-family: "Noah-Regular";
+  font-family: "Noah-Bold";
   font-size: 38px;
   line-height: 45px;
   color: #1c1c1c;
@@ -835,6 +835,7 @@ input:focus {
 
 .corporate-games {
   background-color: #ffffff;
+  padding-bottom: 97px;
 }
 
 .corporate-games-block {
@@ -859,8 +860,19 @@ input:focus {
 }
 
 .corporate-games-block-content {
+  margin-top: 76px;
+  height: 543px;
   position: relative;
-  width: 56.9%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: 63.56666667%;
+  margin-left: -6.78333333%;
+  margin-right: -10.11666667%;
   z-index: 60;
   background-color: #ffed5c;
 }
@@ -868,12 +880,25 @@ input:focus {
 .corporate-games-block-content .page__title-h3,
 .corporate-games-block-content .page__text {
   color: #1c1c1c;
+  margin-left: 28.21666667%;
+}
+
+.corporate-games-block-content .page__title-h3 {
+  padding-bottom: 40px;
+}
+
+.corporate-games-block-content .page__text {
+  width: 40.23333333%;
+  padding-bottom: 50px;
 }
 
 .corporate-games-block-content .page__btn {
   border: 1px solid #1c1c1c;
   color: #1c1c1c;
-  width: 63.56666667%;
+  width: 30.23333333%;
+  margin-left: 28.21666667%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .battle-of-corporations {
@@ -886,14 +911,46 @@ input:focus {
   flex-wrap: wrap;
   margin-left: -1.55%;
   margin-right: -1.55%;
+  flex-wrap: nowrap;
+}
+
+.battle-of-corporations-block-content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 
 .battle-of-corporations-block-content .page__title-h3 {
+  width: 30.23333333%;
+  padding-bottom: 67px;
   color: #ffffff;
+}
+
+.battle-of-corporations-block-content .page__text {
+  width: 63.56666667%;
+}
+
+.battle-of-corporations-block-content .page__btn {
+  width: 51.9%;
+  margin-top: 60px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.battle-of-corporations-block-img .page__img {
+  position: relative;
+  top: 109px;
+  margin-left: -18.45%;
+  width: 120.23333333%;
 }
 
 .tourslet {
   background-color: #ffffff;
+  padding: 300px 0 230px;
 }
 
 .tourslet-block {
@@ -902,10 +959,32 @@ input:focus {
   flex-wrap: wrap;
   margin-left: -1.55%;
   margin-right: -1.55%;
+  flex-wrap: nowrap;
+}
+
+.tourslet-block-img {
+  margin-left: -3.45%;
+}
+
+.tourslet-block-content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  margin-right: -31.78333333%;
+  margin-left: 9.05%;
 }
 
 .tourslet-block-content .page__text {
   color: #1c1c1c;
+  width: 55.23333333%;
+}
+
+.tourslet-block-content .page__title-h3 {
+  padding-bottom: 10px;
 }
 
 .trust {
@@ -945,7 +1024,18 @@ input:focus {
   color: #ffffff;
 }
 
+.footer-block__col {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  width: 13.56666667%;
+}
+
 .footer-block__about {
+  display: -webkit-box;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;

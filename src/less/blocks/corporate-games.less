@@ -1,5 +1,6 @@
 .corporate-games {
     background-color: @color_white;
+    padding-bottom: 97px;
     &-block {
         .row-flex();
         flex-wrap: nowrap;
@@ -16,19 +17,40 @@
         }
 
         &-content {
+            margin-top: 76px;
+            height: 543px;
             position: relative;
-            .size(3.6);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .size(4);
+            .shift-left(-0.5);
+            .shift-right(-0.7);
             z-index: 60;
             background-color: @color_yellow;
 
             .page__title-h3, .page__text {
                 color: @color_dark;
+                .shift-left(1.6);
+            }
+
+            .page__title-h3 {
+                padding-bottom: 40px;
+            }
+
+            .page__text {
+                .size(2.6);
+                padding-bottom: 50px;
             }
 
             .page__btn {
                 border: 1px solid @color_dark;
                 color: @color_dark;
-                .size(4);
+                .size(2);
+                .shift-left(1.6);
+                padding-top: 5px;
+                padding-bottom: 5px;
+                
             }
 
             

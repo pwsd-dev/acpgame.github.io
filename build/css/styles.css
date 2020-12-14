@@ -367,7 +367,7 @@ input:focus {
 }
 
 .page__title-h3 {
-  font-family: "Noah-Regular";
+  font-family: "Noah-Bold";
   font-size: 38px;
   line-height: 45px;
   color: #1c1c1c;
@@ -835,6 +835,7 @@ input:focus {
 
 .corporate-games {
   background-color: #ffffff;
+  padding-bottom: 97px;
 }
 
 .corporate-games-block {
@@ -859,8 +860,19 @@ input:focus {
 }
 
 .corporate-games-block-content {
+  margin-top: 76px;
+  height: 543px;
   position: relative;
-  width: calc(60.00000000000001% - 0px);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: calc(66.66666666666667% - 0px);
+  margin-left: calc(-8.333333333333334% + 0px);
+  margin-right: calc(-11.666666666666666% + 0px);
   z-index: 60;
   background-color: #ffed5c;
 }
@@ -868,12 +880,25 @@ input:focus {
 .corporate-games-block-content .page__title-h3,
 .corporate-games-block-content .page__text {
   color: #1c1c1c;
+  margin-left: calc(26.66666666666667% + 0px);
+}
+
+.corporate-games-block-content .page__title-h3 {
+  padding-bottom: 40px;
+}
+
+.corporate-games-block-content .page__text {
+  width: calc(43.333333333333336% - 0px);
+  padding-bottom: 50px;
 }
 
 .corporate-games-block-content .page__btn {
   border: 1px solid #1c1c1c;
   color: #1c1c1c;
-  width: calc(66.66666666666667% - 0px);
+  width: calc(33.333333333333336% - 0px);
+  margin-left: calc(26.66666666666667% + 0px);
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .battle-of-corporations {
@@ -886,14 +911,46 @@ input:focus {
   flex-wrap: wrap;
   margin-left: 0px;
   margin-right: 0px;
+  flex-wrap: nowrap;
+}
+
+.battle-of-corporations-block-content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 
 .battle-of-corporations-block-content .page__title-h3 {
+  width: calc(33.333333333333336% - 0px);
+  padding-bottom: 67px;
   color: #ffffff;
+}
+
+.battle-of-corporations-block-content .page__text {
+  width: calc(66.66666666666667% - 0px);
+}
+
+.battle-of-corporations-block-content .page__btn {
+  width: calc(55% - 0px);
+  margin-top: 60px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.battle-of-corporations-block-img .page__img {
+  position: relative;
+  top: 109px;
+  margin-left: calc(-20% + 0px);
+  width: calc(123.33333333333334% - 0px);
 }
 
 .tourslet {
   background-color: #ffffff;
+  padding: 300px 0 230px;
 }
 
 .tourslet-block {
@@ -902,10 +959,32 @@ input:focus {
   flex-wrap: wrap;
   margin-left: 0px;
   margin-right: 0px;
+  flex-wrap: nowrap;
+}
+
+.tourslet-block-img {
+  margin-left: calc(-5% + 0px);
+}
+
+.tourslet-block-content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  margin-right: calc(-33.333333333333336% + 0px);
+  margin-left: calc(7.500000000000001% + 0px);
 }
 
 .tourslet-block-content .page__text {
   color: #1c1c1c;
+  width: calc(58.333333333333336% - 0px);
+}
+
+.tourslet-block-content .page__title-h3 {
+  padding-bottom: 10px;
 }
 
 .trust {
@@ -945,7 +1024,18 @@ input:focus {
   color: #ffffff;
 }
 
+.footer-block__col {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  width: calc(16.666666666666668% - 0px);
+}
+
 .footer-block__about {
+  display: -webkit-box;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
