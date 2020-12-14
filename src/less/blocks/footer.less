@@ -1,7 +1,15 @@
 .footer {
-    
+    padding-bottom: 10px;
     &-block {
+
         .row-flex();
+        padding: 47px 0 25px;
+        &__img {
+            .size(1);
+            background-image: url(../assets/img/img-footer.png);
+            background-repeat: no-repeat;
+        }
+
         a {
             text-decoration: none;
             font-family: "@{Noah}-Bold";
@@ -21,5 +29,29 @@
             display: flex;
             flex-direction: column;
         }
+
+        &__phones {
+            a {
+                text-align: right;
+                padding-bottom: 20px;
+                font-size: 20px;
+            }
+        }
+
+        &__soical {
+            a {
+                color: @color_yellow;
+                padding-bottom: 20px;
+                text-align: right;
+            }
+        }
+    }
+
+    &__copy {
+        font-family: "@{Noah}-Bold";
+        text-align: center;
+        font-size: 10px;
+        color: @color_white;
+
     }
 }

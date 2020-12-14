@@ -570,12 +570,13 @@ input:focus {
 }
 
 .about {
-  padding-top: 50px;
+  padding-top: 150px;
   background-color: #ffffff;
 }
 
 .about .page__text {
   color: #1c1c1c;
+  width: 113.56666667%;
 }
 
 .about-block {
@@ -584,6 +585,7 @@ input:focus {
   flex-wrap: wrap;
   margin-left: -1.55%;
   margin-right: -1.55%;
+  flex-wrap: nowrap;
 }
 
 .about-block-description {
@@ -595,26 +597,39 @@ input:focus {
 }
 
 .about-block-description .page__btn {
-  width: 63.56666667%;
+  width: 83.56666667%;
   border: 1px solid #1c1c1c;
   color: #1c1c1c;
   margin-top: 50px;
 }
 
 .about-block-experience {
-  display: -webkit-box;
-  display: flex;
   flex-wrap: wrap;
   margin-left: -1.55%;
   margin-right: -1.55%;
+  display: -webkit-box;
+  display: flex;
 }
 
 .about-block-experience__item {
-  width: 38.56666667%;
+  display: -webkit-box;
+  display: flex;
+  width: 40.23333333%;
+  padding-bottom: 100px;
 }
 
 .about-block-experience__item span {
   font-family: "Dincondensedc";
+}
+
+.about-block-experience__item .page__text {
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+
+.about-block .padding-left {
+  padding-left: 70px;
 }
 
 .emotions {
@@ -764,6 +779,8 @@ input:focus {
   text-align: center;
   background-color: #ffed5c;
   padding: 115px 120px 60px 40px;
+  z-index: 40;
+  margin-left: -6.78333333%;
 }
 
 .games-block-content-format-slider p {
@@ -803,6 +820,7 @@ input:focus {
   background-color: #1c1c1c;
   z-index: 40;
   width: 68.56666667%;
+  margin-left: 4.88333333%;
 }
 
 .kids-block__content .page__title-h3 {
@@ -989,6 +1007,11 @@ input:focus {
 
 .trust {
   background-color: #ffffff;
+  padding-bottom: 120px;
+}
+
+.trust-block .page__title-h3 {
+  padding-bottom: 46px;
 }
 
 .next-section {
@@ -1008,12 +1031,23 @@ input:focus {
   padding-bottom: 160px;
 }
 
+.footer {
+  padding-bottom: 10px;
+}
+
 .footer-block {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
   margin-left: -1.55%;
   margin-right: -1.55%;
+  padding: 47px 0 25px;
+}
+
+.footer-block__img {
+  width: 13.56666667%;
+  background-image: url(../assets/img/img-footer.png);
+  background-repeat: no-repeat;
 }
 
 .footer-block a {
@@ -1039,6 +1073,25 @@ input:focus {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
+}
+
+.footer-block__phones a {
+  text-align: right;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.footer-block__soical a {
+  color: #ffed5c;
+  padding-bottom: 20px;
+  text-align: right;
+}
+
+.footer__copy {
+  font-family: "Noah-Bold";
+  text-align: center;
+  font-size: 10px;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 920px) {
