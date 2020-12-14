@@ -27,17 +27,16 @@
 			<header class="header">
 				<div class="wrapper">
 					<div class="header-block">
-						<div class="header-block-company">
-							<div class="header-block-company__logo"><img src="assets/img/logo.png"></div>
-							<div class="page__subtitle">ACP GAME</div>
+						<div class="header-block__logo"><img class="page_desktop" src="assets/img/logo-desktop.png"><img class="page_mobile" src="assets/img/logo-mobile.png"></div>
+						<div class="header-block__links"><a class="page__link" href="tel:+7 (495) 941-83-25">8 (495) 941-83-25</a><a class="page__link" href="tel:+7 (985) 774-32-40">8 (985) 774-32-40</a></div>
+						<div class="header-block__social">
+							<div class="page__icon page__icon_facebook"></div>
+							<div class="page__icon page__icon_instagram"></div>
 						</div>
-						<div class="header-block-social"><a class="page__number">8 (495) 941-83-25</a><a class="page__number">8 (985) 774-32-40</a>
-							<div class="header-block-social__facebook"></div>
-							<div class="header-block-social__instagram"></div>
+						<div class="header-block__menu">
+							<div class="page__icon page__icon_menu"></div>
 						</div>
-						<div class="header-block-hamburger">
-							<div class="header-block-hamburger__icon"></div>
-						</div>
+						<div class="header-bg"></div>
 					</div>
 				</div>
 			</header>
@@ -45,25 +44,29 @@
 				<div class="wrapper">
 					<div class="banner-block">
 						<div class="banner-block-content">
-							<div class="banner-block__description">
-								<p class="page__text">Интеллектуальные  </p>
-								<p class="page__text">игры для бизнес-аудитории</p>
-								<p class="page__text">с уникальным сценарием</p>
+							<div class="banner-block-content__description">
+								<p class="page__text">Интеллектуальные <br> игры для бизнес-аудитории с&nbsp;уникальным сценарием</p>
 							</div>
-							<div class="banner-block__slogan">
-								<h1 class="page__title-h1">Я играю</h1>
-								<h1 class="page__title-h1">икру забираю</h1>
-								<div class="page__btn">принять участие</div>
+							<div class="banner-block-content__slogan">
+								<h1 class="page__title-h1">Я играю <br><span class="page_yellow">икру </span><span class="page_white">забираю</span></h1>
+								<button class="page__btn">принять участие</button>
 							</div>
-							<div class="banner-block__invite">
-								<p class="page__text">Мы приглашаем</p>
-								<p class="page__text">к участию новых людей из</p>
-								<p class="page__text">мира бизнеса</p>
+							<div class="banner-block-content__description">
+								<p class="page__text page__text_arrow">Мы приглашаем к участию новых людей из мира бизнеса</p>
 							</div>
 						</div>
-						<div class="banner-block-img"><img src="assets/img/Карусель на главной.png"></div>
+						<div class="banner-block-img">
+							<div class="banner-block-img__big"><img src="assets/img/img-banner-1.png"></div>
+							<div class="banner-block-img__preview">
+								<div class="page__img_small"><img src="assets/img/img-banner-small-1.png"></div>
+								<div class="page__img_small"><img src="assets/img/img-banner-small-2.png"></div>
+								<div class="page__img_small"><img src="assets/img/img-banner-small-3.png"></div>
+							</div>
+						</div>
+						<div class="banner-bg"></div>
 					</div>
 				</div>
+				<div class="banner_info"></div>
 			</section>
 			<section class="about">
 				<div class="wrapper">
@@ -222,5 +225,6 @@
 		</main>
 		<script src="js/debug-grid-create.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/store-scroll.js"></script>
 	</body>
 </html>
