@@ -850,7 +850,7 @@ input:focus {
 .corporate-games-block-img {
   position: relative;
   z-index: 80;
-  width: calc(55% - 0px);
+  width: calc(63.333333333333336% - 0px);
 }
 
 .corporate-games-block-img .page__img {
