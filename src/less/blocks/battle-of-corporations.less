@@ -2,10 +2,37 @@
     background-color: @color_dark;
     &-block {
         .row-flex();
+        flex-wrap: nowrap;
         &-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             .page__title-h3 {
+                .size(2);
+                padding-bottom: 67px;
                 color: @color_white;
             }
+
+            .page__text {
+                .size(4);
+            }
+
+            .page__btn {
+                .size(3.3);
+                margin-top: 60px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+        }
+
+        &-img {
+            .page__img {
+                position: relative;
+                top: 109px;
+                .shift-left(-1.2);
+                .size(7.4);
+            }
+            
         }
     }
 }

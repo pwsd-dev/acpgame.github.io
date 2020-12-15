@@ -4,12 +4,22 @@
     &-block {
         .row-flex();
         flex-wrap: nowrap;
+        .xs-block({
+            flex-direction: column;
+            
+        });
         &__content {
             padding-left: 120px;
             padding-bottom: 60px;
             background-color: @color_dark;
             z-index: 40;
             .size(4.3);
+            .shift-left(.2);
+            .size-xs(8);
+            .xs-block({
+                .shift-left(-1.5);
+                
+            });
             .page__title-h3 {
                 color: @color_white;
                 padding: 40px 0 30px;
