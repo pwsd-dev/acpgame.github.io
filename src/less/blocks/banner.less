@@ -14,21 +14,25 @@
     &-bg{
         background: #ffed5c;
         position: absolute;
-        right: -79%;
+        // right: -79%;
+        top: 0;
+        right: calc(-83.33333333333334% + 0px);
         // width: 100%;
         height: 100%;
         .size(6);
-        // .shift-right(-5);
+        // .shift-right(-4);
 
     }
     &-block {
+        position: relative;
         padding-top: @offset-first-top;
         display: flex;
         height: inherit;
         &-content {
+            .size(2);
             position: relative;
             z-index: 15;
-            .size(2);
+            
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -96,14 +100,16 @@
 
 
         &-img {
-            .size(4);
-            // .shift-right(-1);
+            .size(4.5);
+            .shift-right(-.2);
             position: relative;
             z-index: 10;
             display: flex;
             align-items: center;
             &__big{
                 position: relative;
+                display: flex;
+                flex-shrink: 100;
                 &::after{
                     content: '';
                     z-index: -1;
@@ -111,20 +117,55 @@
                     height: 100%;
                     width: 100%;
                     top: 0;
-                    left: 0;
+                    left: 1px;
                     background-color: @color_yellow;
                 }
+                // &:not(.tns-slide-active){
+                //     display: none;
+                // }
             }
             &__preview{
                 display: flex;
                 flex-direction: column;
                 padding-left: 4px;
+                .page__img_small{
+                    cursor: pointer;
+                    img{
+                        object-fit: cover;
+                        width: 92px;
+                        height: 80px;
+                    }
+                    filter: grayscale(100%);
+                    opacity: .8;
+                    &.tns-nav-active{
+                        filter: none;
+                        opacity: 1;
+                    }
+                }
             }
         }
        
     }
-    &_info{
-        width: 100%;
-        height: 152px;
+    &-info{
+       margin-top:50px;
+        &-content{
+            // margin: 0 -15px;
+            .size(6);
+            .shift-left(-0.25);
+            .shift-padding(0.25);
+            height: 152px;
+            background-color: @color_black;
+            border: 1px solid @color_white;
+            display: flex;
+            align-items: center;
+            .page__title-h2{
+                .size(.8);
+                .shift-right(.2);
+                font-family: "@{Noah}-Bold";
+            }
+            .page__text{
+                .size(1);
+            }
+        }
     }
 }

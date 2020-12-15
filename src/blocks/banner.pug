@@ -1,3 +1,8 @@
+mixin names(date, city, game)
+	.page__text
+		div.page_yellow=date
+		div.city=city
+		div.game-name=game
 section.banner
 	.wrapper
 		.banner-block
@@ -13,8 +18,21 @@ section.banner
 					p.page__text.page__text_arrow Мы приглашаем к участию новых людей из мира бизнеса
 			.banner-block-img
 				.banner-block-img__big
-					img(src="assets/img/img-banner-1.png")
+					#sliderBanner
+						.page__img
+							img.tns-lazy-img(data-src="assets/img/img-banner-1.png" )
+						.page__img
+							img.tns-lazy-img(data-src="assets/img/img-banner-2.png")
+						.page__img
+							img.tns-lazy-img(data-src="assets/img/img-banner-3.png")
+						.page__img
+							img.tns-lazy-img(data-src="assets/img/img-banner-4.png")
+					
+				
 				.banner-block-img__preview
+					#customizeThumbnails
+						.page__img_small
+							img( src="assets/img/img-banner-1.png")
 						.page__img_small
 							img(src="assets/img/img-banner-small-1.png")
 						.page__img_small
@@ -22,4 +40,12 @@ section.banner
 						.page__img_small
 							img(src="assets/img/img-banner-small-3.png")
 			.banner-bg
-	.banner_info
+	.banner-info
+		.wrapper
+			.banner-info-content
+				h2.page__title-h2 Ближайшие игры
+				+names("25 Октября", "Ереван", "Угадать за 60 секунд")
+				+names("28 Октября", "Екатеринбург", "Угадать за 60 секунд")
+				+names("8 Декабря", "Екатеринбург", "Угадать за 60 секунд")
+				+names("17 Декабря", "Москва", "Битва корпораций")
+				+names("23 Декабря", "Екатеринбург", "Читай.Слушай.Смотри.")

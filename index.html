@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 		<title>Acpgame</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css" type="text/css">
 		<link rel="stylesheet" href="css/styles.css" type="text/css">
 	</head>
 	<body>
@@ -57,17 +58,58 @@
 							</div>
 						</div>
 						<div class="banner-block-img">
-							<div class="banner-block-img__big"><img src="assets/img/img-banner-1.png"></div>
+							<div class="banner-block-img__big">
+								<div id="sliderBanner">
+									<div class="page__img"><img class="tns-lazy-img" data-src="assets/img/img-banner-1.png"></div>
+									<div class="page__img"><img class="tns-lazy-img" data-src="assets/img/img-banner-2.png"></div>
+									<div class="page__img"><img class="tns-lazy-img" data-src="assets/img/img-banner-3.png"></div>
+									<div class="page__img"><img class="tns-lazy-img" data-src="assets/img/img-banner-4.png"></div>
+								</div>
+							</div>
 							<div class="banner-block-img__preview">
-								<div class="page__img_small"><img src="assets/img/img-banner-small-1.png"></div>
-								<div class="page__img_small"><img src="assets/img/img-banner-small-2.png"></div>
-								<div class="page__img_small"><img src="assets/img/img-banner-small-3.png"></div>
+								<div id="customizeThumbnails">
+									<div class="page__img_small"><img src="assets/img/img-banner-1.png"></div>
+									<div class="page__img_small"><img src="assets/img/img-banner-small-1.png"></div>
+									<div class="page__img_small"><img src="assets/img/img-banner-small-2.png"></div>
+									<div class="page__img_small"><img src="assets/img/img-banner-small-3.png"></div>
+								</div>
 							</div>
 						</div>
 						<div class="banner-bg"></div>
 					</div>
 				</div>
-				<div class="banner_info"></div>
+				<div class="banner-info">
+					<div class="wrapper">
+						<div class="banner-info-content">
+							<h2 class="page__title-h2">Ближайшие игры</h2>
+										<div class="page__text">
+											<div class="page_yellow">25 Октября</div>
+											<div class="city">Ереван</div>
+											<div class="game-name">Угадать за 60 секунд</div>
+										</div>
+										<div class="page__text">
+											<div class="page_yellow">28 Октября</div>
+											<div class="city">Екатеринбург</div>
+											<div class="game-name">Угадать за 60 секунд</div>
+										</div>
+										<div class="page__text">
+											<div class="page_yellow">8 Декабря</div>
+											<div class="city">Екатеринбург</div>
+											<div class="game-name">Угадать за 60 секунд</div>
+										</div>
+										<div class="page__text">
+											<div class="page_yellow">17 Декабря</div>
+											<div class="city">Москва</div>
+											<div class="game-name">Битва корпораций</div>
+										</div>
+										<div class="page__text">
+											<div class="page_yellow">23 Декабря</div>
+											<div class="city">Екатеринбург</div>
+											<div class="game-name">Читай.Слушай.Смотри.</div>
+										</div>
+						</div>
+					</div>
+				</div>
 			</section>
 			<section class="about">
 				<div class="wrapper">
@@ -86,11 +128,11 @@
 								<div class="page__img"> <img src="assets/img/7.png"></div>
 								<p class="page__text">городов</p>
 							</div>
-							<div class="about-block-experience__item">
+							<div class="about-block-experience__item mob">
 								<div class="page__img"> <img src="assets/img/500+.png"></div>
 								<p class="page__text">игр</p>
 							</div>
-							<div class="about-block-experience__item padding-left">
+							<div class="about-block-experience__item padding-left mob">
 								<div class="page__img"> <img src="assets/img/200+.png"></div>
 								<p class="page__text">корпоративов</p>
 							</div>
@@ -227,6 +269,7 @@
 				</div>
 			</footer>
 		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 		<script src="js/debug-grid-create.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/store-scroll.js"></script>
