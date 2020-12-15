@@ -2,9 +2,21 @@
     background-color: @color_white;
     padding-top: 160px;
     padding-bottom: 87px;
+    .xs-block({
+        padding-top: 0;
+        padding-bottom: 64px;
+        background-color: @color_yellow;
+        
+    });
+
     &-block {
         .row-flex();
         flex-wrap: nowrap;
+        .xs-block({
+            flex-direction: column;
+            
+            
+        });
         &-img {
             .shift-left(-1);
             //.shift-right();
@@ -12,6 +24,10 @@
             text-align: right;
             position: relative;
             padding-top: 50px;
+            .xs-block({
+                padding-top: 0;
+                
+            });
             .page__img{
                 z-index: 30;
                 position: relative;
@@ -44,10 +60,22 @@
                     color: @color_dark;
                     padding-left: 150px;
                     
+                    .xs-block({
+                        padding-left: 0;
+                        
+                        
+                    });
+                    
                 }
 
                 .page__title-h3 {
-                    
+                    .size-xs(12);
+                    padding-top: 25px;
+                    padding-bottom: 10px;
+                }
+
+                .page__text {
+                    .size-xs(5.5);
                 }
 
                 &-slider {
@@ -56,6 +84,13 @@
                     padding: 115px 120px 60px 40px;
                     z-index: 40;
                     .shift-left(-.5);
+
+                    .xs-block({
+                        padding: 0;
+                        
+                        
+                    });
+
 
 
                     p {
@@ -66,6 +101,10 @@
 
                     .page__btn {
                         .size(3);
+                        .size-xs(5);
+                        .xs-block({
+                            margin-left: 40px
+                        });
                         color: @color_dark;
                         border: 1px solid @color_dark;
                         margin-top: 40px;

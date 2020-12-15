@@ -614,12 +614,9 @@ input:focus {
 .about-block-experience__item {
   display: -webkit-box;
   display: flex;
+  flex-wrap: nowrap;
   width: 40.23333333%;
   padding-bottom: 100px;
-}
-
-.about-block-experience__item span {
-  font-family: "Dincondensedc";
 }
 
 .about-block-experience__item .page__text {
@@ -630,6 +627,12 @@ input:focus {
 
 .about-block .padding-left {
   padding-left: 70px;
+}
+
+.about-block .mob {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
 }
 
 .emotions {
@@ -773,6 +776,11 @@ input:focus {
 .games-block-content-format .page__text {
   color: #1c1c1c;
   padding-left: 150px;
+}
+
+.games-block-content-format .page__title-h3 {
+  padding-top: 25px;
+  padding-bottom: 10px;
 }
 
 .games-block-content-format-slider {
@@ -1141,7 +1149,176 @@ input:focus {
     right: 0;
   }
 
+  .about-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+
+  .about-block .page__title-h3 {
+    text-align: center;
+    margin: 0 auto;
+    width: 113.56666667%;
+  }
+
+  .about-block-description {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+
+  .about-block-description .page__btn {
+    width: 113.56666667%;
+    padding-top: 10px;
+    -webkit-box-ordinal-group: 4;
+            order: 3;
+  }
+
+  .about-block-experience__item {
+    flex-wrap: nowrap;
+    width: 30.23333333%;
+    padding-top: 40px;
+    padding-left: 20px;
+  }
+
+  .about-block-experience__item .col-mob {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+
+  .emotions {
+    padding-top: 0;
+  }
+
+  .emotions-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: start;
+            align-items: flex-start;
+  }
+
+  .emotions-block-content {
+    -webkit-box-ordinal-group: 2;
+            order: 1;
+  }
+
+  .emotions-block-content .page__btn {
+    width: 196.9%;
+  }
+
   .emotions-block-content__text {
-    width: 96.9%;
+    width: 196.9%;
+  }
+
+  .emotions-block-content__text .page__title-h3 {
+    width: 196.9%;
+  }
+
+  .emotions-block-img {
+    position: relative;
+    width: 113.56666667%;
+    margin-left: -6.78333333%;
+  }
+
+  .emotions-block-img__small_1,
+  .emotions-block-img__small_2 {
+    display: none;
+  }
+
+  .video {
+    padding-bottom: 40px;
+  }
+
+  .video-block {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+
+  .video-block-content .page__title-h3 {
+    width: 396.9%;
+  }
+
+  .video-block-content .page__text {
+    width: 296.9%;
+  }
+
+  .video-block-content .page__text {
+    padding-bottom: 30px;
+  }
+
+  .video-block-content .page__btn {
+    width: 296.9%;
+  }
+
+  .video-block-content .page__btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .video-block-img {
+    -webkit-box-ordinal-group: 0;
+            order: -1;
+  }
+
+  .games {
+    padding-top: 0;
+    padding-bottom: 64px;
+    background-color: #ffed5c;
+  }
+
+  .games-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+
+  .games-block-img {
+    padding-top: 0;
+  }
+
+  .games-block-content-format .page__title-h3,
+  .games-block-content-format .page__text {
+    padding-left: 0;
+  }
+
+  .games-block-content-format .page__title-h3 {
+    width: 196.9%;
+  }
+
+  .games-block-content-format .page__text {
+    width: 88.56666667%;
+  }
+
+  .games-block-content-format-slider {
+    padding: 0;
+  }
+
+  .games-block-content-format-slider .page__btn {
+    width: 80.23333333%;
+  }
+
+  .games-block-content-format-slider .page__btn {
+    margin-left: 40px;
+  }
+
+  .kids-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+
+  .kids-block__content {
+    width: 130.23333333%;
+  }
+
+  .kids-block__content {
+    margin-left: -23.45%;
   }
 }
