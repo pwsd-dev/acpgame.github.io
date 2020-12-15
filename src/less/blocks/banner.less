@@ -1,28 +1,130 @@
+@size-r: calc(-83.33333333333334% + 0px);
 .banner{
-    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    //fix me   padding-top: @offset-first-top;
+    top: -@offset-first-top;
+  
+    // height: 100vh;
+    // background-color: @color_black;
+    // z-index: -20; // для сетки если хочу делать background для banner
+    .wrapper {
+        height: 100%;
+    }
+    &-bg{
+        background: #ffed5c;
+        position: absolute;
+        right: -79%;
+        // width: 100%;
+        height: 100%;
+        .size(6);
+        // .shift-right(-5);
+
+    }
     &-block {
+        padding-top: @offset-first-top;
         display: flex;
+        height: inherit;
         &-content {
+            position: relative;
+            z-index: 15;
+            .size(2);
+            display: flex;
             flex-direction: column;
             justify-content: space-between;
-            &__description {
-
-            }
-        }
-
-        &__slogan {
-            
-            .page__title-h1 {
+            &__slogan{
                 
+                .page__title-h1{
+                    .size(10);
+                    margin-top: 70px;
+                    margin-bottom: 30px;
+                    text-shadow: 
+                    @color_white 1px 0px 0,
+                    @color_white -1px 0px 0, 
+                    @color_white 0px -1px 0, 
+                    @color_white 0px 2px 0;
+                    .page{
+                        &_yellow,
+                        &_white{
+                            text-shadow: none;
+                        }
+                    }
+                }
+                .page__btn {
+                    .size(4);
+                    margin-bottom: 50px;
+                }
             }
+           
+            &__description{
+                &:first-child{
+                    .size(4);
+                }
+                &:nth-of-type(3){
+                    .size(5);
+                    // .shift-right(1);
+                    // display: flex;
+                    // justify-content: flex-end;
+                    align-self: flex-end;
+                    .page__text{
+                        .size(4);
+                    }
+                }
+                .page__text{
+                    line-height: 174.33%;
+                    font-family: "@{Noah}-Bold";
+                    &_arrow{
+                        position: relative;
+                        text-align: right;
+                        &::after{
+                            content: '';
+                            display: inline-block;
+                            position: absolute;
+                            .sprite(@icon-arrow-long);
+                            top: 0;
+                            right:-50px;
+                        }
+                        
+                    }
+                }
 
-            .page__btn {
-                .size(2.6);
+            }
+            &__slogan{
+
             }
         }
+
 
         &-img {
-             
+            .size(4);
+            // .shift-right(-1);
+            position: relative;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            &__big{
+                position: relative;
+                &::after{
+                    content: '';
+                    z-index: -1;
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    background-color: @color_yellow;
+                }
+            }
+            &__preview{
+                display: flex;
+                flex-direction: column;
+                padding-left: 4px;
+            }
         }
+       
+    }
+    &_info{
+        width: 100%;
+        height: 152px;
     }
 }

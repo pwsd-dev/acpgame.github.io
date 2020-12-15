@@ -1,6 +1,7 @@
 .page{
     position: relative;
-    background: #363636;
+    // background: #363636;
+    background:@color_black;
     z-index: 1;
     // margin-bottom: 200px;
     height: 100%;
@@ -55,6 +56,16 @@
         line-height: 26.74px;
         color: @color_white;
     }
+    &__link{
+        font-family: "@{Gerbera}";
+        font-size: 20px;
+        line-height: 26.74px;
+        color: @color_white;
+        text-decoration: none;
+        &:hover{
+            color: @color_yellow;
+        }
+    }
 
     &__btn {
         cursor: pointer;
@@ -79,6 +90,31 @@
                     background-color: @color_white;
                     transition: all ease-out 0.5s;
                 }
+    }
+    &__icon{
+        &_facebook{
+            .sprite(@icon-facebook);
+        }
+        &_instagram{
+            .sprite(@icon-instagram);
+        }
+        &_menu{
+            .sprite(@icon-hamburger);
+        }
+    }
+    &_yellow{
+        color: @color_yellow;
+    }
+    &_white{
+        color: @color_white;
+    }
+    &_desktop{
+        display: block;
+        .xs(display, none);
+    }
+    &_mobile{
+        display: none;
+        .xs(display, block);
     }
 }
 

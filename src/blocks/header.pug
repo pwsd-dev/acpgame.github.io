@@ -1,14 +1,16 @@
 header.header
     .wrapper
         .header-block
-            .header-block-company
-                .header-block-company__logo
-                    img(src="assets/img/logo.png")
-                .page__subtitle ACP GAME
-            .header-block-social
-                a.page__number 8 (495) 941-83-25
-                a.page__number 8 (985) 774-32-40
-                .header-block-social__facebook
-                .header-block-social__instagram
-            .header-block-hamburger
-                .header-block-hamburger__icon
+            .header-block__logo
+                img.page_desktop(src="assets/img/logo-desktop.png")
+                img.page_mobile(src="assets/img/logo-mobile.png")
+            .header-block__links
+                a.page__link(href="tel:+7 (495) 941-83-25") 8 (495) 941-83-25
+                a.page__link(href="tel:+7 (985) 774-32-40") 8 (985) 774-32-40
+                
+            .header-block__social
+                .page__icon.page__icon_facebook
+                .page__icon.page__icon_instagram
+            .header-block__menu
+                .page__icon.page__icon_menu
+            .header-bg
