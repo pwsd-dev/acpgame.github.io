@@ -1111,6 +1111,7 @@ html:not([data-scroll='0']) .header {
 
 .battle-of-corporations {
   background-color: #1c1c1c;
+  overflow: hidden;
 }
 
 .battle-of-corporations-block {
@@ -1134,7 +1135,7 @@ html:not([data-scroll='0']) .header {
 
 .battle-of-corporations-block-content .page__title-h3 {
   width: calc(33.333333333333336% - 0px);
-  padding-bottom: 67px;
+  padding-bottom: 40px;
   color: #ffffff;
 }
 
@@ -1143,10 +1144,10 @@ html:not([data-scroll='0']) .header {
 }
 
 .battle-of-corporations-block-content .page__btn {
-  width: calc(55% - 0px);
+  width: calc(50% - 0px);
   margin-top: 60px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .battle-of-corporations-block-img .page__img {
@@ -1183,7 +1184,8 @@ html:not([data-scroll='0']) .header {
   -webkit-box-pack: center;
           justify-content: center;
   margin-right: calc(-33.333333333333336% + 0px);
-  margin-left: calc(7.500000000000001% + 0px);
+  margin-left: calc(10% + 0px);
+  padding-top: 30px;
 }
 
 .tourslet-block-content .page__text {
