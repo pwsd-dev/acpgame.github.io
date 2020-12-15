@@ -94,9 +94,15 @@
     &__icon{
         &_facebook{
             .sprite(@icon-facebook);
+            &_white{
+                .sprite(@icon-facebook-white);
+            }
         }
         &_instagram{
             .sprite(@icon-instagram);
+            &_white{
+                .sprite(@icon-instagram-white);
+            }
         }
         &_menu{
             .sprite(@icon-hamburger);
@@ -115,6 +121,9 @@
     &_mobile{
         display: none;
         .xs(display, block);
+    }
+    &_hidden{
+        display: none !important;
     }
 }
 

@@ -1,0 +1,94 @@
+.modal-menu{
+    color: @color_white;
+    background-color: @color_dark;
+    .modal-container{
+        height: 100%;
+        
+    }
+    .modal__content{
+        height: 100%;
+        .row-flex();
+        // padding: 60px 0px;
+        // min-width: 1440px;
+        // height: 100vh;
+        align-items: center;
+        &-nav{
+            .size(3);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 56px 152px;
+            box-sizing: border-box;
+            background-color: @color_dark;
+          
+            .page__nav{
+                display: flex;
+                flex-direction: column;
+                border-bottom: 1px solid @color_yellow;
+                padding-bottom: 40px;
+                margin-bottom: 35px;
+                .page__link{
+                    line-height: 40px;
+                }
+                .page__lists{
+                    padding-left:20px; 
+                }
+            }
+            .page__links{
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 35px;
+                
+            }
+        }
+        &-info{
+            .size(3);
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 90px 0;
+            box-sizing: border-box;
+            background-color: @color_yellow;
+            
+            .page__img{
+                .size(3);
+                padding: 8px;
+                box-sizing: border-box;
+                
+                &:nth-of-type(1),
+                &:nth-of-type(2){
+                    align-self: flex-end;
+                }
+                &:nth-of-type(3),
+                &:nth-of-type(4){
+                    align-self: flex-start;
+                }
+             
+                &:nth-of-type(odd){
+                    text-align: right;
+                }
+                &:nth-of-type(even){
+                    position: relative;
+                    bottom: -50px;
+                }
+               
+            }
+        }
+    }
+    .modal__action{
+        .page__btn_close{
+            padding: 0px 23px;
+            &::before,
+            &::after{
+                width: 32px;
+                height: 1.5px;
+                background: @color_dark;          
+            }
+        }
+    }
+    
+}
+                        

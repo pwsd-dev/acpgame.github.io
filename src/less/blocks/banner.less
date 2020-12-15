@@ -1,10 +1,10 @@
-@size-r: calc(-83.33333333333334% + 0px);
+
 .banner{
     position: relative;
     overflow: hidden;
     //fix me   padding-top: @offset-first-top;
-    top: -@offset-first-top;
-  
+    // top: -@offset-first-top;
+    // padding-top: @offset-first-top;
     // height: 100vh;
     // background-color: @color_black;
     // z-index: -20; // для сетки если хочу делать background для banner
@@ -25,7 +25,7 @@
     }
     &-block {
         position: relative;
-        padding-top: @offset-first-top;
+        padding-top: 40px;
         display: flex;
         height: inherit;
         &-content {
@@ -114,10 +114,10 @@
                     content: '';
                     z-index: -1;
                     position: absolute;
-                    height: 100%;
+                    height: calc(100% - 65px);
                     width: 100%;
-                    top: 0;
                     left: 1px;
+                    bottom: -2px;                
                     background-color: @color_yellow;
                 }
                 // &:not(.tns-slide-active){
@@ -147,7 +147,9 @@
        
     }
     &-info{
-       margin-top:50px;
+        position: relative;
+        bottom: -80px;
+        z-index: 100;
         &-content{
             // margin: 0 -15px;
             .size(6);
