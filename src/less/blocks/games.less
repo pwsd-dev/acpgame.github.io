@@ -2,6 +2,7 @@
     background-color: @color_white;
     padding-top: 160px;
     padding-bottom: 87px;
+    overflow: hidden;
     .xs-block({
         padding-top: 0;
         padding-bottom: 64px;
@@ -58,7 +59,7 @@
 
                 .page__title-h3, .page__text {
                     color: @color_dark;
-                    padding-left: 150px;
+                    padding-left: 130px;
                     
                     .xs-block({
                         padding-left: 0;
@@ -70,12 +71,15 @@
 
                 .page__title-h3 {
                     .size-xs(12);
-                    padding-top: 25px;
+                    padding-top: 20px;
                     padding-bottom: 10px;
                 }
 
                 .page__text {
                     .size-xs(5.5);
+                    .xs-block({
+                        padding-bottom: 30px;
+                    });
                 }
 
                 &-slider {
@@ -103,12 +107,13 @@
                         .size(3);
                         .size-xs(5);
                         .xs-block({
-                            margin-left: 40px
+                            margin-left: 40px;
+                            margin-top: 20px;
                         });
                         color: @color_dark;
                         border: 1px solid @color_dark;
-                        margin-top: 40px;
-                        margin-left: 106px;
+                        margin-top: 65px;
+                        margin-left: 140px;
                         padding-top: 5px;
                         padding-bottom: 5px;
                         font-size: 18px;

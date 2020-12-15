@@ -1,6 +1,7 @@
 .tourslet {
     background-color: @color_white;
     padding: 300px 0 230px;
+    overflow: hidden;
     &-block {
         .row-flex();
         flex-wrap: nowrap;
@@ -15,7 +16,8 @@
             flex-direction: column;
             justify-content: center;
             .shift-right(-2);
-            .shift-left(.45);
+            .shift-left(.6);
+            padding-top: 30px;
             .page__text {
                 color: @color_dark;
                 .size(3.5);
