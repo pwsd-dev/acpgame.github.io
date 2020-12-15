@@ -1,6 +1,7 @@
 .kids {
     background-color: @color_white;
     padding-bottom: 60px;
+    overflow: hidden;
     &-block {
         .row-flex();
         flex-wrap: nowrap;
@@ -42,6 +43,14 @@
             }
 
             &-img { 
+                .xs-block({
+                    order: -1;
+                    padding-top: 0;
+                    .size(6.6);
+                    .shift-right(0);
+                    .shift-left(-.260);
+                    
+                });
                 padding-top: 109px;
                 z-index: 50;
                 //.size(6.3);

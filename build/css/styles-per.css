@@ -731,6 +731,7 @@ html:not([data-scroll='0']) .header {
 .about {
   padding-top: 150px;
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 .about .page__text {
@@ -797,6 +798,7 @@ html:not([data-scroll='0']) .header {
 .emotions {
   padding-top: 110px;
   padding-bottom: 110px;
+  overflow: hidden;
 }
 
 .emotions-block {
@@ -863,6 +865,7 @@ html:not([data-scroll='0']) .header {
   background-color: #ffed5c;
   position: relative;
   padding: 140px 0 80px;
+  overflow: hidden;
 }
 
 .video-block {
@@ -906,6 +909,7 @@ html:not([data-scroll='0']) .header {
   background-color: #ffffff;
   padding-top: 160px;
   padding-bottom: 87px;
+  overflow: hidden;
 }
 
 .games-block {
@@ -957,6 +961,7 @@ html:not([data-scroll='0']) .header {
 }
 
 .games-block-content-format .page__title-h3 {
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 
@@ -988,6 +993,7 @@ html:not([data-scroll='0']) .header {
 .kids {
   background-color: #ffffff;
   padding-bottom: 60px;
+  overflow: hidden;
 }
 
 .kids-block {
@@ -1160,6 +1166,7 @@ html:not([data-scroll='0']) .header {
 .tourslet {
   background-color: #ffffff;
   padding: 300px 0 230px;
+  overflow: hidden;
 }
 
 .tourslet-block {
@@ -1200,6 +1207,7 @@ html:not([data-scroll='0']) .header {
 .trust {
   background-color: #ffffff;
   padding-bottom: 120px;
+  overflow: hidden;
 }
 
 .trust-block .page__title-h3 {
@@ -1225,6 +1233,7 @@ html:not([data-scroll='0']) .header {
 
 .footer {
   padding-bottom: 10px;
+  overflow: hidden;
 }
 
 .footer-block {
@@ -1383,6 +1392,7 @@ html:not([data-scroll='0']) .header {
 
   .emotions {
     padding-top: 0;
+    padding-bottom: 70px;
   }
 
   .emotions-block {
@@ -1399,11 +1409,11 @@ html:not([data-scroll='0']) .header {
   }
 
   .emotions-block-content .page__btn {
-    width: 196.9%;
+    width: 96.9%;
   }
 
   .emotions-block-content__text {
-    width: 196.9%;
+    width: 88.56666667%;
   }
 
   .emotions-block-content__text .page__title-h3 {
@@ -1423,6 +1433,7 @@ html:not([data-scroll='0']) .header {
 
   .video {
     padding-bottom: 40px;
+    padding-top: 40px;
   }
 
   .video-block {
@@ -1488,6 +1499,10 @@ html:not([data-scroll='0']) .header {
     width: 88.56666667%;
   }
 
+  .games-block-content-format .page__text {
+    padding-bottom: 30px;
+  }
+
   .games-block-content-format-slider {
     padding: 0;
   }
@@ -1498,6 +1513,7 @@ html:not([data-scroll='0']) .header {
 
   .games-block-content-format-slider .page__btn {
     margin-left: 40px;
+    margin-top: 20px;
   }
 
   .kids-block {
@@ -1512,5 +1528,14 @@ html:not([data-scroll='0']) .header {
 
   .kids-block__content {
     margin-left: -23.45%;
+  }
+
+  .kids-block__content-img {
+    -webkit-box-ordinal-group: 0;
+            order: -1;
+    padding-top: 0;
+    width: 106.9%;
+    margin-right: 1.55%;
+    margin-left: -2.78333333%;
   }
 }
