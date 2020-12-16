@@ -2,21 +2,42 @@
     background-color: @color_white;
     padding: 300px 0 230px;
     overflow: hidden;
+    .xs-block({
+        padding: 50px 0 70px;
+        
+    });
     &-block {
         .row-flex();
         flex-wrap: nowrap;
+        .xs-block({
         
+            flex-direction: column;
+            justify-content: start;
+            
+        });
 
         &-img {
             .shift-left(-0.3);
+            .xs-block({
+                .shift-left(0);
+                
+                
+            });
         }
 
         &-content {
             display: flex;
             flex-direction: column;
             justify-content: center;
+
             .shift-right(-2);
             .shift-left(.6);
+            .xs-block({
+                justify-content: start;
+                .shift-left(.1);
+                .shift-right(-2);
+                
+            });
             padding-top: 30px;
             .page__text {
                 color: @color_dark;
