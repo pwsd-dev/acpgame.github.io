@@ -1315,6 +1315,7 @@ html:not([data-scroll='0']) .header {
   flex-wrap: wrap;
   margin-left: 0px;
   margin-right: 0px;
+  flex-wrap: nowrap;
   padding: 47px 0 25px;
 }
 
@@ -1982,5 +1983,54 @@ html:not([data-scroll='0']) .header {
             order: -1;
     position: relative;
     top: -109px;
+  }
+
+  .tourslet {
+    padding: 50px 0 70px;
+  }
+
+  .tourslet-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: start;
+            justify-content: start;
+  }
+
+  .tourslet-block-img {
+    margin-left: calc(0% + 0px);
+  }
+
+  .tourslet-block-content {
+    -webkit-box-pack: start;
+            justify-content: start;
+    margin-left: calc(1.666666666666667% + 0px);
+    margin-right: calc(-33.333333333333336% + 0px);
+  }
+
+  .trust {
+    padding-bottom: 50px;
+  }
+
+  .trust-block__img {
+    width: calc(100% - 0px);
+  }
+
+  .next-section .page__title-h2 {
+    padding-top: 40px;
+  }
+
+  .footer-block__corporation,
+  .footer-block__games {
+    display: none;
+  }
+
+  .footer-block__about {
+    display: none;
+  }
+
+  .footer-block__phones {
+    width: calc(50% - 0px);
+    margin-right: calc(8.333333333333334% + 0px);
   }
 }

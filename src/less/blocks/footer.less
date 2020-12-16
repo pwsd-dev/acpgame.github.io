@@ -4,11 +4,24 @@
     &-block {
 
         .row-flex();
+        flex-wrap: nowrap;
         padding: 47px 0 25px;
         &__img {
             .size(1);
+            .xs-block({
+        
+                
+        
+            });
             background-image: url(../assets/img/img-footer.png);
             background-repeat: no-repeat;
+        }
+
+        &__corporation, &__games {
+
+            .xs-block({
+                display: none;
+            });
         }
 
         a {
@@ -24,14 +37,22 @@
             display: flex;
             flex-direction: column;
             .size(1);
+            
         }
 
         &__about {
             display: flex;
             flex-direction: column;
+            .xs-block({
+                display: none;
+            });
         }
 
         &__phones {
+            .xs-block({
+                .size(3);
+                .shift-right(.5);
+            });
             a {
                 text-align: right;
                 padding-bottom: 20px;
@@ -49,6 +70,10 @@
     }
 
     &__copy {
+        .xs-block({
+            //font-size: 20px;
+            //padding-bottom: 20px;
+        });
         font-family: "@{Noah}-Bold";
         text-align: center;
         font-size: 10px;
