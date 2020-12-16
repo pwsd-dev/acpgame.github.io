@@ -1360,6 +1360,7 @@ html:not([data-scroll='0']) .header {
   color: #ffed5c;
   padding-bottom: 20px;
   text-align: right;
+  text-align: center;
 }
 
 .footer__copy {
