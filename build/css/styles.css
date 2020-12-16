@@ -443,7 +443,7 @@ html:not([data-scroll='0']) .header {
 
 .page__icon_facebook {
   background-image: url(../assets/icons/sprite.png);
-  background-position: 0px 0px;
+  background-position: -51px 0px;
   width: 41px;
   height: 41px;
 }
@@ -457,7 +457,7 @@ html:not([data-scroll='0']) .header {
 
 .page__icon_instagram {
   background-image: url(../assets/icons/sprite.png);
-  background-position: -51px 0px;
+  background-position: 0px 0px;
   width: 41px;
   height: 41px;
 }
@@ -1868,6 +1868,10 @@ html:not([data-scroll='0']) .header {
     margin-top: 20px;
   }
 
+  .kids {
+    padding-bottom: 0;
+  }
+
   .kids-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1882,6 +1886,14 @@ html:not([data-scroll='0']) .header {
     margin-left: calc(-25% + 0px);
   }
 
+  .kids-block__content .page__text {
+    width: calc(66.66666666666667% - 0px);
+  }
+
+  .kids-block__content .page__btn {
+    margin-bottom: 20px;
+  }
+
   .kids-block__content-img {
     -webkit-box-ordinal-group: 0;
             order: -1;
@@ -1889,5 +1901,86 @@ html:not([data-scroll='0']) .header {
     width: calc(110% - 0px);
     margin-right: calc(0% + 0px);
     margin-left: calc(-4.333333333333334% + 0px);
+  }
+
+  .corporate-games {
+    background-color: #ffed5c;
+    padding-bottom: 0;
+  }
+
+  .corporate-games-block {
+    padding-top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+
+  .corporate-games-block-img {
+    width: calc(116.66666666666667% - 0px);
+    margin-left: calc(-8.333333333333334% + 0px);
+  }
+
+  .corporate-games-block-content {
+    width: calc(100% - 0px);
+    margin-left: calc(-25% + 0px);
+    height: 45vh;
+    margin-top: 0px;
+    padding-top: 20px;
+    -webkit-box-pack: start;
+            justify-content: start;
+  }
+
+  .corporate-games-block-content .page__text {
+    width: calc(100% - 0px);
+  }
+
+  .corporate-games-block-content .page__btn {
+    width: calc(91.66666666666667% - 0px);
+  }
+
+  .corporate-games-block-content .page__btn {
+    margin-bottom: 0;
+  }
+
+  .battle-of-corporations {
+    padding-bottom: 20px;
+  }
+
+  .battle-of-corporations-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: start;
+            justify-content: start;
+  }
+
+  .battle-of-corporations-block-content {
+    -webkit-box-pack: start;
+            justify-content: start;
+  }
+
+  .battle-of-corporations-block-content .page__title-h3 {
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+
+  .battle-of-corporations-block-content .page__text {
+    width: calc(100% - 0px);
+  }
+
+  .battle-of-corporations-block-content .page__btn {
+    width: calc(95.00000000000001% - 0px);
+  }
+
+  .battle-of-corporations-block-content .page__btn {
+    margin-bottom: 60px;
+  }
+
+  .battle-of-corporations-block-img {
+    width: calc(100% - 0px);
+    -webkit-box-ordinal-group: 0;
+            order: -1;
+    position: relative;
+    top: -109px;
   }
 }

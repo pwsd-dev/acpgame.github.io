@@ -1,32 +1,65 @@
 .battle-of-corporations {
     background-color: @color_dark;
     overflow: hidden;
+    .xs-block({
+        padding-bottom: 20px;
+        
+    });
     &-block {
         .row-flex();
         flex-wrap: nowrap;
+        .xs-block({
+        
+            flex-direction: column;
+            justify-content: start;
+            
+        });
         &-content {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            .xs-block({
+               
+                justify-content: start;
+                
+            });
             .page__title-h3 {
                 .size(2);
+                .xs-block({
+                    padding-top: 20px;
+                    padding-bottom: 15px;
+                    
+                });
                 padding-bottom: 40px;
                 color: @color_white;
             }
 
             .page__text {
                 .size(4);
+                .size-xs(6);
             }
 
             .page__btn {
                 .size(3);
+                .size-xs(5.7);
                 margin-top: 60px;
                 padding-top: 7px;
                 padding-bottom: 7px;
+                .xs-block({
+                    margin-bottom: 60px;
+                    
+                });
             }
         }
 
         &-img {
+            .xs-block({
+                .size(6);
+                order: -1;
+                position: relative;
+                top: -109px;
+                
+            });
             .page__img {
                 position: relative;
                 top: 109px;
