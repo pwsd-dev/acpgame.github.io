@@ -1,0 +1,23 @@
+.page__img_small{
+    cursor: pointer;
+    .xs-block({
+        width: 10px;
+        height: 10px;
+        margin: 0 10px;
+    });
+    img{
+        .xs(display, none);
+        object-fit: cover;
+        width: 92px;
+        height: 80px;
+    }
+    filter: grayscale(100%);
+    opacity: .8;
+    &.tns-nav-active{
+        filter: none;
+        opacity: 1;
+        .xs-block({
+            background-color: @color_yellow;
+        });
+    }
+}
