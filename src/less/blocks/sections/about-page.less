@@ -1,0 +1,44 @@
+.about-page {
+    background-color: @color_white;
+    .on-main {
+        color: @color_black;
+        position: relative;
+    }
+
+    .on-main::before {
+        content: '';
+        display: inline-block;
+        background-color: @color_black;
+        width: 30px;
+        height: 2px;
+        margin-right: 10px;
+        position: absolute;
+        top: 10px;
+        left: -40px;
+
+    }
+
+    &-block {
+        .row-flex();
+        flex-wrap: nowrap;
+
+        &__description {
+            .size(3);
+            .shift-left(2.2);
+            .page__text {
+                color: @color_black;
+                padding-bottom: 40px;
+            }
+
+            .page__text_small {
+                .shift-left(2);
+                .size(4);
+                font-family: "@{Noah}-Regular";
+                font-size: 18px;
+                line-height: 24px;
+                color: @color_black;
+            }
+        }
+
+    }
+}

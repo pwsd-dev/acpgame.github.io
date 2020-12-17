@@ -451,7 +451,7 @@ html:not([data-scroll='0']) .header {
 
 .page__icon_facebook {
   background-image: url(../assets/icons/sprite.png);
-  background-position: 0px 0px;
+  background-position: -51px 0px;
   width: 41px;
   height: 41px;
 }
@@ -465,7 +465,7 @@ html:not([data-scroll='0']) .header {
 
 .page__icon_instagram {
   background-image: url(../assets/icons/sprite.png);
-  background-position: -51px 0px;
+  background-position: 0px 0px;
   width: 41px;
   height: 41px;
 }
@@ -1727,6 +1727,55 @@ html:not([data-scroll='0']) .header {
   -webkit-filter: none;
           filter: none;
   opacity: 1;
+}
+
+.about-page {
+  background-color: #ffffff;
+}
+
+.about-page .on-main {
+  color: #000000;
+  position: relative;
+}
+
+.about-page .on-main::before {
+  content: '';
+  display: inline-block;
+  background-color: #000000;
+  width: 30px;
+  height: 2px;
+  margin-right: 10px;
+  position: absolute;
+  top: 10px;
+  left: -40px;
+}
+
+.about-page-block {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1.55%;
+  margin-right: -1.55%;
+  flex-wrap: nowrap;
+}
+
+.about-page-block__description {
+  width: 46.9%;
+  margin-left: 38.21666667%;
+}
+
+.about-page-block__description .page__text {
+  color: #000000;
+  padding-bottom: 40px;
+}
+
+.about-page-block__description .page__text_small {
+  margin-left: 34.88333333%;
+  width: 63.56666667%;
+  font-family: "Noah-Regular";
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
 }
 
 @media screen and (max-width: 920px) {
