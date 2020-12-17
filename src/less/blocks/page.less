@@ -5,7 +5,7 @@
     z-index: 1;
     // margin-bottom: 200px;
     height: 100%;
-    min-height: 100vh;
+    // min-height: 100vh;
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
     transition: all .35s;
     &__title {
@@ -20,6 +20,24 @@
                 font-size: 65px;
                 line-height: 100%;//65px
             });
+
+            &_text-shadow{
+               &_white{
+                text-shadow: 
+                @color_white 1px 0px 0,
+                @color_white -1px 0px 0, 
+                @color_white 0px -1px 0, 
+                @color_white 0px 2px 0;
+               }  
+               &_gray{
+                text-shadow: 
+                @color_white 1px 0px 0,
+                @color_white -1px 0px 0, 
+                @color_white 0px -1px 0, 
+                @color_white 0px 2px 0;
+               }
+
+            }
         }
 
         &-h2 {

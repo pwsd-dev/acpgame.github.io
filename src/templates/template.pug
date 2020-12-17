@@ -10,9 +10,10 @@ html(lang='ru')
             link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css', type='text/css') 
             link(rel='stylesheet', href='css/styles.css', type='text/css')
     body
-        main.page
-            block content
-            include ../blocks/modal/modal-menu
+        include ../modules/header-module
+        block content
+        include ../blocks/footer
+        include ../blocks/modal/modal-menu
         block script
             script(src='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js')
             script(src='js/debug-grid-create.js')
