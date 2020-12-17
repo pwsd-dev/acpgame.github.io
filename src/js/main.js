@@ -12,7 +12,7 @@ bannerInfoLinkToggle.addEventListener('click', (e)=>{
   
   
   bannerInfoContent.forEach((link)=>{
-    link.classList.toggle('hide_mobile');
+    link.classList.toggle('hide');
   });
 
 });
@@ -25,10 +25,12 @@ var sliderBanner = tns({
     // loop: true,
     navContainer: "#customizeThumbnails",
     navAsThumbnails: true,
-    autoplay: true,
+    autoplay: false,
     autoplayResetOnVisibility: false,
     controls: false,
     autoplayPosition: "bottom",
+    autoplayButton:".btn-play",
+    autoplayHoverPause:true,
     autoplayText: [
         "▶",
         "❚❚"
@@ -54,7 +56,7 @@ var sliderBanner = tns({
     autoplayButton:false,
     autoplayTimeout: 1800,
     swipeAngle: true,
-    lazyload: true,
+    lazyload: false,
     speed: 800,
     
   });

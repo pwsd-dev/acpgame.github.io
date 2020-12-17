@@ -15,15 +15,23 @@
         &-nav{
             .size(3);
             .size-xs(6);
-            .xs(padding, 0 10px 0);
+          
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             padding: 56px 152px;
+            .md-block({
+                padding: 56px 50px;
+            });
+            .xs(padding, 0 10px 0);
             box-sizing: border-box;
             background-color: @color_dark;
-          
+            .page__img{
+               .xxs-block({
+                width: 10%;
+               });
+            }
             .page__nav{
                 display: flex;
                 flex-direction: column;
@@ -40,12 +48,20 @@
                 }
                 .page__lists{
                     padding-left:20px; 
+                    .xxs(display, none);
                 }
             }
             .page__links{
                 display: flex;
                 justify-content: space-around;
                 margin-bottom: 35px;
+                .smm-block({
+                    flex-wrap: wrap;
+                    margin-bottom: 0;
+                    .page__link{
+                        margin-bottom: 15px;
+                    }
+                });
                 .xs(margin-bottom, 25px);
                 
             }

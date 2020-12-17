@@ -3,22 +3,30 @@ module.exports = {
 	offset: "0px",
 	//mobileFirst: true,
 	container: {
-        maxWidth: "1246px",
+        maxWidth: "1248px",
         fields: "90px"
     },
 	breakPoints: {
+		mmd: {
+            width: "1200px"
+        },
 		md: {
-            width: "920px",
-            fields: "15px"
+            width: "1024px"
+        },
+        smm: {
+            width: "992px"
         },
         sm: {
-            width: "720px"
+            width: "768px",
+            fields: "50px"
         },
         xs: {
-            width: "576px"
+            width: "620px",
+            fields: "30px"
+
         },
         xxs: {
-            width: "420px",
+            width: "360px",
             /*
             offset: "10px",
             fields: "5px"

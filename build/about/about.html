@@ -10,9 +10,6 @@
 		<link rel="stylesheet" href="css/styles.css" type="text/css">
 	</head>
 	<body>
-		<button class="debugGrid-btn debugGrid-btn__create" onclick="debugGridCreate()"></button>
-		<button class="debugGrid-btn debugGrid-btn__remove debugGrid-btn__hidden" onclick="debugGridRemove()"></button>
-		<div class="debugGrid debugGrid__z-index-negative"></div>
 		<section class="bg">
 			<div class="wrapper">
 				<div class="bg-grid">
@@ -28,7 +25,7 @@
 		<header class="header">
 			<div class="wrapper">
 				<div class="header-block">
-					<div class="header-block__logo"><img class="page_desktop" src="assets/img/logo-desktop.png"><img class="page_mobile" src="assets/img/logo-mobile.png"></div>
+					<div class="header-block__logo"><a href="/"><img class="page_desktop" src="assets/img/logo-desktop.png"><img class="page_mobile" src="assets/img/logo-mobile.png"></a></div>
 					<div class="header-block__links"><a class="page__link page_desktop" href="tel:+7 (495) 941-83-25">8 (495) 941-83-25</a><a class="page__link page_desktop" href="tel:+7 (985) 774-32-40">8 (985) 774-32-40</a><a class="page__link page_mobile" href="tel:+7 (985) 774-32-40">
 							<div class="page__icon page__icon_phone"></div></a></div>
 					<div class="header-block__social">
@@ -38,7 +35,7 @@
 					<div class="header-block__menu">
 						<button class="page__btn open-modal" data-modal="modal-menu"><span class="page__icon page__icon_menu"></span><span class="page_mobile page__text">Меню</span></button>
 					</div>
-					<div class="header-bg"></div>
+					<div class="header-block_bg"></div>
 				</div>
 			</div>
 		</header>
@@ -77,15 +74,12 @@
 				<div class="modal__content">
 					<div class="modal__content-nav">
 						<div class="page__img"><a href="../"><img src="assets/img/logo-big.png" alt=""></a></div>
-						<nav class="page__nav"><a class="page__link" href="about/about.html">О нас</a><a class="page__link" href="#">Команда</a><a class="page__link" href="#">Корпоративные игры</a>
-							<p class="page__link" href="#">Формат игр
+						<nav class="page__nav"><a class="page__link" href="about/about.html">О нас</a><a class="page__link" href="#">Команда</a><a class="page__link" href="#">Корпоративные игры</a><a class="page__link" href="#">Формат игр
 								<ul class="page__lists">
 									<li class="page__list"> <a class="page__link" href="">Угадать за 60 секунд</a></li>
 									<li class="page__list"> <a class="page__link" href="">Читай.Слушай.Смотри.</a></li>
 									<li class="page__list"> <a class="page__link" href="">Детские игры</a></li>
-								</ul>
-							</p><a class="page__link" href="#">Битва корпораций</a><a class="page__link" href="#">Фотоотчеты</a><a class="page__link" href="#">Видео</a><a class="page__link" href="#">СМИ о нас</a><a class="page__link" href="#">Контакты</a>
-						</nav>
+								</ul></a><a class="page__link" href="#">Битва корпораций</a><a class="page__link" href="#">Фотоотчеты</a><a class="page__link" href="#">Видео</a><a class="page__link" href="#">СМИ о нас</a><a class="page__link" href="#">Контакты</a></nav>
 						<div class="page__links"><a class="page__link" href="tel:+7 (495) 941-83-25">8 (495) 941-83-25</a><a class="page__link" href="tel:+7 (985) 774-32-40">8 (985) 774-32-40</a></div>
 						<div class="social">
 							<button class="page__btn page__icon page__icon_facebook_white"></button>
