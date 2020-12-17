@@ -2,10 +2,14 @@
     position: sticky;
     top: 0;
     // z-index: -1;
-    z-index: 100;
+    z-index: 200;
     background: #000;
     overflow: hidden;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    .xs-block({
+        // padding: 15px 0;
+        background: @color_yellow;
+    });
     // filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
     &-bg{
         //fixme подумать над right: -99%;
@@ -27,13 +31,20 @@
         }
         &__links{
             .size(2);
+            .size-xs(1);
+            
             display: flex;
+            .xs-block({
+                justify-content: flex-end;
+            });
             .page__link{
                 .size(3);
             }
+            
         }
         &__social{
             .size(1);
+            .xs(display, none);
             padding: 25px 0;
             background-color: @color_yellow;
             display: flex;
@@ -42,9 +53,30 @@
         &__menu{
             // .size(1);
             // .shift-right(-1);
+            // .size-xs(2);
             position: absolute;
             right: -50px;
             z-index: 1;
+            .xs-block({
+                position: relative;
+                right: -10px;
+                display: flex;
+            });
+            .page__text{
+                color: @color_dark;
+                font-family: "@{Noah}-Bold";
+                font-size: 12px;
+                font-weight: 700;
+                margin-left: 10px;
+                text-transform: none;
+            }
+            .page__btn{
+                .page__icon,
+                .page__text{
+                    z-index: -1;
+                }
+            }
+            
         }
         .page__btn{
             border: none;

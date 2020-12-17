@@ -29,13 +29,14 @@
 				<div class="wrapper">
 					<div class="header-block">
 						<div class="header-block__logo"><img class="page_desktop" src="assets/img/logo-desktop.png"><img class="page_mobile" src="assets/img/logo-mobile.png"></div>
-						<div class="header-block__links"><a class="page__link" href="tel:+7 (495) 941-83-25">8 (495) 941-83-25</a><a class="page__link" href="tel:+7 (985) 774-32-40">8 (985) 774-32-40</a></div>
+						<div class="header-block__links"><a class="page__link page_desktop" href="tel:+7 (495) 941-83-25">8 (495) 941-83-25</a><a class="page__link page_desktop" href="tel:+7 (985) 774-32-40">8 (985) 774-32-40</a><a class="page__link page_mobile" href="tel:+7 (985) 774-32-40">
+								<div class="page__icon page__icon_phone"></div></a></div>
 						<div class="header-block__social">
 							<button class="page__btn page__icon page__icon_facebook"></button>
 							<button class="page__btn page__icon page__icon_instagram"></button>
 						</div>
 						<div class="header-block__menu">
-							<button class="page__btn page__icon page__icon_menu open-modal" data-modal="modal-menu"></button>
+							<button class="page__btn open-modal" data-modal="modal-menu"><span class="page__icon page__icon_menu"></span><span class="page_mobile page__text">Меню</span></button>
 						</div>
 						<div class="header-bg"></div>
 					</div>
@@ -82,32 +83,33 @@
 				<div class="wrapper">
 					<div class="banner-info-content">
 						<h2 class="page__title-h2">Ближайшие игры</h2>
-									<div class="page__text">
+									<div class="page__text hide_mobile">
 										<div class="page_yellow">25 Октября</div>
 										<div class="city">Ереван</div>
 										<div class="game-name">Угадать за 60 секунд</div>
 									</div>
-									<div class="page__text">
+									<div class="page__text hide_mobile">
 										<div class="page_yellow">28 Октября</div>
 										<div class="city">Екатеринбург</div>
 										<div class="game-name">Угадать за 60 секунд</div>
 									</div>
-									<div class="page__text">
+									<div class="page__text hide_mobile">
 										<div class="page_yellow">8 Декабря</div>
 										<div class="city">Екатеринбург</div>
 										<div class="game-name">Угадать за 60 секунд</div>
 									</div>
-									<div class="page__text">
+									<div class="page__text hide_mobile">
 										<div class="page_yellow">17 Декабря</div>
 										<div class="city">Москва</div>
 										<div class="game-name">Битва корпораций</div>
 									</div>
-									<div class="page__text">
+									<div class="page__text hide_mobile">
 										<div class="page_yellow">23 Декабря</div>
 										<div class="city">Екатеринбург</div>
 										<div class="game-name">Читай.Слушай.Смотри.</div>
 									</div>
 					</div>
+					<div class="page__link-toggle page__text page_mobile">еще даты</div>
 				</div>
 			</div>
 			<section class="about">

@@ -1,5 +1,5 @@
 mixin names(date, city, game)
-	.page__text
+	.page__text.hide_mobile
 		div.page_yellow=date
 		div.city=city
 		div.game-name=game
@@ -49,3 +49,4 @@ section.banner
 				+names("8 Декабря", "Екатеринбург", "Угадать за 60 секунд")
 				+names("17 Декабря", "Москва", "Битва корпораций")
 				+names("23 Декабря", "Екатеринбург", "Читай.Слушай.Смотри.")
+			.page__link-toggle.page__text.page_mobile еще даты
