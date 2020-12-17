@@ -459,7 +459,7 @@ html:not([data-scroll='0']) .header {
 
 .page__icon_facebook {
   background-image: url(../assets/icons/sprite.png);
-  background-position: 0px 0px;
+  background-position: -51px 0px;
   width: 41px;
   height: 41px;
 }
@@ -473,7 +473,7 @@ html:not([data-scroll='0']) .header {
 
 .page__icon_instagram {
   background-image: url(../assets/icons/sprite.png);
-  background-position: -51px 0px;
+  background-position: 0px 0px;
   width: 41px;
   height: 41px;
 }
