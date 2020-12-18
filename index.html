@@ -2,6 +2,7 @@
 <html lang="ru"> 
 	<head>
 		<meta charset="utf-8">
+		<base href="build/">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 		<title>Acpgame</title>
@@ -48,7 +49,7 @@
 							</div>
 							<div class="banner-block-content__slogan">
 								<h1 class="page__title-h1">Я играю <br><span class="page_yellow">икру </span><span class="page_white">забираю</span></h1>
-								<button class="page__btn">принять участие</button>
+								<button class="page__btn page__btn_yellow">принять участие</button>
 							</div>
 							<div class="banner-block-content__description">
 								<p class="page__text page__text_arrow">Мы&nbsp;приглашаем к&nbsp;участию новых людей из&nbsp;мира бизнеса</p>
@@ -115,24 +116,21 @@
 					<div class="about-block">
 						<div class="about-block-description">
 							<h3 class="page__title-h3">о нас</h3>
-							<p class="page__text">Мы за качество.количество не перестает удивлять даже нас.</p>
-							<div class="page__btn">подробнее</div>
+							<p class="page__text">Мы за качество.  </p>
+							<p class="page__text">Но количество не перестает удивлять даже нас.</p>
+							<button class="page__btn page__btn_gray">подробнее</button>
 						</div>
 						<div class="about-block-experience">
-							<div class="about-block-experience__item">
-								<div class="page__img"> <img src="assets/img/7.png"></div>
+							<div class="about-block-experience__item"><span class="page__number">7</span>
 								<p class="page__text"> лет — приличный опыт</p>
 							</div>
-							<div class="about-block-experience__item padding-left">
-								<div class="page__img"> <img src="assets/img/7.png"></div>
+							<div class="about-block-experience__item"><span class="page__number">7</span>
 								<p class="page__text">городов</p>
 							</div>
-							<div class="about-block-experience__item mob">
-								<div class="page__img"> <img src="assets/img/500+.png"></div>
+							<div class="about-block-experience__item"><span class="page__number">500+</span>
 								<p class="page__text">игр</p>
 							</div>
-							<div class="about-block-experience__item padding-left mob">
-								<div class="page__img"> <img src="assets/img/200+.png"></div>
+							<div class="about-block-experience__item"><span class="page__number">200+</span>
 								<p class="page__text">корпоративов</p>
 							</div>
 						</div>
@@ -147,13 +145,20 @@
 								<h3 class="page__title-h3">Свежие эмоции</h3>
 								<p class="page__text">Мы стараемся фотоотчетами передать атмосферу наших мероприятий. Удается нам это или нет, вы сможете решить сами.</p>
 							</div>
-							<div class="page__btn">Смотреть все фото</div>
+							<button class="page__btn page__btn_yellow">Смотреть все фото</button>
 						</div>
 						<div class="emotions-block-img">
-							<div class="emotions-block-img__big"><img src="assets/img/img-emotions-big.png"></div>
-							<div class="emotions-block-img-column">
-								<div class="emotions-block-img__small_1"><img src="assets/img/img-emotions-small-2.png"></div>
-								<div class="emotions-block-img__small_2"><img src="assets/img/img-emotions-small-1.png"></div>
+							<div class="emotions-block-img__big">
+								<div id="emotionsBanner">
+									<div class="page__img"><img src="assets/img/img-emotions-big.png"></div>
+									<div class="page__img"><img src="assets/img/img-emotions-big.png"></div>
+								</div>
+							</div>
+							<div class="emotions-block-img__preview">
+								<div class="slider-thumbnails" id="customizeThumbnailsEmotions">
+									<div class="page__img_small"><img src="assets/img/img-emotions-small-2.png"></div>
+									<div class="page__img_small"><img src="assets/img/img-emotions-small-1.png"></div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -165,9 +170,9 @@
 						<div class="video-block-content">
 							<h3 class="page__title-h3">Смотрите видео</h3>
 							<p class="page__text">Сложно передать всю эмоциональную составляющую наших мероприятий, но нам это удалось.</p>
-							<div class="page__btn">Смотреть все видео</div>
+							<button class="page__btn page__btn_gray">Смотреть все видео</button>
 						</div>
-						<div class="video-block-img"><img src="assets/img/img-video.png"></div>
+						<div class="video-block-img"><img class="page__video" src="assets/img/img-video.png"></div>
 					</div>
 				</div>
 			</section>
@@ -181,11 +186,12 @@
 								<p class="page__text">Мы представляем пять видов  эксклюзивных игр, которые не оставят вас равнодушными.</p>
 							</div>
 							<div class="games-block-content-format-slider">
+								<div class="btn-play page_hidden"></div>
 								<div id="sliderGames">
-									<div class="page__img"><img class="page__img" data-src="assets/img/img-games-1.png"></div>
-									<div class="page__img"><img class="page__img" data-src="assets/img/img-games-2.png"></div>
-									<div class="page__img"><img class="page__img" data-src="assets/img/img-games-3.png"></div>
-									<div class="page__img"><img class="page__img" data-src="assets/img/img-games-4.png"></div>
+									<div class="page__img"><img class="page__img" src="assets/img/img-games-1.png"></div>
+									<div class="page__img"><img class="page__img" src="assets/img/img-games-2.png"></div>
+									<div class="page__img"><img class="page__img" src="assets/img/img-games-3.png"></div>
+									<div class="page__img"><img class="page__img" src="assets/img/img-games-4.png"></div>
 								</div>
 								<div class="slider-thumbnails" id="customizeThumbnailsGames">
 									<div class="page__img_small"></div>
@@ -193,7 +199,7 @@
 									<div class="page__img_small"></div>
 									<div class="page__img_small"></div>
 								</div>
-								<div class="page__btn">Подробнее</div>
+								<button class="page__btn page__btn_gray">Подробнее</button>
 							</div>
 						</div>
 					</div>

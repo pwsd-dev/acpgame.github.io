@@ -25,7 +25,7 @@ var sliderBanner = tns({
     // loop: true,
     navContainer: "#customizeThumbnails",
     navAsThumbnails: true,
-    autoplay: false,
+    autoplay: true,
     autoplayResetOnVisibility: false,
     controls: false,
     autoplayPosition: "bottom",
@@ -50,17 +50,19 @@ var sliderBanner = tns({
     // loop: true,
     navContainer: "#customizeThumbnailsGames",
     navAsThumbnails: true,
-    autoplay: false,
+    autoplay: true,
     autoplayResetOnVisibility: false,
     controls: false,
     autoplayButton:false,
+    
+    autoplayButton:".btn-play",
     autoplayTimeout: 1800,
     swipeAngle: true,
     lazyload: false,
     speed: 800,
     
   });
-  var sliderGames = tns({
+  var sliderEmotions = tns({
     container: "#emotionsBanner",
     // mode: "gallery",
     items: 1,
