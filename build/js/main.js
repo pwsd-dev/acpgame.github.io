@@ -60,3 +60,20 @@ var sliderBanner = tns({
     speed: 800,
     
   });
+  var sliderGames = tns({
+    container: "#emotionsBanner",
+    // mode: "gallery",
+    items: 1,
+    // loop: true,
+    navContainer: "#customizeThumbnailsEmotions",
+    navAsThumbnails: true,
+    autoplay: false,
+    autoplayResetOnVisibility: false,
+    controls: false,
+    autoplayButton:false,
+    autoplayTimeout: 1800,
+    swipeAngle: true,
+    lazyload: false,
+    speed: 800,
+    
+  });
