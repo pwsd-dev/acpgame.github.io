@@ -28,6 +28,9 @@
             box-sizing: border-box;
             background-color: @color_dark;
             .page__img{
+                .xs-block({
+                    width: 18%;
+                });
                .xxs-block({
                 width: 10%;
                });
@@ -62,7 +65,13 @@
                         margin-bottom: 15px;
                     }
                 });
-                .xs(margin-bottom, 25px);
+
+                .xs-block({
+                    margin-bottom: 20px;
+                    .page__link{
+                        margin-bottom:0;
+                    }
+                });
                 
             }
         }

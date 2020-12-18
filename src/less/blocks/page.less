@@ -20,6 +20,9 @@
                 font-size: 65px;
                 line-height: 100%;//65px
             });
+            .xxs-block({
+                font-size: 3em;
+            });
 
             &_text-shadow{
                &_white{
@@ -45,7 +48,10 @@
             font-size: 28px;
             line-height: 34.97px;
             color: @color_white;
-
+            .xxs-block({
+                font-size: 1.5em;
+            });
+           
         }
 
         &-h3 {
@@ -54,7 +60,12 @@
             line-height: 45px;
             color: @color_dark;
             text-transform: uppercase;
-
+            .xs-block({
+                font-size: 2.2em;
+            });
+            .xxs-block({
+                font-size: 1.8em;
+            });
         }
 
 
@@ -71,6 +82,9 @@
         font-size: 18px;
         line-height: 24px;
         color: @color_white;
+        .xxs-block({
+            font-size: 1em;
+        });
     }
 
     &__number {
@@ -101,19 +115,31 @@
         // height: 55px;
         height: 70px;
         box-sizing: border-box;
-        font-size: 15px;
-        letter-spacing: 1px;
-        line-height: 30px;
-        font-family: "@{Noah}-Bold";
+        font-size: 18px;
+        // letter-spacing: 1px;
+        // line-height: 30px;
+        line-height: 174.33%;
+        // font-family: "@{Noah}-Bold";
+        font-family: '@{Noah}-ExtraBold';
         text-transform: uppercase;
         border: none;
         color: @color_white;
         background-color: transparent;
         border: 2px solid @color_yellow;
-            &:hover{
+        transition: all ease-out 0.5s;
+        &_gray{
+            color: @color_gray;
+            border: 2px solid @color_gray;
+        }
+        &_yellow{
+            color: @color_white;
+            border: 2px solid @color_yellow;
+        }
+        &:hover{
                     color: #262626;
                     background-color: @color_white;
-                    transition: all ease-out 0.5s;
+                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+                    // filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
                 }
         &_menu{
             position: relative;
@@ -159,6 +185,22 @@
         &_phone{
             .sprite(@icon-phone);
         }
+    }
+    &__number {
+        font-family: @Dincondensedc;
+        color: @color_dark;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 100px;
+        line-height: 100%;
+        /* or 100px */
+
+        letter-spacing: -0.07em;
+        text-transform: uppercase;
+        .xs-block({
+            font-size: 68px;
+            line-height: 68px;
+        });
     }
     &_yellow{
         color: @color_yellow;
