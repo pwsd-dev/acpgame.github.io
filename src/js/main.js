@@ -56,7 +56,7 @@ var sliderBanner = tns({
     autoplayButton:false,
     autoplayTimeout: 1800,
     swipeAngle: true,
-    lazyload: true,
+    lazyload: false,
     speed: 800,
     
   });

@@ -3,7 +3,7 @@
     padding-top: 160px;
     padding-bottom: 87px;
     overflow: hidden;
-    .xs-block({
+    .sm-block({
         padding-top: 0;
         padding-bottom: 64px;
         background-color: @color_yellow;
@@ -12,19 +12,32 @@
 
     &-block {
         .row-flex();
-        flex-wrap: nowrap;
-        .xs-block({
-            flex-direction: column;
-            
-            
+        .sm-block({
+            // flex-direction: column;
         });
         &-img {
-            .shift-left(-1);
-            //.shift-right();
-            .size(8);
+            .shift-left(-.6);
+            .shift-right(-1);
+            .shift-sm-right(0);
+            .shift-sm-left(0);
+            .size(4);
+            .size-sm(6);
             text-align: right;
             position: relative;
-            padding-top: 50px;
+            margin-top: 6%;
+            align-self: flex-start;
+            &::after{
+                content: '';
+                z-index: -1;
+                position: absolute;
+                height: 100%;
+                width: 96%;
+                left: 0;
+                left: 1px;
+                bottom: -14px;
+                background-color: #ffed5c;
+            }
+            
             .xs-block({
                 padding-top: 0;
                 
@@ -45,63 +58,55 @@
         }
 
         &-content {
-            .size(6);
-            .shift-right(-0.5);
+            .size(3);
+            .size-sm(6);
+            .shift-left(.6);
+            .shift-sm-left(0);
+            // .shift-right(-0.5);
             z-index: 20;
             
             &-format {
-                
-
+                .shift-left(2);
+                .shift-sm-left(0);
+                padding-bottom: 17%;
+    
+                .page__title-h3, 
                 .page__text {
-                    .size(3.5);
-                    padding: 4px 0 70px;
-                }
-
-                .page__title-h3, .page__text {
                     color: @color_dark;
-                    padding-left: 130px;
-                    
                     .xs-block({
                         padding-left: 0;
-                        
-                        
                     });
-                    
                 }
-
                 .page__title-h3 {
                     .size-xs(12);
-                    padding-top: 20px;
                     padding-bottom: 10px;
                 }
-
                 .page__text {
+                    .size(5);
                     .size-xs(5.5);
                     .xs-block({
                         padding-bottom: 30px;
                     });
                 }
-
                 &-slider {
+                    .size(7);
+                    .size-sm(6);
+                    .shift-right(-2);
+                    .shift-sm-right(0);
+
                     text-align: center;
                     background-color: @color_yellow;
-                    padding: 115px 120px 60px 40px;
+                    padding: 69px 0px 60px 0px;
+                    box-sizing: border-box;
                     z-index: 40;
-                    .shift-left(-.5);
-
+                    // .shift-left(-.5);
+                    .page__img {
+                        max-height: 365px;
+                    }
                     .xs-block({
                         padding: 0;
-                        
-                        
                     });
 
-
-
-                    p {
-                        color: @color_white;
-                        font-family: "@{Dincondensedc}";
-                        font-size: 84px;
-                    }
 
                     .page__btn {
                         .size(3);
@@ -110,13 +115,7 @@
                             margin-left: 40px;
                             margin-top: 20px;
                         });
-                        color: @color_dark;
-                        border: 1px solid @color_dark;
-                        margin-top: 65px;
-                        margin-left: 140px;
-                        padding-top: 5px;
-                        padding-bottom: 5px;
-                        font-size: 18px;
+                        margin: 45px auto 0;
                     }
                     .slider-thumbnails{
                         display: flex;
