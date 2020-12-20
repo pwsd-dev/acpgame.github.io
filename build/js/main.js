@@ -79,3 +79,20 @@ var sliderBanner = tns({
     speed: 800,
     
   });
+  var sliderEmotions = tns({
+    container: "#sliderTrust",
+    // mode: "gallery",
+    items: 1,
+    // loop: true,
+    navContainer: "#customizeThumbnailsTrust",
+    navAsThumbnails: true,
+    autoplay: false,
+    autoplayResetOnVisibility: false,
+    controls: false,
+    autoplayButton:false,
+    autoplayTimeout: 1800,
+    swipeAngle: true,
+    lazyload: false,
+    speed: 800,
+    
+  });
