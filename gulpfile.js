@@ -135,6 +135,10 @@ function scripts() {
 		.pipe(gulp.dest('./build/js'))
 		.pipe(gulpif(isSync, browserSync.stream()));
 }
+function libs() {
+	return gulp.src('./src/libs/**/*')
+		.pipe(gulp.dest('./build/libs'))
+}
 
 function watch() {
 	if (isSync) {
@@ -167,7 +171,7 @@ function grid(done) {
 }
 
 let build = gulp.series(clear,
-	gulp.parallel(sprite, images, fonts, html, pugc, pugProd, styles, scripts)
+	gulp.parallel(sprite, images, fonts, html, pugc, pugProd, styles, scripts,libs)
 );
 
 gulp.task('build', gulp.series(grid, build));
