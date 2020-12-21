@@ -3,7 +3,7 @@
 
 .wrapper{
     .wrapper();
-    // для того чтобы между section и контентом был слой с линией //.bg-grid z-index: 10;
+    // для того чтобы между section и контентом был слой с линией //.bg-grid == wrapper
     position: relative;
     z-index: 15;
 }
@@ -36,6 +36,7 @@ body {
   position: relative;
   font-family: @Gerbera;
   background-color: @color_black;
+  transition: all .5s ease-out;
 }
 a, button{
   cursor: pointer;
@@ -53,4 +54,7 @@ html:not([data-scroll='0']) .header {
  
   transition: all ease-out .5s;
  
+}
+video{
+  max-width:100%;
 }

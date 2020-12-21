@@ -2,8 +2,9 @@ header.header
     .wrapper
         .header-block
             .header-block__logo
-                img.page_desktop(src="assets/img/logo-desktop.png")
-                img.page_mobile(src="assets/img/logo-mobile.png")
+                a(href="/")
+                    img.page_desktop(src="assets/img/logo-desktop.png")
+                    img.page_mobile(src="assets/img/logo-mobile.png")
             .header-block__links
                 a.page__link.page_desktop(href="tel:+7 (495) 941-83-25") 8 (495) 941-83-25
                 a.page__link.page_desktop(href="tel:+7 (985) 774-32-40") 8 (985) 774-32-40
@@ -18,4 +19,4 @@ header.header
                 button.page__btn.open-modal(data-modal="modal-menu")
                     span.page__icon.page__icon_menu
                     span.page_mobile.page__text Меню
-            .header-bg
+            .header-block_bg

@@ -5,12 +5,17 @@ section.emotions
                 .emotions-block-content__text
                     h3.page__title-h3 Свежие эмоции
                     p.page__text Мы стараемся фотоотчетами передать атмосферу наших мероприятий. Удается нам это или нет, вы сможете решить сами.
-                .page__btn Смотреть все фото
+                button.page__btn.page__btn_yellow Смотреть все фото
             .emotions-block-img
                 .emotions-block-img__big
-                    img(src="assets/img/img-emotions-big.png")
-                .emotions-block-img-column
-                    .emotions-block-img__small_1
-                        img(src="assets/img/img-emotions-small-2.png")
-                    .emotions-block-img__small_2
-                        img(src="assets/img/img-emotions-small-1.png")
+                    #emotionsBanner
+                        .page__img
+                            img(src="assets/img/img-emotions-big.png")
+                        .page__img
+                            img(src="assets/img/img-emotions-big.png")
+                .emotions-block-img__preview
+                    #customizeThumbnailsEmotions.slider-thumbnails
+                        .page__img_small
+                            img(src="assets/img/img-emotions-small-2.png")
+                        .page__img_small
+                            img(src="assets/img/img-emotions-small-1.png")

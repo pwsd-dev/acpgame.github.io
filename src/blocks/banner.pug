@@ -1,5 +1,5 @@
 mixin names(date, city, game)
-	.page__text.hide_mobile
+	.page__text.hide
 		div.page_yellow=date
 		div.city=city
 		div.game-name=game
@@ -13,11 +13,13 @@ section.banner
 					h1.page__title-h1 Я играю <br>
 						span.page_yellow икру 
 						span.page_white забираю
-					button.page__btn принять участие
+					button.page__btn.page__btn_yellow принять участие
 				.banner-block-content__description
-					p.page__text.page__text_arrow Мы приглашаем к участию новых людей из мира бизнеса
+					p.page__text.page__text_arrow Мы&nbsp;приглашаем к&nbsp;участию новых людей из&nbsp;мира бизнеса
 			.banner-block-img
 				.banner-block-img__big
+					.banner-block-img__big_bg
+					.btn-play.page_hidden
 					#sliderBanner
 						.page__img
 							img.tns-lazy-img(data-src="assets/img/img-banner-1.png" )
@@ -30,7 +32,7 @@ section.banner
 					
 				
 				.banner-block-img__preview
-					#customizeThumbnails
+					#customizeThumbnails.slider-thumbnails
 						.page__img_small
 							img( src="assets/img/img-banner-1.png")
 						.page__img_small
@@ -39,7 +41,7 @@ section.banner
 							img(src="assets/img/img-banner-small-2.png")
 						.page__img_small
 							img(src="assets/img/img-banner-small-3.png")
-			.banner-bg
+			
 .banner-info
 		.wrapper
 			.banner-info-content

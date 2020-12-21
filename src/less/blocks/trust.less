@@ -15,6 +15,23 @@
         &__img {
             .size-xs(6);
             //height: 40vh;
+            .slider-thumbnails{
+                display: flex;
+                justify-content: center;
+                margin-top: 70px;
+            }
+            .page__img_small{
+                width: 10px;
+                height: 10px;
+                margin: 0 10px;
+                background-color: @color_gray;
+               
+                &.tns-nav-active{
+
+                   background-color: @color_yellow;
+
+                }
+            }
         }
     }
 }

@@ -1,86 +1,112 @@
 .about {
-    padding-top: 150px;
     background-color: @color_white;
     overflow: hidden;
-    .page__text {
-        color: @color_dark;
-        .size(7);
-    }
     &-block {
+        padding: 12% 0;
         .row-flex();
-        flex-wrap: nowrap;
         .xs-block({
             flex-direction: column;
-            .page__title-h3 {
-                text-align: center;
-                margin: 0 auto;
-                .size(7);
-            }
-
         });
         &-description {
-            .shift-right(1.25);
+            .size(3);
+            .size-smm(6);
+            padding-top: 22px;
+            // .shift-right(1.25);
+            .smm-block({
+                text-align: center;
+                .page__btn{
+                    margin: 50px auto 0;
+                }
+            });
             .xs-block({
-                display: flex;
-                flex-direction: column;
-                
+                .page__text{
+                    text-align: left;
+                }
             });
             .page__title-h3 {
-                padding-bottom: 10px;
+                padding-bottom: 17px;
+              
             }
-
-            .page__btn {
-                .size(5.2);
-                border: 1px solid @color_dark;
+            .page__text {
                 color: @color_dark;
-                margin-top: 50px;
-                .xs-block({
-                    .size(7);
-                    padding-top: 10px;
-                    order: 3;
-                });
-
+                // .size(3);
+            }
+            .page__btn {
+                .size(3);
+                .size-xs(6);
+                // border: 1px solid @color_dark;
+                // color: @color_dark;
+                margin-top: 88px;
             }
         }
 
         &-experience {
+            .size(3);
+            .size-smm(6);
             .row-flex();
-            display: flex;
-            //flex-wrap: nowrap;
-            
+            .smm-block({
+                padding-top: 10%;
+            });
+
             &__item {
+                .size(3);
+                .size-smm(1.5);
+               
                 display: flex;
-                flex-wrap: nowrap;
-                .size(2.6);
-                padding-bottom: 100px;
-
-                .xs-block({
+                align-items: center;
+                // padding-bottom: 100px;
+                .smm-block({
+                    flex-direction: column;
                     
-                    flex-wrap: nowrap;
-                    .size(2);
-                    padding-top: 40px;
-                    padding-left: 20px;
-                    .col-mob {
-                        flex-direction: column;
-                    }
                 });
-
-                .page__text {
-                    position: relative;
-                    left: 20px;
-                    top: 20px;
+                .sm-block({
+                    align-items: flex-start;
+                });
+                &:nth-child(1){
+                    .xs-block({
+                        flex-direction: row;
+                        .page__text{
+                            align-self: center;
+                            padding-bottom: 25px;
+                            padding-left: 10px;
+                        }
+                    });
 
                 }
+                &:nth-child(odd){
+                    .size-sm(4);
+                    .size-xs(3);
+                }
+                &:nth-child(even){
+                    .size-sm(2);
+                    .size-xs(3);
+                    padding-left: 34px;
+                    box-sizing: border-box;
+                    .smm-block({
+                        padding-left: 0px;
+                    });
+                }
+                &:nth-child(-n + 2){
+                    padding-bottom: 17%;
+                    box-sizing: border-box;
+                    .smm-block({
+                        padding-bottom: 0px;
+                    });
+                    .sm-block({
+                        padding-bottom: 10%;
+                    });
+                }
+                .page__text {
+                    color:@color_dark;
+                    padding-left: 10px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 600;
+                    .smm-block({
+                        padding-left: 0px;
+                    });
+                }
             }
-        }
-
-        .padding-left {
-            padding-left: 70px;
-
-        }
-
-        .mob {
-            flex-direction: column;
         }
     }
 }

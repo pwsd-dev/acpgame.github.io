@@ -12,7 +12,7 @@ bannerInfoLinkToggle.addEventListener('click', (e)=>{
   
   
   bannerInfoContent.forEach((link)=>{
-    link.classList.toggle('hide_mobile');
+    link.classList.toggle('hide');
   });
 
 });
@@ -29,6 +29,8 @@ var sliderBanner = tns({
     autoplayResetOnVisibility: false,
     controls: false,
     autoplayPosition: "bottom",
+    autoplayButton:".btn-play",
+    autoplayHoverPause:true,
     autoplayText: [
         "▶",
         "❚❚"
@@ -48,13 +50,49 @@ var sliderBanner = tns({
     // loop: true,
     navContainer: "#customizeThumbnailsGames",
     navAsThumbnails: true,
+    autoplay: true,
+    autoplayResetOnVisibility: false,
+    controls: false,
+    autoplayButton:false,
+    
+    autoplayButton:".btn-play",
+    autoplayTimeout: 1800,
+    swipeAngle: true,
+    lazyload: false,
+    speed: 800,
+    
+  });
+  var sliderEmotions = tns({
+    container: "#emotionsBanner",
+    // mode: "gallery",
+    items: 1,
+    // loop: true,
+    navContainer: "#customizeThumbnailsEmotions",
+    navAsThumbnails: true,
     autoplay: false,
     autoplayResetOnVisibility: false,
     controls: false,
     autoplayButton:false,
     autoplayTimeout: 1800,
     swipeAngle: true,
-    lazyload: true,
+    lazyload: false,
+    speed: 800,
+    
+  });
+  var sliderEmotions = tns({
+    container: "#sliderTrust",
+    // mode: "gallery",
+    items: 1,
+    // loop: true,
+    navContainer: "#customizeThumbnailsTrust",
+    navAsThumbnails: true,
+    autoplay: false,
+    autoplayResetOnVisibility: false,
+    controls: false,
+    autoplayButton:false,
+    autoplayTimeout: 1800,
+    swipeAngle: true,
+    lazyload: false,
     speed: 800,
     
   });

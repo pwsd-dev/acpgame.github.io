@@ -1,74 +1,106 @@
 .kids {
     background-color: @color_white;
     padding-bottom: 60px;
+    .xs(padding-bottom,0);
     overflow: hidden;
-    .xs-block({
-        
-        padding-bottom: 0;
-        
-    });
+    .wrapper{
+        .sm-block({
+            padding: 0;
+        })
+    }
     &-block {
         .row-flex();
-        flex-wrap: nowrap;
-        .xs-block({
-            flex-direction: column;
-            
-            
-        });
+        
+        
         &__content {
-            padding-left: 120px;
-            padding-bottom: 60px;
-            background-color: @color_dark;
-            z-index: 40;
+            // padding-left: 120px;
+            // padding-bottom: 60px;
+            
+            background-color: @color_black;
+            // z-index: 40;
+            // .size(4.8);
             .size(3);
-            //.shift-left(.2);
-            //.size-xs(8);
-            .xs-block({
-                .shift-left(-1.5);
-                
+            .shift-smm-left(-.5);
+            .shift-sm-left(0);
+            .size-sm(6);
+            .sm-block({
+                order: 1;
+                position: relative;
             });
+            .xs-block({
+                
+                padding: 8% 5%;
+            });
+            padding: 8% 8% 4% 11%;
+            box-sizing: border-box;
+            align-self: flex-start;
+            // .shift-left(.2);
             .page__title-h3 {
                 color: @color_white;
-                padding: 40px 0 20px;
+                // padding: 40px 0 20px;
+                padding: 8% 0 4%;
             }
 
             .page__text {
-                .size(5);
-                .size-xs(4);
-                padding-bottom: 20px;
+                // .size(4);
+                // .size-xs(4);
+                font-size: 16px;
+                // line-height: 24px;
+                line-height: 150%;
+                // padding-bottom: 20px;
             }
 
             .page__btn {
-                .size(3.8);
-                .xs-block({
-        
-                    margin-bottom: 20px;
-                    
-                });
-                margin-top: 20px;
-                padding-top: 7px;
-                padding-bottom: 7px;
+                .size(4.5);
+                .size-sm(6);
+
+                margin-top: 12%;
+                // margin-top: 20px;
+                // padding-top: 7px;
+                // padding-bottom: 7px;
             }
             .page__img{
-                padding-top: 97px;
-                .size(12);
+                // padding-top: 97px;
+                // .size(12);
+                .sm-block({
+                    position: absolute;
+                    top: -22px;
+                    right: 22px;
+                });
+                .size-xs(2);
             }
 
             &-img { 
+                .size(4);
+                .shift-left(-.4);
+                .shift-right(-.6);
+                .smm-block({
+                    padding-top: 0;
+                    align-self: center;
+                });
+                .size-sm(6);
+                .sm-block({
+                    order: 0;
+                    margin: 0;
+                });
+                display: flex;
+                padding-top: 9%;
                 .xs-block({
                     order: -1;
                     padding-top: 0;
-                    .size(6.6);
-                    .shift-right(0);
-                    .shift-left(-.260);
+                    // .size(6.6);
+                    // .shift-right(0);
+                    // .shift-left(-.260);
+                    
                     
                 });
-                padding-top: 109px;
-                z-index: 50;
+                // padding-top: 109px;
+                // z-index: 50;
                 //.size(6.3);
-                .size(4);
-                .shift-right(-.6);
-                .shift-left(-.4);
+                // .size(12);
+               
+                // .shift-right(-2);
+                // .shift-left(-.200);
             }
         }
     }
