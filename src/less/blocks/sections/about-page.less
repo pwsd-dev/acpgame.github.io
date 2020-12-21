@@ -3,11 +3,9 @@
     .on-main {
         color: @color_black;
         position: relative;
+        padding: 20px 0 20px;
     }
-    .page__text {
-        color: @color_dark;
-        .size(7);
-    }
+
     .on-main::before {
         content: '';
         display: inline-block;
@@ -16,10 +14,16 @@
         height: 2px;
         margin-right: 10px;
         position: absolute;
-        top: 10px;
+        top: 30px;
         left: -40px;
 
     }
+
+    .page__text {
+        color: @color_dark;
+        .size(7);
+    }
+    
     
 
 
@@ -30,6 +34,7 @@
         .page__img_big {
             .size(4.5);
             .shift-left(-0.48);
+            margin-top: 94px;
         }
        
         
@@ -55,10 +60,12 @@
         }
 
         &-experience {
+            position: relative;
             background-color: @color_dark;
             padding-left: 100px;
             padding-top: 85px;
             margin-top: 135px;
+            padding-bottom: 60px;
             box-sizing: border-box;
             .row-flex();
             .size(4.4);
@@ -69,12 +76,22 @@
                 //.size(1);
                 color: @color_white;
             }
+        }
 
-            
+        &-experience::before {
+            content: '';
+            display: inline-block;
+            width: 726px;
+            height: 13px;
+            background-color: @color_yellow;
+            position: absolute;
+            top: -13px;
+            right: 1px;
         }
 
         &-invite {
-            padding: 150px 0 100px;
+            padding: 200px 0 100px;
+            position: relative;
             .page__title-h2 {
                 .size(2);
                 .shift-left(2);
@@ -87,11 +104,21 @@
         }
 
         &-invite::before {
-            
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: 100px;
+            left: 49%;
+            background-image: url(../assets/img/“-1.png);
+            background-repeat: no-repeat;
         }
 
         &-next-section {
-           padding: 110px 0 140px; 
+           padding: 110px 0 140px;
+           background-color: #fafafa;
+           //background-color: @color_gray;
             .page__title-h2 {
                 color: @color_black;
                 text-align: center;

@@ -1,0 +1,62 @@
+.team {
+    background-color: @color_white;
+
+    .on-main {
+        color: @color_black;
+        position: relative;
+        padding: 20px 0 20px;
+    }
+
+   &-block {
+
+    &__description {
+        .page__text {
+            padding: 60px 0 150px;
+            .size(4);
+            .shift-left(1);
+            color: @color_black;
+        }
+    }
+
+    &-events {
+        .page__title-h2 {
+            .size(2);
+            .shift-left(2);
+            text-align: center;
+            color: @color_black;
+            margin-top: 220px;
+            margin-bottom: 180px;
+            
+        }
+
+        .page__title-h2::before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: -70px;
+            left: 48%;
+            background-image: url(../assets/img/“-1.png);
+            background-repeat: no-repeat;
+        }
+    }
+
+    &-next-section {
+        background-color: #fafafa;
+        .page__title-h2 {
+            text-align: center;
+            color: @color_black;
+            padding-bottom: 20px;
+            padding-top: 130px;
+
+        }
+
+        .page__title-h3 {
+            font-family: '@{Noah}-ExtraBold';
+            text-align: center;
+            padding-bottom: 170px;
+        }
+    }
+   } 
+}
