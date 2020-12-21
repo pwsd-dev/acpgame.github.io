@@ -1155,8 +1155,7 @@ html:not([data-scroll='0']) .header {
   padding-bottom: 60px;
   background-color: #1c1c1c;
   z-index: 40;
-  width: calc(80% - 0px);
-  margin-left: calc(3.333333333333334% + 0px);
+  width: calc(50% - 0px);
 }
 
 .kids-block__content .page__title-h3 {
@@ -1184,9 +1183,9 @@ html:not([data-scroll='0']) .header {
 .kids-block__content-img {
   padding-top: 109px;
   z-index: 50;
-  width: calc(200% - 0px);
-  margin-right: calc(-33.333333333333336% + 0px);
-  margin-left: calc(-3.333333333333334% + 0px);
+  width: calc(66.66666666666667% - 0px);
+  margin-right: calc(-10% + 0px);
+  margin-left: calc(-6.666666666666668% + 0px);
 }
 
 .corporate-games {
@@ -1754,6 +1753,11 @@ html:not([data-scroll='0']) .header {
   position: relative;
 }
 
+.about-page .page__text {
+  color: #1c1c1c;
+  width: calc(116.66666666666667% - 0px);
+}
+
 .about-page .on-main::before {
   content: '';
   display: inline-block;
@@ -1775,6 +1779,11 @@ html:not([data-scroll='0']) .header {
   flex-wrap: nowrap;
 }
 
+.about-page-block .page__img_big {
+  width: calc(75% - 0px);
+  margin-left: calc(-8% + 0px);
+}
+
 .about-page-block__description {
   width: calc(50% - 0px);
   margin-left: calc(36.66666666666667% + 0px);
@@ -1792,6 +1801,49 @@ html:not([data-scroll='0']) .header {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+}
+
+.about-page-block-experience {
+  background-color: #1c1c1c;
+  padding-left: 100px;
+  padding-top: 85px;
+  margin-top: 135px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: calc(73.33333333333334% - 0px);
+  margin-right: calc(-8.333333333333334% + 0px);
+}
+
+.about-page-block-experience .page__text {
+  color: #ffffff;
+}
+
+.about-page-block-invite {
+  padding: 150px 0 100px;
+}
+
+.about-page-block-invite .page__title-h2 {
+  width: calc(33.333333333333336% - 0px);
+  margin-left: calc(33.333333333333336% + 0px);
+  color: #000000;
+  text-align: center;
+}
+
+.about-page-block-next-section {
+  padding: 110px 0 140px;
+}
+
+.about-page-block-next-section .page__title-h2 {
+  color: #000000;
+  text-align: center;
+}
+
+.about-page-block-next-section .page__title-h3 {
+  text-align: center;
 }
 
 @media screen and (max-width: 920px) {
@@ -2179,10 +2231,6 @@ html:not([data-scroll='0']) .header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
-  }
-
-  .kids-block__content {
-    width: calc(133.33333333333334% - 0px);
   }
 
   .kids-block__content {
