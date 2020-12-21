@@ -23,23 +23,66 @@
             .xxs-block({
                 font-size: 3em;
             });
-
+            &_color{
+                &-black{
+                    color: @color_black;
+                }
+                &-gray{
+                    color: @color_white;
+                }
+            }
             &_text-shadow{
-               &_white{
+                // .page{
+                //     &_yellow,
+                //     &_white{
+                //         text-shadow: none;
+                //     }
+                // }
+                &_white,
+                &_gray{
+                    span{
+                        &:nth-of-type(n + 2){
+                            text-shadow:none;
+                        }
+                    }
+                }
+
+                &_white{
                 text-shadow: 
                 @color_white 1px 0px 0,
                 @color_white -1px 0px 0, 
                 @color_white 0px -1px 0, 
-                @color_white 0px 2px 0;
+                @color_white 0px 1px 0;
+                span{
+                    &:nth-of-type(1){
+                        color:@color_black;
+                    }
+                    &:nth-of-type(2){
+                        color:@color_yellow;
+                        
+                    }
+                    &:nth-of-type(3){
+                        color:@color_white;
+                    }
+                }
                }  
                &_gray{
                 text-shadow: 
-                @color_white 1px 0px 0,
-                @color_white -1px 0px 0, 
-                @color_white 0px -1px 0, 
-                @color_white 0px 2px 0;
+                @color_gray 1px 0px 0,
+                @color_gray -1px 0px 0, 
+                @color_gray 0px -1px 0, 
+                @color_gray 0px 1px 0;
+                span{
+                    &:nth-of-type(1){
+                        color:@color_white;
+                    }
+                    &:nth-of-type(2){
+                        color:@color_gray;
+                        
+                    }
+                }
                }
-
+              
             }
         }
 
