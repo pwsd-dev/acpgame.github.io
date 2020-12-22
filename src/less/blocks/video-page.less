@@ -1,8 +1,44 @@
 .video-page {
     background-color: @color_black;
     &-block {
+        //.row-flex();
         .page__title-h1 {
             color: @color_white;
+            margin-bottom: 50px;
+        }
+
+        &__tabs {
+            .row-flex();
+        }
+
+       
+        &__item {
+            .size(3);
+            //.row-flex();
+        }
+
+        &-wrapper {
+            .row-flex();
+            //flex-wrap: nowrap;
+            &__tabs {
+                .row-flex();
+                .size(5);
+                flex-wrap: nowrap;
+                margin-bottom: 40px;
+                .page__btn_yellow {
+                    margin-right: 43px;
+                    //flex-wrap: nowrap;
+                    .size(6);
+                    
+                    font-size: 16px;
+                }
+        
+            }
+
+            &__item {
+                .size(3);
+                //.row-flex();
+            }
         }
     }
 }

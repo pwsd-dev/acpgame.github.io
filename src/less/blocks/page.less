@@ -214,6 +214,68 @@
             }
         }
     }
+    &__btn_yellow {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+
+        border-radius: 2px;
+        height: 55px;
+        //eight: 45px;
+        box-sizing: border-box;
+        font-size: 16px;
+        // letter-spacing: 1px;
+        // line-height: 30px;
+        line-height: 174.33%;
+        // font-family: "@{Noah}-Bold";
+        font-family: '@{Noah}-ExtraBold';
+        text-transform: uppercase;
+        border: none;
+        color: @color_white;
+        background-color: transparent;
+        border: 2px solid @color_yellow;
+        transition: all ease-out 0.5s;
+        &_gray{
+            color: @color_gray;
+            border: 2px solid @color_gray;
+        }
+        &_yellow{
+            color: @color_white;
+            border: 2px solid @color_yellow;
+        }
+        &:hover{
+                    color: #262626;
+                    background-color: @color_white;
+                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+                    // filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
+                }
+        &_menu{
+            position: relative;
+            .line::before,
+            &::before,
+            &::after{
+                content: '';
+                display: inline-block;
+                width: 26px;
+                left: 10px;
+                height: 3px;
+                border-radius: 3px;
+                background-color: #405466;
+                position: absolute;
+            }
+            &::before{
+                top: 13.9px;
+            }
+            &::after{
+                top: 21px;
+            }
+            .line::before{
+                top: 28px;
+            }
+        }
+    }
     &__icon{
         &_facebook{
             .sprite(@icon-facebook);
