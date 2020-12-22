@@ -1,0 +1,138 @@
+.games-format{
+    &-item{
+        .row-flex();
+        margin-bottom: 95px;
+    
+        .smm-block({
+            margin: 60px 0 50px;
+        });
+        &:nth-of-type(1){
+            margin-top: -81px;
+            .smm-block({
+                margin-top: 60px;
+            });
+        }
+        &:nth-of-type(odd){
+            justify-content: flex-end;
+            .smm-block({
+                justify-content: flex-start;
+            });
+            .games-format-item-img{
+                .shift-right(1);
+                .shift-mmd-right(0);
+            }
+            .games-format-item-details{
+                .shift-right(.03);
+            }
+        }
+        &:nth-of-type(even){
+            .games-format-item-img{
+                .shift-left(1);
+                .shift-mmd-left(0);
+            }
+            .games-format-item-details{
+
+                .shift-left(1.01);
+                .shift-mmd-left(0);
+            }
+        }
+        &-img{
+            .size(2);
+            .size-smm(4);
+            .size-xs(6);
+            min-height: 416px;
+            background-color: @color_yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 16px;
+            .smm-block({
+                margin: 16px 0;
+            });
+            .xs-block({
+                min-height: 250px;
+            });
+        }
+        &-details{
+            .size(4.96);
+            .size-mmd(6);
+       
+            background-color: @color_white;
+            
+            .page__details{
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                transition: all .5s ease-out;
+                .games-format-name,
+                .page__text{
+                    font-family: '@{Noah}-Bold';
+                }
+                &-summary{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    padding: 26px 37px;
+                    .xs-block({
+                        padding: 20px 10px;
+                    });
+                    .games-format-name{
+                        font-size: 28px;
+                        line-height: 40px;
+                        margin-left: 88px;
+                        opacity: 1;
+                        transition: all .5s ease-out;
+                        .xs-block({
+                            margin-left: 0px;
+                            font-size: 24px;
+                        });
+                       
+                    }
+                    .page__text{
+                        font-size: 16px;
+                        line-height: 24px;
+                        .size-xs(6);
+                    }
+                }
+                
+                &[open]{
+                    background-color:  @color_grayED;
+                    .games-format-name{
+                        opacity: 0;
+                    }
+                }
+                .page__lists{
+                    background-color:  @color_white;
+                    .row-flex();
+                    padding: 36px 0;
+                    justify-content: center;
+                    .xs-block({
+                        padding: 36px 10px;
+                    });
+                    .page__text,
+                    .page__list {
+                        .size(3.4);
+                        .size(6);
+                    }
+                    .page__text{
+                        font-size: 18px;
+                        line-height: 31px;
+                    }
+                    .page__list{
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: bold;
+                        &::before{
+                            content: '';
+                            width: 4px;
+                            height: 4px;
+                            border-radius: 100%;
+                            background-color: @color_black;
+                            margin-right: 12px;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

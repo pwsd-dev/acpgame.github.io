@@ -10,13 +10,20 @@
             flex-direction: column;
             .size(1);
             .size-md(1.5);
-            .size-smm(2);
+            .size-smm(1.5);
+            .size-sm(2);
             .size-xs(3);
             .md-block({
                 margin-bottom: 25px;
             });
         }
-       
+        &__img{
+            .size-smm(6);
+            .size-sm(6);
+            .xs-block({
+                order: 0;
+            });
+        }
 
         .page__link {
             text-decoration: none;
@@ -31,10 +38,29 @@
         &__about {
             display: flex;
             flex-direction: column;
-           
+            .xs-block({
+                order: 1;
+            });
         }
-
+        &__games{
+            .xs-block({
+                order: 2;
+            });
+        }
+        &__corporation{
+            .xs-block({
+                order: 3;
+            });
+        }
         &__phones {
+            .size-xs(6);
+            .xs-block({
+                order: 4;
+                .page__link{
+                    text-align: center;
+                }
+               
+            });
             .shift-md-left(1.5);
             .shift-smm-left(0);
             .page__link {
@@ -45,15 +71,21 @@
                     text-align: left;
                 });
             }
+          
         }
 
         &__soical {
+            .size-xs(6);
+            .xs-block({
+                order: 5;
+            });
             .page__link {
                 color: @color_yellow;
                 padding-bottom: 20px;
                 text-align: right;
                 text-align: center;
             }
+            
         }
     }
 

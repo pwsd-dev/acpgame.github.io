@@ -37,6 +37,7 @@ body {
   font-family: @Gerbera;
   background-color: @color_black;
   transition: all .5s ease-out;
+  min-height: 100vh;
 }
 a, button{
   cursor: pointer;
@@ -57,4 +58,40 @@ html:not([data-scroll='0']) .header {
 }
 video{
   max-width:100%;
+}
+
+
+details{
+  /* Убираем стандартный маркер Chrome */
+  summary{
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+    outline:none;
+    /* Убираем стандартный маркер Firefox */
+    &::-webkit-details-marker {
+      display: none
+    }
+  }
+  &[open] summary,
+  summary{
+    &::after {
+      content: '';
+      margin-right: 7px;
+      display: inline-block;
+      position: absolute;
+      right: 23px;
+      .sprite(@icon-arrow-black);
+    }
+  }
+  &[open] summary{
+ 
+    &:focus{
+      border: none;
+    }
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+  
 }

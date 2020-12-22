@@ -1,0 +1,37 @@
+mixin gamesFormatItem(img,gamesFormatName)
+    section.games-format-item
+        .games-format-item-img
+            img.page__img(src=img)
+        .games-format-item-details
+            details.page__details
+                summary.page__details-summary 
+                    span.page__text Правла игры 
+                    span.games-format-name=gamesFormatName
+                ul.page__lists
+                    .page__text Каждая команда состоит из 6 человек: 
+                    .page__text 1 капитан и 5 интеллектуалов.
+                    li.page__list Ведущий задает оригинальные вопросы, которые охватывают все области знаний, требуют эрудиции, логики мышления.
+                    li.page__list На каждый вопрос команде дается 1 минута на обсуждение, после чего ведущий собирает бланки с ответами.
+                    li.page__list Если команда предложила правильный ответ на вопрос ведущего, она получает 1 балл, если нет – 0.
+                    li.page__list Победителем по итогам игры становится команда, набравшая максимальное количество баллов.
+                    li.page__list В случае равенства баллов, задается «контрольный вопрос».
+
+.wrapper
+    section.breadcrumb
+            .page__text.on-main На главную
+    section.games-format-title
+            h1.page__title-h1.page__title-h1_text-shadow_gray
+                        span Формат <br>  
+                        span Наших игр
+    section.games-format-items
+        +gamesFormatItem('assets/img/img-games-2.png',' Угадать за 60 секунд')
+        +gamesFormatItem('assets/img/img-games-1.png',' Читай. Слушай. Смотри')
+        +gamesFormatItem('assets/img/img-games-3.png',' Большая игра')
+        +gamesFormatItem('assets/img/img-games-4.png',' Что?Где?Почему?')
+    include ../blocks/mixins/mixin-blockquote
+    +blockquote('Мы приглашаем к участию  новых интересных людей из мира бизнеса.')
+include ../blocks/mixins/mixin-next-section
++nextSection('Следующий раздел', 'корпоративные игры', '../')
+
+                
+
