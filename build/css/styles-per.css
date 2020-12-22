@@ -313,7 +313,7 @@ details summary::after {
   position: absolute;
   right: 23px;
   background-image: url(../assets/icons/sprite.png);
-  background-position: -114px -54px;
+  background-position: -161px -25px;
   width: 23px;
   height: 14px;
 }
@@ -588,14 +588,13 @@ details[open] summary::after {
 
 .page__icon_facebook_white {
   background-image: url(../assets/icons/sprite.png);
-  background-position: -179px -25px;
+  background-position: -25px -127px;
   width: 9px;
   height: 19px;
 }
 
 .page__icon_instagram {
   background-image: url(../assets/icons/sprite.png);
-  background-position: 0px 0px;
   background-position: -63px 0px;
   width: 41px;
   height: 41px;
@@ -603,21 +602,21 @@ details[open] summary::after {
 
 .page__icon_instagram_white {
   background-image: url(../assets/icons/sprite.png);
-  background-position: -151px -25px;
+  background-position: -25px -98px;
   width: 18px;
   height: 19px;
 }
 
 .page__icon_menu {
   background-image: url(../assets/icons/sprite.png);
-  background-position: -114px -25px;
+  background-position: -63px -51px;
   width: 27px;
   height: 19px;
 }
 
 .page__icon_phone {
   background-image: url(../assets/icons/sprite.png);
-  background-position: -63px -51px;
+  background-position: -53px -98px;
   width: 17px;
   height: 17px;
 }
@@ -641,7 +640,6 @@ details[open] summary::after {
   text-transform: uppercase;
 }
 
-<<<<<<< HEAD
 .page__on-main {
   display: -webkit-box;
   display: flex;
@@ -651,15 +649,15 @@ details[open] summary::after {
 .page__on-main::before {
   content: '';
   background-image: url(../assets/icons/sprite.png);
-  background-position: 0px -51px;
+  background-position: -114px 0px;
   width: 74px;
   height: 15px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-=======
+}
+
 .page__list {
   font-family: "Noah-Regular";
->>>>>>> main
 }
 
 .page_yellow {
@@ -1016,7 +1014,7 @@ details[open] summary::after {
 .banner-info .page__link-toggle::after {
   content: '';
   background-image: url(../assets/icons/sprite.png);
-  background-position: -147px -54px;
+  background-position: -161px -50px;
   width: 15px;
   height: 9px;
   display: inline-block;
