@@ -478,6 +478,12 @@ details[open] summary::after {
   text-transform: uppercase;
 }
 
+.page__title-h4 {
+  font-family: "Noah-Bold";
+  font-size: 28px;
+  line-height: 35px;
+}
+
 .page__subtitle {
   font-size: 23px;
   line-height: 25.58px;
@@ -650,7 +656,7 @@ details[open] summary::after {
 
 .page__icon_facebook {
   background-image: url(../assets/icons/sprite.png);
-  background-position: -63px 0px;
+  background-position: 0px -47px;
   width: 41px;
   height: 41px;
 }
@@ -664,7 +670,7 @@ details[open] summary::after {
 
 .page__icon_instagram {
   background-image: url(../assets/icons/sprite.png);
-  background-position: 0px -47px;
+  background-position: -63px 0px;
   width: 41px;
   height: 41px;
 }
@@ -690,7 +696,7 @@ details[open] summary::after {
   height: 17px;
 }
 
-.page__icon_arrow-long-gray_next {
+.page__icon_arrow-long-black_next {
   background-image: url(../assets/icons/sprite.png);
   background-position: -114px 0px;
   width: 74px;
@@ -710,23 +716,33 @@ details[open] summary::after {
 }
 
 .page__on-main {
-  display: -webkit-box;
-  display: flex;
+  display: inline-block;
   text-decoration: none;
   padding-top: 30px;
   padding-bottom: 45px;
   font-family: "Noah-Regular";
   font-size: 16px;
   color: #000000;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .page__on-main::before {
   content: '';
   margin-right: 20px;
+  display: inline-block;
   background-image: url(../assets/icons/sprite.png);
   background-position: -114px -50px;
   width: 37px;
   height: 15px;
+  margin-right: 14px;
+  vertical-align: bottom;
+  margin-bottom: 2px;
+}
+
+.page__on-main:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .page__on-main-yellow {
@@ -738,11 +754,14 @@ details[open] summary::after {
   font-family: "Noah-Regular";
   font-size: 16px;
   color: #ffffff;
+  padding: 40px 0;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .page__on-main-yellow::before {
   content: '';
-  margin-right: 20px;
+  display: inline-block;
   background-image: url(../assets/icons/sprite.png);
   background-position: -63px -51px;
   width: 37px;
@@ -2246,6 +2265,114 @@ details[open] summary::after {
   color: #ffffff;
 }
 
+.block-infoSlider {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.block-infoSlider__info {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: calc(8.333333333333334% + 0px);
+  position: relative;
+  margin-top: 6%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  background-color: #1c1c1c;
+  box-sizing: border-box;
+  align-self: flex-start;
+}
+
+.block-infoSlider__info-item {
+  width: calc(43.333333333333336% - 0px);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.block-infoSlider__info-item .page__number {
+  margin-right: 6%;
+}
+
+.block-infoSlider__info-item .page__text {
+  width: calc(50% - 0px);
+  margin-bottom: 5%;
+  align-self: flex-end;
+}
+
+.block-infoSlider__info::before {
+  content: '';
+  position: absolute;
+  top: -9px;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffed5c;
+  z-index: -1;
+}
+
+.block-infoSlider__info .page__btn {
+  width: calc(45.00000000000001% - 0px);
+  margin-left: calc(33.333333333333336% + 0px);
+  margin-top: 13%;
+}
+
+.block-infoSlider__slider .slider-thumbnails {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  position: relative;
+  top: -112px;
+}
+
+.block-infoSlider__slider .page__img_small {
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  background-color: #626262;
+}
+
+.block-infoSlider__slider .page__img_small.tns-nav-active {
+  background-color: #ffed5c;
+}
+
+.block-infoSlider__slider .tns-controls button {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  top: -41px;
+  background-color: #ffffff;
+  border: none;
+}
+
+.block-infoSlider__slider .tns-controls button[data-controls="prev"]::before,
+.block-infoSlider__slider .tns-controls button[data-controls="next"]::before {
+  content: '';
+  display: inline-block;
+  background-image: url(../assets/icons/sprite.png);
+  background-position: -161px -25px;
+  width: 23px;
+  height: 14px;
+}
+
+.block-infoSlider__slider .tns-controls button[data-controls="prev"]::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.block-infoSlider__slider .tns-controls button[data-controls="next"]::before {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
 .sample-page {
   background-color: #ffffff;
 }
@@ -2268,24 +2395,6 @@ details[open] summary::after {
   top: 180px;
 }
 
-.about-page .on-main {
-  color: #000000;
-  position: relative;
-  padding: 20px 0 20px;
-}
-
-.about-page .on-main::before {
-  content: '';
-  display: inline-block;
-  background-color: #000000;
-  width: 30px;
-  height: 2px;
-  margin-right: 10px;
-  position: absolute;
-  top: 30px;
-  left: -40px;
-}
-
 .about-page .page__text {
   color: #1c1c1c;
   width: calc(116.66666666666667% - 0px);
@@ -2298,6 +2407,29 @@ details[open] summary::after {
   margin-left: 0px;
   margin-right: 0px;
   flex-wrap: nowrap;
+}
+
+.about-page-block .block-infoSlider .page__number,
+.about-page-block .block-infoSlider .page__text {
+  color: #ffffff;
+}
+
+.about-page-block .block-infoSlider__slider {
+  width: calc(57.50000000000001% - 0px);
+  margin-left: calc(-7.500000000000001% + 0px);
+}
+
+.about-page-block .block-infoSlider__slider .tns-controls {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+}
+
+.about-page-block .block-infoSlider__info {
+  width: calc(58.333333333333336% - 0px);
+  margin-right: calc(-8.333333333333334% + 0px);
+  margin-top: 4%;
 }
 
 .about-page-block .page__img_big {
@@ -2323,38 +2455,6 @@ details[open] summary::after {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-}
-
-.about-page-block-experience {
-  position: relative;
-  background-color: #1c1c1c;
-  padding-left: 100px;
-  padding-top: 85px;
-  margin-top: 135px;
-  padding-bottom: 60px;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 0px;
-  margin-right: 0px;
-  width: calc(73.33333333333334% - 0px);
-  margin-right: calc(-8.333333333333334% + 0px);
-}
-
-.about-page-block-experience .page__text {
-  color: #ffffff;
-}
-
-.about-page-block-experience::before {
-  content: '';
-  display: inline-block;
-  width: 726px;
-  height: 13px;
-  background-color: #ffed5c;
-  position: absolute;
-  top: -13px;
-  right: 1px;
 }
 
 .team .on-main {
@@ -2509,6 +2609,251 @@ details[open] summary::after {
   background-color: #000000;
   margin-right: 12px;
   display: inline-block;
+}
+
+.battle-of-corporations .banner {
+  overflow: inherit;
+  background-color: #ffed5c;
+}
+
+.battle-of-corporations .banner .page__on-main {
+  padding-bottom: 18px;
+}
+
+.battle-of-corporations .banner .page__title-h1 span:nth-of-type(1) {
+  color: #ffed5c;
+}
+
+.battle-of-corporations .banner-block {
+  padding-top: 0;
+}
+
+.battle-of-corporations .banner-block__content {
+  width: calc(58.333333333333336% - 0px);
+}
+
+.battle-of-corporations .banner-block__content-imgText {
+  display: -webkit-box;
+  display: flex;
+}
+
+.battle-of-corporations .banner-block__content-imgText .page__img {
+  width: calc(56.66666666666667% - 0px);
+  padding-top: 10%;
+}
+
+.battle-of-corporations .banner-block__content-imgText .page__text {
+  width: calc(33.333333333333336% - 0px);
+  align-self: center;
+}
+
+.battle-of-corporations .banner-block__content-imgText .page__text {
+  font-family: "Noah-Bold";
+  line-height: 174.33%;
+}
+
+.battle-of-corporations .banner-block__content-imgText .page__text_arrow {
+  position: relative;
+}
+
+.battle-of-corporations .banner-block__content-imgText .page__text_arrow::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-image: url(../assets/icons/sprite.png);
+  background-position: -114px 0px;
+  width: 74px;
+  height: 15px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  left: -32px;
+  bottom: -130px;
+}
+
+.battle-of-corporations .banner-block__img {
+  width: calc(50% - 0px);
+  margin-right: calc(-8.333333333333334% + 0px);
+  margin-bottom: -29%;
+  padding-top: 82px;
+}
+
+.battle-of-corporations .banner-block__img .page__title-h4 {
+  margin-left: calc(16.666666666666668% + 0px);
+  padding-top: 5%;
+}
+
+.battle-of-corporations .banner-block__img .page__text {
+  width: calc(66.66666666666667% - 0px);
+  margin-left: calc(16.666666666666668% + 0px);
+  padding-top: 4%;
+}
+
+.battle-of-corporations .content {
+  padding-bottom: 10%;
+}
+
+.battle-of-corporations .content .page__title-h3 {
+  padding: 9% 0 4%;
+  width: calc(41.66666666666667% - 0px);
+}
+
+.battle-of-corporations .content-items {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.battle-of-corporations .content-items .content-item {
+  width: calc(50% - 0px);
+}
+
+.battle-of-corporations .content-items .content-item:nth-of-type(1) .page__img::after {
+  right: -17px;
+  bottom: -17px;
+  width: 178px;
+  height: 225px;
+}
+
+.battle-of-corporations .content-items .content-item:nth-of-type(2) {
+  margin-top: 25%;
+}
+
+.battle-of-corporations .content-items .content-item:nth-of-type(2) .page__img::after {
+  top: -21px;
+  right: -6px;
+  width: 208px;
+  height: 225px;
+}
+
+.battle-of-corporations .content-items .content-item:nth-of-type(3) {
+  margin-top: -8%;
+}
+
+.battle-of-corporations .content-items .content-item:nth-of-type(3) .content-item__img .page__img::after {
+  right: -202px;
+  bottom: 0px;
+  width: 209px;
+  height: 209px;
+}
+
+.battle-of-corporations .content-items .content-item:nth-of-type(4) {
+  margin-top: 19%;
+}
+
+.battle-of-corporations .content-items .content-item:nth-of-type(odd) .content-item__img {
+  padding-top: 8%;
+}
+
+.battle-of-corporations .content-items .content-item__img {
+  width: calc(83.33333333333334% - 0px);
+  margin-left: calc(16.666666666666668% + 0px);
+}
+
+.battle-of-corporations .content-items .content-item__img .page__img {
+  display: -webkit-box;
+  display: flex;
+  position: relative;
+}
+
+.battle-of-corporations .content-items .content-item__img .page__img::after {
+  content: '';
+  position: absolute;
+  background-color: #ffed5c;
+  z-index: -1;
+}
+
+.battle-of-corporations .content-items .content-item__text {
+  width: calc(66.66666666666667% - 0px);
+  margin-left: calc(33.333333333333336% + 0px);
+}
+
+.battle-of-corporations .content-items .content-item__text .page__title-h4 {
+  padding-top: 9%;
+}
+
+.battle-of-corporations .content-items .content-item__text .page__text {
+  padding-top: 5%;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.battle-of-corporations .conditions .page__title-h3 {
+  margin-bottom: 4%;
+}
+
+.battle-of-corporations .conditions .block-infoSlider .page__number,
+.battle-of-corporations .conditions .block-infoSlider .page__text {
+  color: #ffffff;
+}
+
+.battle-of-corporations .conditions .block-infoSlider__slider {
+  width: calc(58.333333333333336% - 0px);
+  margin-right: calc(-8.333333333333334% + 0px);
+}
+
+.battle-of-corporations .conditions .block-infoSlider__info {
+  width: calc(58.333333333333336% - 0px);
+  margin-left: calc(-8.333333333333334% + 0px);
+  margin-top: 6%;
+}
+
+.battle-of-corporations .present {
+  padding-top: 10%;
+  margin-bottom: 14%;
+}
+
+.battle-of-corporations .present-block {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: #ffed5c;
+  margin: 6px;
+}
+
+.battle-of-corporations .present-block__img {
+  width: calc(33.333333333333336% - 0px);
+  margin-left: calc(8.333333333333334% + 0px);
+  margin-top: -18%;
+  display: -webkit-box;
+  display: flex;
+}
+
+.battle-of-corporations .present-block__content {
+  margin-left: calc(8.333333333333334% + 0px);
+  width: calc(50% - 0px);
+  padding-top: 7%;
+}
+
+.battle-of-corporations .present-block__content .page__title-h3 {
+  position: relative;
+  color: #626262;
+  margin-bottom: 7%;
+}
+
+.battle-of-corporations .present-block__content .page__title-h3::before {
+  content: '';
+  position: absolute;
+  top: 45%;
+  left: -26%;
+  width: 101px;
+  height: 4px;
+  background-color: #ffffff;
+  display: inline-block;
+}
+
+.battle-of-corporations .present-block__content .page__text {
+  width: calc(50% - 0px);
+  font-family: "Noah-Bold";
+  font-size: 28px;
+  line-height: 35px;
+}
+
+.battle-of-corporations .trust .page__title-h3 {
+  color: #626262;
 }
 
 @media screen and (max-width: 1200px) {
@@ -2983,6 +3328,10 @@ details[open] summary::after {
 
   .games-format-item-img {
     margin: 16px 0;
+  }
+
+  .battle-of-corporations .banner-block__content-imgText .page__text_arrow::after {
+    display: none;
   }
 }
 
@@ -3685,6 +4034,10 @@ details[open] summary::after {
 
   .games-format-item-details .page__details-summary .page__text {
     width: calc(100% - 0px);
+  }
+
+  .battle-of-corporations .banner-block__content-imgText .page__text {
+    line-height: 20px;
   }
 }
 

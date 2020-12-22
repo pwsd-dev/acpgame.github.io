@@ -16,9 +16,8 @@ mixin gamesFormatItem(img,gamesFormatName)
                     li.page__list Победителем по итогам игры становится команда, набравшая максимальное количество баллов.
                     li.page__list В случае равенства баллов, задается «контрольный вопрос».
 
-.wrapper
-    section.breadcrumb
-            .page__text.on-main На главную
+.wrapper    
+    include ../blocks/shared/on-main
     section.games-format-title
             h1.page__title-h1.page__title-h1_text-shadow_gray
                         span Формат <br>  

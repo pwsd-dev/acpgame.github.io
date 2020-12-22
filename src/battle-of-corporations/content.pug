@@ -1,0 +1,74 @@
+mixin item(img,titleH4,text)
+    .content-item
+            .content-item__img
+                .page__img
+                    img(src=img alt="")
+            .content-item__text
+                h4.page__title-h4=titleH4
+                p.page__text=text
+section.banner
+    .wrapper    
+        include ../blocks/shared/on-main
+        .banner-block
+            .banner-block__content
+                h1.page__title-h1.page__title-h1_text-shadow_gray
+                                span Битва <br>  
+                                span корпораций
+                .banner-block__content-imgText
+                    .page__img
+                        img(src="assets/img/img-battle-of-corporations-logo.png", alt="")
+                    p.page__text.page__text_arrow Неформальная площадка для интеллектуального батла и общения между компаниями.
+            .banner-block__img
+                img(src="assets/img/img-battle-of-corporations-1.png", alt="")
+                h4.page__title-h4 Сплоченность команды
+                p.page__text Укрепление эмоциональной связи между сотрудниками, командообразование.
+section.content
+    .wrapper
+        h3.page__title-h3 Какие задачи решает «Битва Корпораций»
+        .content-items
+            +item("assets/img/img-battle-of-corporations-2.png",'HR-Брендинг','Укрепление имиджа компании, которая заботится о корпоративной культуре своих сотрудников.')
+            +item("assets/img/img-battle-of-corporations-3.png",'Оптимизация бюджета','Стоимость участия в проекте существенно ниже бюджета отдельного корпоративного мероприятия')
+            +item("assets/img/img-battle-of-corporations-4.png",'Система премирования','Поощрение особо отличившихся сотрудников участием в проекте, с возможностью вести внутренний счет баллов и дополнительным вознаграждением команды-победителя в общем зачете компании.')
+            +item("assets/img/img-battle-of-corporations-5.png",'Новые бизнес-возможности','Новые возможности для развития бизнеса через укрепление связей с коллегами из других компаний и отраслей.')
+section.conditions
+    .wrapper
+        h3.page__title-h3 Условия участия
+        .block-infoSlider
+            .block-infoSlider__info
+                .block-infoSlider__info-item
+                    span.page__number 6
+                    p.page__text человек в команде
+                .block-infoSlider__info-item
+                    span.page__number 9000
+                    p.page__text рублей с команды
+                button.page__btn.page__btn_yellow принять участие
+            .block-infoSlider__slider
+                .btn-play.page_hidden
+                #sliderInfoSlider
+                    .page__img
+                        img(src="assets/img/img-battle-of-corporations-7.png", alt="")
+                    .page__img
+                        img(src="assets/img/img-battle-of-corporations-7.png", alt="")
+                    .page__img
+                        img(src="assets/img/img-battle-of-corporations-7.png", alt="")
+                    .page__img
+                        img(src="assets/img/img-battle-of-corporations-7.png", alt="")
+                #customizeThumbnailsInfoSlider.slider-thumbnails
+                    .page__img_small
+                    .page__img_small
+                    .page__img_small
+                    .page__img_small   
+section.present
+    .wrapper
+        .present-block
+            .present-block__img
+                img(src="assets/img/img-battle-of-corporations-6.png", alt="")
+            .present-block__content
+                h3.page__title-h3 главный приз
+                p.page__text Банка красной икры — традиционный приз за первое место
+include ../blocks/trust
+include ../blocks/mixins/mixin-next-section
++nextSection('Следующий раздел', 'О нас', '../')
+
+                
+
