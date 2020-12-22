@@ -106,3 +106,28 @@ if(document.getElementById('sliderTrust')){
     });
   }
   
+if(document.getElementById('sliderInfoSlider')){
+    var sliderEmotions = tns({
+      container: "#sliderInfoSlider",
+      // mode: "gallery",
+      items: 1,
+      // loop: true,
+      navContainer: "#customizeThumbnailsInfoSlider",
+      navAsThumbnails: true,
+      autoplay: false,
+      autoplayResetOnVisibility: false,
+      controls: true,
+      controlsPosition:"bottom",
+      controlsText:[
+        "",
+        ""
+      ],
+      autoplayButton:false,
+      autoplayTimeout: 1800,
+      swipeAngle: true,
+      lazyload: false,
+      speed: 800,
+      
+    });
+  }
+  

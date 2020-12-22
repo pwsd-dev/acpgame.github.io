@@ -478,6 +478,12 @@ details[open] summary::after {
   text-transform: uppercase;
 }
 
+.page__title-h4 {
+  font-family: "Noah-Bold";
+  font-size: 28px;
+  line-height: 35px;
+}
+
 .page__subtitle {
   font-size: 23px;
   line-height: 25.58px;
@@ -2020,30 +2026,120 @@ details[open] summary::after {
   margin-bottom: 11%;
 }
 
+.block-infoSlider {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1.55%;
+  margin-right: -1.55%;
+}
+
+.block-infoSlider__info {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1.55%;
+  margin-right: -1.55%;
+  padding-left: 9.88333333%;
+  position: relative;
+  margin-top: 6%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  background-color: #1c1c1c;
+  box-sizing: border-box;
+  align-self: flex-start;
+}
+
+.block-infoSlider__info-item {
+  width: 40.23333333%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.block-infoSlider__info-item .page__number {
+  margin-right: 6%;
+}
+
+.block-infoSlider__info-item .page__text {
+  width: 46.9%;
+  margin-bottom: 5%;
+  align-self: flex-end;
+}
+
+.block-infoSlider__info::before {
+  content: '';
+  position: absolute;
+  top: -9px;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffed5c;
+  z-index: -1;
+}
+
+.block-infoSlider__info .page__btn {
+  width: 41.9%;
+  margin-left: 34.88333333%;
+  margin-top: 13%;
+}
+
+.block-infoSlider__slider .slider-thumbnails {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  position: relative;
+  top: -112px;
+}
+
+.block-infoSlider__slider .page__img_small {
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  background-color: #626262;
+}
+
+.block-infoSlider__slider .page__img_small.tns-nav-active {
+  background-color: #ffed5c;
+}
+
+.block-infoSlider__slider .tns-controls button {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  top: -41px;
+  background-color: #ffffff;
+  border: none;
+}
+
+.block-infoSlider__slider .tns-controls button[data-controls="prev"]::before,
+.block-infoSlider__slider .tns-controls button[data-controls="next"]::before {
+  content: '';
+  display: inline-block;
+  background-image: url(../assets/icons/sprite.png);
+  background-position: -161px -25px;
+  width: 23px;
+  height: 14px;
+}
+
+.block-infoSlider__slider .tns-controls button[data-controls="prev"]::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.block-infoSlider__slider .tns-controls button[data-controls="next"]::before {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
 .sample-page {
   background-color: #ffffff;
 }
 
 .sample-page .page__text {
   color: #000000;
-}
-
-.about-page .on-main {
-  color: #000000;
-  position: relative;
-  padding: 20px 0 20px;
-}
-
-.about-page .on-main::before {
-  content: '';
-  display: inline-block;
-  background-color: #000000;
-  width: 30px;
-  height: 2px;
-  margin-right: 10px;
-  position: absolute;
-  top: 30px;
-  left: -40px;
 }
 
 .about-page .page__text {
@@ -2058,6 +2154,29 @@ details[open] summary::after {
   margin-left: -1.55%;
   margin-right: -1.55%;
   flex-wrap: nowrap;
+}
+
+.about-page-block .block-infoSlider .page__number,
+.about-page-block .block-infoSlider .page__text {
+  color: #ffffff;
+}
+
+.about-page-block .block-infoSlider__slider {
+  width: 54.4%;
+  margin-left: -5.95%;
+}
+
+.about-page-block .block-infoSlider__slider .tns-controls {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+}
+
+.about-page-block .block-infoSlider__info {
+  width: 55.23333333%;
+  margin-right: -6.78333333%;
+  margin-top: 4%;
 }
 
 .about-page-block .page__img_big {
@@ -2083,38 +2202,6 @@ details[open] summary::after {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-}
-
-.about-page-block-experience {
-  position: relative;
-  background-color: #1c1c1c;
-  padding-left: 100px;
-  padding-top: 85px;
-  margin-top: 135px;
-  padding-bottom: 60px;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -1.55%;
-  margin-right: -1.55%;
-  width: 70.23333333%;
-  margin-right: -6.78333333%;
-}
-
-.about-page-block-experience .page__text {
-  color: #ffffff;
-}
-
-.about-page-block-experience::before {
-  content: '';
-  display: inline-block;
-  width: 726px;
-  height: 13px;
-  background-color: #ffed5c;
-  position: absolute;
-  top: -13px;
-  right: 1px;
 }
 
 .team .on-main {
@@ -2272,7 +2359,244 @@ details[open] summary::after {
 }
 
 .battle-of-corporations .banner {
+  overflow: inherit;
   background-color: #ffed5c;
+}
+
+.battle-of-corporations .banner .page__on-main {
+  padding-bottom: 18px;
+}
+
+.battle-of-corporations .banner .page__title-h1 span:nth-of-type(1) {
+  color: #ffed5c;
+}
+
+.battle-of-corporations .banner-block {
+  padding-top: 0;
+}
+
+.battle-of-corporations .banner-block__content {
+  width: 55.23333333%;
+}
+
+.battle-of-corporations .banner-block__content-imgText {
+  display: -webkit-box;
+  display: flex;
+}
+
+.battle-of-corporations .banner-block__content-imgText .page__img {
+  width: 53.56666667%;
+  padding-top: 10%;
+}
+
+.battle-of-corporations .banner-block__content-imgText .page__text {
+  width: 30.23333333%;
+  align-self: center;
+}
+
+.battle-of-corporations .banner-block__content-imgText .page__text {
+  font-family: "Noah-Bold";
+  line-height: 174.33%;
+}
+
+.battle-of-corporations .banner-block__content-imgText .page__text_arrow {
+  position: relative;
+}
+
+.battle-of-corporations .banner-block__content-imgText .page__text_arrow::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-image: url(../assets/icons/sprite.png);
+  background-position: -114px 0px;
+  width: 74px;
+  height: 15px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  left: -32px;
+  bottom: -130px;
+}
+
+.battle-of-corporations .banner-block__img {
+  width: 46.9%;
+  margin-right: -6.78333333%;
+  margin-bottom: -29%;
+  padding-top: 82px;
+}
+
+.battle-of-corporations .banner-block__img .page__title-h4 {
+  margin-left: 18.21666667%;
+  padding-top: 5%;
+}
+
+.battle-of-corporations .banner-block__img .page__text {
+  width: 63.56666667%;
+  margin-left: 18.21666667%;
+  padding-top: 4%;
+}
+
+.battle-of-corporations .content {
+  padding-bottom: 10%;
+}
+
+.battle-of-corporations .content .page__title-h3 {
+  padding: 9% 0 4%;
+  width: 38.56666667%;
+}
+
+.battle-of-corporations .content-items {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1.55%;
+  margin-right: -1.55%;
+}
+
+.battle-of-corporations .content-items .content-item {
+  width: 46.9%;
+}
+
+.battle-of-corporations .content-items .content-item:nth-of-type(1) .page__img::after {
+  right: -17px;
+  bottom: -17px;
+  width: 178px;
+  height: 225px;
+}
+
+.battle-of-corporations .content-items .content-item:nth-of-type(2) {
+  margin-top: 25%;
+}
+
+.battle-of-corporations .content-items .content-item:nth-of-type(2) .page__img::after {
+  top: -21px;
+  right: -6px;
+  width: 208px;
+  height: 225px;
+}
+
+.battle-of-corporations .content-items .content-item:nth-of-type(3) {
+  margin-top: -8%;
+}
+
+.battle-of-corporations .content-items .content-item:nth-of-type(3) .content-item__img .page__img::after {
+  right: -202px;
+  bottom: 0px;
+  width: 209px;
+  height: 209px;
+}
+
+.battle-of-corporations .content-items .content-item:nth-of-type(4) {
+  margin-top: 19%;
+}
+
+.battle-of-corporations .content-items .content-item:nth-of-type(odd) .content-item__img {
+  padding-top: 8%;
+}
+
+.battle-of-corporations .content-items .content-item__img {
+  width: 80.23333333%;
+  margin-left: 18.21666667%;
+}
+
+.battle-of-corporations .content-items .content-item__img .page__img {
+  display: -webkit-box;
+  display: flex;
+  position: relative;
+}
+
+.battle-of-corporations .content-items .content-item__img .page__img::after {
+  content: '';
+  position: absolute;
+  background-color: #ffed5c;
+  z-index: -1;
+}
+
+.battle-of-corporations .content-items .content-item__text {
+  width: 63.56666667%;
+  margin-left: 34.88333333%;
+}
+
+.battle-of-corporations .content-items .content-item__text .page__title-h4 {
+  padding-top: 9%;
+}
+
+.battle-of-corporations .content-items .content-item__text .page__text {
+  padding-top: 5%;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.battle-of-corporations .conditions .page__title-h3 {
+  margin-bottom: 4%;
+}
+
+.battle-of-corporations .conditions .block-infoSlider .page__number,
+.battle-of-corporations .conditions .block-infoSlider .page__text {
+  color: #ffffff;
+}
+
+.battle-of-corporations .conditions .block-infoSlider__slider {
+  width: 55.23333333%;
+  margin-right: -6.78333333%;
+}
+
+.battle-of-corporations .conditions .block-infoSlider__info {
+  width: 55.23333333%;
+  margin-left: -6.78333333%;
+  margin-top: 6%;
+}
+
+.battle-of-corporations .present {
+  padding-top: 10%;
+  margin-bottom: 14%;
+}
+
+.battle-of-corporations .present-block {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1.55%;
+  margin-right: -1.55%;
+  background-color: #ffed5c;
+  margin: 6px;
+}
+
+.battle-of-corporations .present-block__img {
+  width: 30.23333333%;
+  margin-left: 9.88333333%;
+  margin-top: -18%;
+  display: -webkit-box;
+  display: flex;
+}
+
+.battle-of-corporations .present-block__content {
+  margin-left: 9.88333333%;
+  width: 46.9%;
+  padding-top: 7%;
+}
+
+.battle-of-corporations .present-block__content .page__title-h3 {
+  position: relative;
+  color: #626262;
+  margin-bottom: 7%;
+}
+
+.battle-of-corporations .present-block__content .page__title-h3::before {
+  content: '';
+  position: absolute;
+  top: 45%;
+  left: -26%;
+  width: 101px;
+  height: 4px;
+  background-color: #ffffff;
+  display: inline-block;
+}
+
+.battle-of-corporations .present-block__content .page__text {
+  width: 46.9%;
+  font-family: "Noah-Bold";
+  font-size: 28px;
+  line-height: 35px;
 }
 
 .battle-of-corporations .trust .page__title-h3 {
@@ -2751,6 +3075,10 @@ details[open] summary::after {
 
   .games-format-item-img {
     margin: 16px 0;
+  }
+
+  .battle-of-corporations .banner-block__content-imgText .page__text_arrow::after {
+    display: none;
   }
 }
 
@@ -3453,6 +3781,10 @@ details[open] summary::after {
 
   .games-format-item-details .page__details-summary .page__text {
     width: 96.9%;
+  }
+
+  .battle-of-corporations .banner-block__content-imgText .page__text {
+    line-height: 20px;
   }
 }
 
