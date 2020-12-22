@@ -621,7 +621,7 @@ details[open] summary::after {
   height: 17px;
 }
 
-.page__icon_arrow-long-gray_next {
+.page__icon_arrow-long-black_next {
   background-image: url(../assets/icons/sprite.png);
   background-position: -114px 0px;
   width: 74px;
@@ -641,19 +641,29 @@ details[open] summary::after {
 }
 
 .page__on-main {
-  display: -webkit-box;
-  display: flex;
+  display: inline-block;
+  color: #000000;
   text-decoration: none;
+  padding: 40px 0;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .page__on-main::before {
   content: '';
+  display: inline-block;
   background-image: url(../assets/icons/sprite.png);
-  background-position: -114px 0px;
-  width: 74px;
+  background-position: -114px -25px;
+  width: 37px;
   height: 15px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  margin-right: 14px;
+  vertical-align: bottom;
+  margin-bottom: 2px;
+}
+
+.page__on-main:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .page__list {
@@ -2259,6 +2269,14 @@ details[open] summary::after {
   background-color: #000000;
   margin-right: 12px;
   display: inline-block;
+}
+
+.battle-of-corporations .banner {
+  background-color: #ffed5c;
+}
+
+.battle-of-corporations .trust .page__title-h3 {
+  color: #626262;
 }
 
 @media screen and (max-width: 1200px) {

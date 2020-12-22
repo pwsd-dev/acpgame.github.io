@@ -233,8 +233,8 @@
         &_phone{
             .sprite(@icon-phone);
         }
-        &_arrow-long-gray_next{
-            .sprite(@icon-arrow-long-gray);
+        &_arrow-long-black_next{
+            .sprite(@icon-arrow-long-black);
         }
     }
     &__number {
@@ -254,21 +254,23 @@
         });
     }
     &__on-main {
-        display: flex;
+        display: inline-block;
+        color: @color_black;
+        // align-items: center;
         text-decoration: none;
+        padding: 40px 0;
+        transition: all .5s ease-out;
         &::before {
             content: '';
-            //display: inline-block;
-            .sprite(@icon-arrow-long-gray);
-            transform: rotate(180deg);
-            
+            display: inline-block;
+            .sprite(@icon-arrow-middle-black);
+            margin-right: 14px;
+            vertical-align: bottom;
+            margin-bottom: 2px;
         }
 
         &:hover {
-            &::before {
-                
-                
-            }
+            transform: scale(1.1);
         }
     }
 
