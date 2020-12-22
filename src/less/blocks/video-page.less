@@ -1,7 +1,9 @@
 .video-page {
     background-color: @color_black;
+    //padding-bottom: 250px;
     &-block {
         //.row-flex();
+        padding-bottom: 100px;
         .page__title-h1 {
             color: @color_white;
             margin-bottom: 50px;
@@ -14,12 +16,13 @@
        
         &__item {
             .size(3);
-            //.row-flex();
+            .row-flex();
+            display: flex;
         }
 
         &-wrapper {
             .row-flex();
-            //flex-wrap: nowrap;
+            
             &__tabs {
                 .row-flex();
                 .size(5);
@@ -36,8 +39,28 @@
             }
 
             &__item {
-                .size(3);
-                //.row-flex();
+                .col();
+                .size(2.9);
+                .shift-right(0.1);
+                
+                
+            }
+            &__next-page {
+                color: @color_white;
+            
+                .sprite(@icon-arrow-outline);
+                position: relative;
+                left: 94%;
+                top: 50px;
+                //padding-top: 20px;
+                //text-align: end;
+            }
+            &__previous-page {
+                .sprite(@icon-arrow-outline);
+                position: relative;
+                transform: rotate(180deg);
+                left: 86%;
+                top: 50px;
             }
         }
     }

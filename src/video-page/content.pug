@@ -24,5 +24,8 @@ section.video-page
                 .video-page-block-wrapper__item
                     .page__img
                         img(src="assets/img/img-video-page.png")
-
-       
+            .video-page-block-wrapper
+                .video-page-block-wrapper__next-page 01/02
+                .video-page-block-wrapper__previous-page
+include ../blocks/mixins/mixin-next-section
++nextSection('Следующий раздел', 'сми о нас', '../')

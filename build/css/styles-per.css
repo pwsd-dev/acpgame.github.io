@@ -657,7 +657,7 @@ details[open] summary::after {
 
 .page__icon_facebook_white {
   background-image: url(../assets/icons/sprite.png);
-  background-position: -25px -127px;
+  background-position: -49px -127px;
   width: 9px;
   height: 19px;
 }
@@ -2107,6 +2107,10 @@ details[open] summary::after {
   background-color: #000000;
 }
 
+.video-page-block {
+  padding-bottom: 100px;
+}
+
 .video-page-block .page__title-h1 {
   color: #ffffff;
   margin-bottom: 50px;
@@ -2122,6 +2126,11 @@ details[open] summary::after {
 
 .video-page-block__item {
   width: 46.9%;
+  flex-wrap: wrap;
+  margin-left: -1.55%;
+  margin-right: -1.55%;
+  display: -webkit-box;
+  display: flex;
 }
 
 .video-page-block-wrapper {
@@ -2150,7 +2159,35 @@ details[open] summary::after {
 }
 
 .video-page-block-wrapper__item {
-  width: 46.9%;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 1.55%;
+  margin-right: 1.55%;
+  width: 45.23333333%;
+  margin-right: 3.21666667%;
+}
+
+.video-page-block-wrapper__next-page {
+  color: #ffffff;
+  background-image: url(../assets/icons/sprite.png);
+  background-position: -25px -127px;
+  width: 14px;
+  height: 23px;
+  position: relative;
+  left: 94%;
+  top: 50px;
+}
+
+.video-page-block-wrapper__previous-page {
+  background-image: url(../assets/icons/sprite.png);
+  background-position: -25px -127px;
+  width: 14px;
+  height: 23px;
+  position: relative;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  left: 86%;
+  top: 50px;
 }
 
 .sample-page {
