@@ -1,0 +1,58 @@
+.smi {
+    background-color: @color_black;
+    .page__title-h1 {
+        margin-bottom: 60px;
+    }
+
+    &-block {
+        
+        &-container {
+            padding-bottom: 200px;
+            //display: flex;
+            &__tabs {
+                .row-flex();
+                .page__btn_yellow {
+                    .size(1);
+                    .shift-right(.5);
+                }
+            }
+
+            
+
+            &__video {
+                display: flex;
+                margin-top: 60px;
+                &-description {
+                    flex-direction: column;
+                    .page__text {
+                        &_yellow {
+                            margin: 20px 0 20px;
+                            position: relative;
+                            top: 350px;
+                            left: -610px;
+                        }
+
+                        &_white {
+                            margin: 20px 0 20px;
+                            position: relative;
+                            top: 350px;
+                            left: -610px;
+                            .size(14);
+
+                        }
+                    }
+
+                
+                }
+            }
+
+            &__article {
+                .page__text {
+                    color: @color_white;
+                }
+
+                
+            }
+        }
+    }
+}
