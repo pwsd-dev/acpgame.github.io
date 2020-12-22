@@ -581,7 +581,7 @@ details[open] summary::after {
 
 .page__icon_facebook {
   background-image: url(../assets/icons/sprite.png);
-  background-position: 0px -47px;
+  background-position: -63px 0px;
   width: 41px;
   height: 41px;
 }
@@ -595,28 +595,28 @@ details[open] summary::after {
 
 .page__icon_instagram {
   background-image: url(../assets/icons/sprite.png);
-  background-position: -63px 0px;
+  background-position: 0px -47px;
   width: 41px;
   height: 41px;
 }
 
 .page__icon_instagram_white {
   background-image: url(../assets/icons/sprite.png);
-  background-position: -25px -98px;
+  background-position: -62px -98px;
   width: 18px;
   height: 19px;
 }
 
 .page__icon_menu {
   background-image: url(../assets/icons/sprite.png);
-  background-position: -63px -51px;
+  background-position: -25px -98px;
   width: 27px;
   height: 19px;
 }
 
 .page__icon_phone {
   background-image: url(../assets/icons/sprite.png);
-  background-position: -53px -98px;
+  background-position: -90px -98px;
   width: 17px;
   height: 17px;
 }
@@ -644,16 +644,40 @@ details[open] summary::after {
   display: -webkit-box;
   display: flex;
   text-decoration: none;
+  padding-top: 30px;
+  padding-bottom: 45px;
+  font-family: "Noah-Regular";
+  font-size: 16px;
+  color: #000000;
 }
 
 .page__on-main::before {
   content: '';
+  margin-right: 20px;
   background-image: url(../assets/icons/sprite.png);
-  background-position: -114px 0px;
-  width: 74px;
+  background-position: -114px -50px;
+  width: 37px;
   height: 15px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+}
+
+.page__on-main-yellow {
+  display: -webkit-box;
+  display: flex;
+  text-decoration: none;
+  padding-top: 30px;
+  padding-bottom: 45px;
+  font-family: "Noah-Regular";
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.page__on-main-yellow::before {
+  content: '';
+  margin-right: 20px;
+  background-image: url(../assets/icons/sprite.png);
+  background-position: -63px -51px;
+  width: 37px;
+  height: 15px;
 }
 
 .page__list {
@@ -2008,6 +2032,14 @@ details[open] summary::after {
   height: 37px;
   display: inline-block;
   margin-bottom: 11%;
+}
+
+.video-page {
+  background-color: #000000;
+}
+
+.video-page-block .page__title-h1 {
+  color: #ffffff;
 }
 
 .sample-page {

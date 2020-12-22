@@ -256,11 +256,41 @@
     &__on-main {
         display: flex;
         text-decoration: none;
+        padding-top: 30px;
+        padding-bottom: 45px;
+        font-family: "@{Noah}-Regular";
+        font-size: 16px;
+        color: @color_black;
         &::before {
             content: '';
+            margin-right: 20px;
             //display: inline-block;
-            .sprite(@icon-arrow-long-gray);
-            transform: rotate(180deg);
+            .sprite(@icon-arrow-long-black-png);
+            //transform: rotate(180deg);
+            
+        }
+
+        &:hover {
+            &::before {
+                
+                
+            }
+        }
+    }
+    &__on-main-yellow {
+        display: flex;
+        text-decoration: none;
+        padding-top: 30px;
+        padding-bottom: 45px;
+        font-family: "@{Noah}-Regular";
+        font-size: 16px;
+        color: @color_white;
+        &::before {
+            content: '';
+            margin-right: 20px;
+            //display: inline-block;
+            .sprite(@icon-arrow-yellow);
+            //transform: rotate(180deg);
             
         }
 
