@@ -15,6 +15,15 @@
         &__img {
             .size-xs(6);
             //height: 40vh;
+            .page__img-container{
+                .page__img{
+                    display: inline-block;
+                    .size(1.5);
+                    &:nth-child(4n + 4){
+                       .shift-right(-1.5);
+                    }
+                }
+            }
             .slider-thumbnails{
                 display: flex;
                 justify-content: center;

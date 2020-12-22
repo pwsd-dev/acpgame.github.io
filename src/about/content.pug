@@ -28,9 +28,9 @@ section
                     .page__img 
                         img(src="assets/img/200+ (1).png")
                     p.page__text корпоративов
-section.about-page-block-invite
-    .wrapper
-        h2.page__title-h2 Мы приглашаем к участию  новых интересных людей из мира бизнеса.
+        include ../blocks/mixins/mixin-blockquote
+        +blockquote('Мы приглашаем к участию  новых интересных людей из мира бизнеса.')
+
 include ../blocks/mixins/mixin-next-section
 +nextSection('Следующий раздел', 'корпоративные игры', '../')
 

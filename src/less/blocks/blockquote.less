@@ -1,0 +1,27 @@
+.blockquote{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 4% 0 13%;
+    .size(1.8);
+    .size-mmd(2.5);
+    .size-smm(6);
+    .page__text{
+        
+        font-family: '@{Noah}-Bold';
+        font-size: 28px;
+        line-height: 35px;
+        color:@color_black;
+        .xs(font-size, 23px);
+    }
+    &::before{
+        content: '';
+        .sprite(@icon-blockquote);
+        display: inline-block;
+        margin-bottom: 11%;
+    }
+}
