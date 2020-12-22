@@ -540,7 +540,7 @@ video {
 
 .page__icon_facebook {
   background-image: url(../assets/icons/sprite.png);
-  background-position: 0px 0px;
+  background-position: -51px 0px;
   width: 41px;
   height: 41px;
 }
@@ -554,7 +554,7 @@ video {
 
 .page__icon_instagram {
   background-image: url(../assets/icons/sprite.png);
-  background-position: -51px 0px;
+  background-position: 0px 0px;
   width: 41px;
   height: 41px;
 }
@@ -597,6 +597,22 @@ video {
   /* or 100px */
   letter-spacing: -0.07em;
   text-transform: uppercase;
+}
+
+.page__on-main {
+  display: -webkit-box;
+  display: flex;
+  text-decoration: none;
+}
+
+.page__on-main::before {
+  content: '';
+  background-image: url(../assets/icons/sprite.png);
+  background-position: 0px -51px;
+  width: 74px;
+  height: 15px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .page_yellow {

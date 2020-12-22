@@ -1,8 +1,10 @@
 section.team
     .wrapper
-       .page__text.on-main На главную
+       include ../blocks/shared/on-main
        .team-block
-            .team-block__title наша команда
+            h1.page__title-h1.page__title-h1_text-shadow_gray
+                span немного <br>
+                span О команде
             .team-block__description
                 p.page__text Вся команда ACP GAME ежедневно проводит масштабную работу для того, чтобы собрать единомышленников и увлечь качественным досугом с уникальным сценарием.
             .page__img
@@ -10,7 +12,6 @@ section.team
 section.team-block-events
     .wrapper
         h2.page__title-h2 Тим-билдинги, клиентские мероприятия в нестандартном формате.
-section.team-block-next-section
-    .wrapper
-        h2.page__title-h2 Следующий раздел
-        h3.page__title-h3 Фотоотчет
+include ../blocks/mixins/mixin-next-section
++nextSection('Следующий раздел', 'корпоративные игры', '../')
+    

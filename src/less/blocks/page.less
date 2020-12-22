@@ -248,6 +248,25 @@
             line-height: 68px;
         });
     }
+    &__on-main {
+        display: flex;
+        text-decoration: none;
+        &::before {
+            content: '';
+            //display: inline-block;
+            .sprite(@icon-arrow-long-gray);
+            transform: rotate(180deg);
+            
+        }
+
+        &:hover {
+            &::before {
+                
+                
+            }
+        }
+
+    }
     &_yellow{
         color: @color_yellow;
     }
@@ -267,5 +286,7 @@
     &_hidden{
         display: none !important;
     }
+
+
 }
 
