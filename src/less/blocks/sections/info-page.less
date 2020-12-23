@@ -1,0 +1,72 @@
+.info-page{
+   
+    .page-block{
+        .row-flex();
+        padding-bottom: 7%;
+        .page__title-h1{
+            .size(3);
+            .size-sm(6);
+        }
+        &__description{
+            .size(3);
+            .size-sm(6);
+            padding-top: 2.6%;
+            .page__text{
+                font-family: "@{Noah}-Bold";
+                line-height: 174.33%;
+                &_bottom{
+                    padding-top: 11%;
+                    .shift-left(2);
+                    .shift-md-left(0);
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+        .block-infoSlider{
+           
+            .page__number,
+            .page__text{
+                color:@color_white;
+            }
+            &__slider{
+              
+                .tns-controls{
+                    display: flex;
+                    justify-content: flex-end;
+                    .sm-block({
+                        display: none;
+                    });
+                }
+            }
+            &__left{
+                .xs-block({
+                    padding:0;
+                });
+            }
+            &__info{
+                margin-top: 4%;
+               
+                .sm-block({
+                    margin-top:0;
+                    
+                });
+            }
+            &__item{
+                padding-bottom: 12%;
+                .page__text{
+                    .size(6);
+                    align-self: center;
+                }
+            }
+
+        }
+        
+       
+
+       
+    }
+    .blockquote{
+        padding: 6% 0 23%;
+    }
+}

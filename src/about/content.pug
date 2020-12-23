@@ -1,16 +1,15 @@
-section
-    .wrapper
+.wrapper
         include ../blocks/shared/on-main
-        .about-page-block
+        .page-block
             h1.page__title-h1.page__title-h1_text-shadow_gray
                 span немного <br>  
                 span О нас
-            .about-page-block__description
+            .page-block__description
                 p.page__text ACP GAME — это не просто игры с вопросами и ответами, это прежде всего, комьюнити с общими интересами, желающее проводить свой досуг с пользой. Это объединение успешных людей, которые знают цену своему времени и ценят качество его организации. Все гости к нам приходят по рекомендациям. Мы уделяем большое внимание рассадке, учитывая пол, возраст и семейный статус.
-                p.page__text_small Комфорт, интересные знакомства и атмосфера — вот, что нас отличает от других. Мероприятия проходят в закрытом формате в лучших ресторанах Москвы.
-        .about-page-block
+                p.page__text.page__text_bottom Комфорт, интересные знакомства и атмосфера — вот, что нас отличает от других. Мероприятия проходят в закрытом формате в лучших ресторанах Москвы.
+        .page-block
             .block-infoSlider
-                .block-infoSlider__slider
+                .block-infoSlider__slider.block-infoSlider__left
                     .btn-play.page_hidden
                     #sliderInfoSlider
                         .page__img
@@ -26,44 +25,28 @@ section
                         .page__img_small
                         .page__img_small
                         .page__img_small
-                .block-infoSlider__info
-                    .block-infoSlider__info-item
+                .block-infoSlider__info.block-infoSlider__rigth
+                    .block-infoSlider__item
                         span.page__number 7
                         p.page__text лет — приличный опыт
-                    .block-infoSlider__info-item
+                    .block-infoSlider__item
                         span.page__number 5
                         p.page__text стран
-                    .block-infoSlider__info-item
+                    .block-infoSlider__item
                         span.page__number 500+
                         p.page__text игр
-                    .block-infoSlider__info-item
+                    .block-infoSlider__item
                         span.page__number 200+
                         p.page__text корпоративов
+                    
                 
-            //- .page__img_big
-            //-     img(src="assets/img/img-about-page.png")
-            //- .about-page-block-experience
-            //-     .about-block-experience__item
-            //-         .page__img 
-            //-             img(src="assets/img/7 (1).png")
-            //-         p.page__text  лет — приличный опыт
-            //-     .about-block-experience__item.padding-left
-            //-         .page__img 
-            //-             img(src="assets/img/5.png")
-            //-         p.page__text стран
-            //-     .about-block-experience__item.mob
-            //-         .page__img 
-            //-             img(src="assets/img/500+ (1).png")
-            //-         p.page__text игр
-            //-     .about-block-experience__item.padding-left.mob
-            //-         .page__img 
-            //-             img(src="assets/img/200+ (1).png")
-            //-         p.page__text корпоративов
+                
+           
         include ../blocks/mixins/mixin-blockquote
         +blockquote('Мы приглашаем к участию  новых интересных людей из мира бизнеса.')
 
 include ../blocks/mixins/mixin-next-section
-+nextSection('Следующий раздел', 'корпоративные игры', '../')
++nextSection('Следующий раздел', 'Команда', '../')
 
                 
 

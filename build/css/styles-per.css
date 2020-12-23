@@ -595,7 +595,7 @@ details[open] summary::after {
           align-items: center;
   text-decoration: none;
   border-radius: 2px;
-  height: 55px;
+  height: 72px;
   box-sizing: border-box;
   font-size: 16px;
   line-height: 174.33%;
@@ -718,13 +718,13 @@ details[open] summary::after {
 .page__on-main {
   display: inline-block;
   text-decoration: none;
-  padding-top: 30px;
-  padding-bottom: 45px;
+  padding-top: 45px;
   font-family: "Noah-Regular";
   font-size: 16px;
   color: #000000;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+  padding-bottom: 17px;
 }
 
 .page__on-main::before {
@@ -2303,23 +2303,22 @@ details[open] summary::after {
   margin-right: -1.55%;
 }
 
-.block-infoSlider__info {
-  display: -webkit-box;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -1.55%;
-  margin-right: -1.55%;
-  padding-left: 9.88333333%;
-  position: relative;
-  margin-top: 6%;
-  padding-top: 8%;
-  padding-bottom: 8%;
-  background-color: #1c1c1c;
-  box-sizing: border-box;
-  align-self: flex-start;
+.block-infoSlider .page__number,
+.block-infoSlider .page__text {
+  color: #ffffff;
 }
 
-.block-infoSlider__info-item {
+.block-infoSlider__left {
+  width: 53.56666667%;
+  margin-left: -5.11666667%;
+}
+
+.block-infoSlider__rigth {
+  width: 55.23333333%;
+  margin-right: -11.78333333%;
+}
+
+.block-infoSlider__item {
   width: 40.23333333%;
   display: -webkit-box;
   display: flex;
@@ -2327,14 +2326,27 @@ details[open] summary::after {
           align-items: center;
 }
 
-.block-infoSlider__info-item .page__number {
+.block-infoSlider__item .page__number {
   margin-right: 6%;
 }
 
-.block-infoSlider__info-item .page__text {
+.block-infoSlider__item .page__text {
   width: 46.9%;
   margin-bottom: 5%;
   align-self: flex-end;
+}
+
+.block-infoSlider__info {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 8.21666667%;
+  position: relative;
+  margin-top: 6%;
+  padding-top: 8%;
+  background-color: #1c1c1c;
+  box-sizing: border-box;
+  align-self: flex-start;
 }
 
 .block-infoSlider__info::before {
@@ -2352,26 +2364,11 @@ details[open] summary::after {
   width: 41.9%;
   margin-left: 34.88333333%;
   margin-top: 13%;
+  margin-bottom: 15%;
 }
 
-.block-infoSlider__slider .slider-thumbnails {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
+.block-infoSlider__slider {
   position: relative;
-  top: -112px;
-}
-
-.block-infoSlider__slider .page__img_small {
-  width: 10px;
-  height: 10px;
-  margin: 0 10px;
-  background-color: #626262;
-}
-
-.block-infoSlider__slider .page__img_small.tns-nav-active {
-  background-color: #ffed5c;
 }
 
 .block-infoSlider__slider .tns-controls button {
@@ -2403,6 +2400,27 @@ details[open] summary::after {
           transform: rotate(-90deg);
 }
 
+.block-infoSlider__slider .slider-thumbnails {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 20%;
+  left: 40%;
+}
+
+.block-infoSlider__slider .page__img_small {
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  background-color: #626262;
+}
+
+.block-infoSlider__slider .page__img_small.tns-nav-active {
+  background-color: #ffed5c;
+}
+
 .sample-page {
   background-color: #ffffff;
 }
@@ -2425,66 +2443,63 @@ details[open] summary::after {
   top: 180px;
 }
 
-.about-page .page__text {
-  color: #1c1c1c;
-  width: 113.56666667%;
-}
-
-.about-page-block {
+.info-page .page-block {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
   margin-left: -1.55%;
   margin-right: -1.55%;
-  flex-wrap: nowrap;
+  padding-bottom: 7%;
 }
 
-.about-page-block .block-infoSlider .page__number,
-.about-page-block .block-infoSlider .page__text {
+.info-page .page-block .page__title-h1 {
+  width: 46.9%;
+}
+
+.info-page .page-block__description {
+  width: 46.9%;
+  padding-top: 2.6%;
+}
+
+.info-page .page-block__description .page__text {
+  font-family: "Noah-Bold";
+  line-height: 174.33%;
+}
+
+.info-page .page-block__description .page__text_bottom {
+  padding-top: 11%;
+  margin-left: 34.88333333%;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.info-page .page-block .block-infoSlider .page__number,
+.info-page .page-block .block-infoSlider .page__text {
   color: #ffffff;
 }
 
-.about-page-block .block-infoSlider__slider {
-  width: 54.4%;
-  margin-left: -5.95%;
-}
-
-.about-page-block .block-infoSlider__slider .tns-controls {
+.info-page .page-block .block-infoSlider__slider .tns-controls {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: end;
           justify-content: flex-end;
 }
 
-.about-page-block .block-infoSlider__info {
-  width: 55.23333333%;
-  margin-right: -6.78333333%;
+.info-page .page-block .block-infoSlider__info {
   margin-top: 4%;
 }
 
-.about-page-block .page__img_big {
-  width: 71.9%;
-  margin-left: -6.45%;
-  margin-top: 94px;
+.info-page .page-block .block-infoSlider__item {
+  padding-bottom: 12%;
 }
 
-.about-page-block__description {
-  width: 46.9%;
-  margin-left: 38.21666667%;
+.info-page .page-block .block-infoSlider__item .page__text {
+  width: 96.9%;
+  align-self: center;
 }
 
-.about-page-block__description .page__text {
-  color: #000000;
-  padding-bottom: 40px;
-}
-
-.about-page-block__description .page__text_small {
-  margin-left: 34.88333333%;
-  width: 63.56666667%;
-  font-family: "Noah-Regular";
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
+.info-page .blockquote {
+  padding: 6% 0 23%;
 }
 
 .team .on-main {
@@ -2644,10 +2659,6 @@ details[open] summary::after {
 .battle-of-corporations .banner {
   overflow: inherit;
   background-color: #ffed5c;
-}
-
-.battle-of-corporations .banner .page__on-main {
-  padding-bottom: 18px;
 }
 
 .battle-of-corporations .banner .page__title-h1 span:nth-of-type(1) {
@@ -2818,17 +2829,6 @@ details[open] summary::after {
   color: #ffffff;
 }
 
-.battle-of-corporations .conditions .block-infoSlider__slider {
-  width: 55.23333333%;
-  margin-right: -6.78333333%;
-}
-
-.battle-of-corporations .conditions .block-infoSlider__info {
-  width: 55.23333333%;
-  margin-left: -6.78333333%;
-  margin-top: 6%;
-}
-
 .battle-of-corporations .present {
   padding-top: 10%;
   margin-bottom: 14%;
@@ -2886,6 +2886,24 @@ details[open] summary::after {
   color: #626262;
 }
 
+.games-of-corparations .page-block .block-infoSlider__info {
+  padding-left: 0;
+}
+
+.games-of-corparations .page-block .block-infoSlider__info .page__title-h3 {
+  color: #ffffff;
+}
+
+.games-of-corparations .page-block .block-infoSlider__info .page__title-h3,
+.games-of-corparations .page-block .block-infoSlider__info .page__text,
+.games-of-corparations .page-block .block-infoSlider__info .page__btn {
+  margin-left: 28.21666667%;
+}
+
+.games-of-corparations .page-block .block-infoSlider__info .page__text {
+  width: 46.9%;
+}
+
 @media screen and (max-width: 1200px) {
   .header-block__links .page__link {
     width: 46.9%;
@@ -2893,6 +2911,26 @@ details[open] summary::after {
 
   .blockquote {
     width: 38.56666667%;
+  }
+
+  .block-infoSlider__left {
+    width: 56.9%;
+  }
+
+  .block-infoSlider__left {
+    margin-left: -8.45%;
+  }
+
+  .block-infoSlider__rigth {
+    width: 55.23333333%;
+  }
+
+  .block-infoSlider__rigth {
+    margin-right: -8.45%;
+  }
+
+  .block-infoSlider__slider .slider-thumbnails {
+    bottom: 25%;
   }
 
   .games-format-item:nth-of-type(odd) .games-format-item-img {
@@ -2929,22 +2967,6 @@ details[open] summary::after {
 
   .battle-of-corporations .content .page__title-h3 {
     width: 46.9%;
-  }
-
-  .battle-of-corporations .conditions .block-infoSlider__slider {
-    width: 53.56666667%;
-  }
-
-  .battle-of-corporations .conditions .block-infoSlider__slider {
-    margin-right: -5.11666667%;
-  }
-
-  .battle-of-corporations .conditions .block-infoSlider__info {
-    width: 53.56666667%;
-  }
-
-  .battle-of-corporations .conditions .block-infoSlider__info {
-    margin-left: -5.11666667%;
   }
 
   .battle-of-corporations .present-block__content .page__text {
@@ -3134,12 +3156,22 @@ details[open] summary::after {
     padding: 56px 50px;
   }
 
+  .info-page .page-block__description .page__text_bottom {
+    margin-left: 1.55%;
+  }
+
   .battle-of-corporations .content-items .content-item:nth-of-type(odd) .content-item__img {
     margin-left: 1.55%;
   }
 
   .battle-of-corporations .content-items .content-item__text {
     margin-left: 18.21666667%;
+  }
+
+  .games-of-corparations .page-block .block-infoSlider__info .page__title-h3,
+  .games-of-corparations .page-block .block-infoSlider__info .page__text,
+  .games-of-corparations .page-block .block-infoSlider__info .page__btn {
+    margin-left: 11.55%;
   }
 }
 
@@ -3387,18 +3419,34 @@ details[open] summary::after {
     width: 96.9%;
   }
 
-  .block-infoSlider__info {
-    padding-left: 3.21666667%;
+  .block-infoSlider__left {
+    width: 60.23333333%;
   }
 
-  .block-infoSlider__info-item {
+  .block-infoSlider__left {
+    margin-left: -11.78333333%;
+  }
+
+  .block-infoSlider__rigth {
+    width: 60.23333333%;
+  }
+
+  .block-infoSlider__rigth {
+    margin-right: -11.78333333%;
+  }
+
+  .block-infoSlider__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
   }
 
-  .block-infoSlider__info-item .page__text {
+  .block-infoSlider__item .page__text {
     width: 96.9%;
+  }
+
+  .block-infoSlider__info {
+    padding-left: 3.21666667%;
   }
 
   .block-infoSlider__info .page__btn {
@@ -3445,22 +3493,6 @@ details[open] summary::after {
 
   .battle-of-corporations .banner-block__img {
     margin-left: 4.88333333%;
-  }
-
-  .battle-of-corporations .conditions .block-infoSlider__slider {
-    width: 60.23333333%;
-  }
-
-  .battle-of-corporations .conditions .block-infoSlider__slider {
-    margin-right: -11.78333333%;
-  }
-
-  .battle-of-corporations .conditions .block-infoSlider__info {
-    width: 60.23333333%;
-  }
-
-  .battle-of-corporations .conditions .block-infoSlider__info {
-    margin-left: -11.78333333%;
   }
 
   .battle-of-corporations .present-block__img {
@@ -3640,6 +3672,57 @@ details[open] summary::after {
     width: 96.9%;
   }
 
+  .block-infoSlider__left {
+    width: 96.9%;
+  }
+
+  .block-infoSlider__left {
+    margin-left: 1.55%;
+  }
+
+  .block-infoSlider__rigth {
+    width: 96.9%;
+  }
+
+  .block-infoSlider__rigth {
+    margin-right: -5.11666667%;
+  }
+
+  .block-infoSlider__item {
+    text-align: center;
+  }
+
+  .block-infoSlider__info {
+    margin-top: 0;
+    -webkit-box-ordinal-group: 2;
+            order: 1;
+    padding: 5%;
+  }
+
+  .block-infoSlider__info .page__btn {
+    width: 96.9%;
+  }
+
+  .block-infoSlider__slider .tns-controls {
+    display: none;
+  }
+
+  .info-page .page-block .page__title-h1 {
+    width: 96.9%;
+  }
+
+  .info-page .page-block__description {
+    width: 96.9%;
+  }
+
+  .info-page .page-block .block-infoSlider__slider .tns-controls {
+    display: none;
+  }
+
+  .info-page .page-block .block-infoSlider__info {
+    margin-top: 0;
+  }
+
   .games-format-item-details .page__details .page__lists {
     padding: 36px 10px;
   }
@@ -3647,14 +3730,6 @@ details[open] summary::after {
   .games-format-item-details .page__details .page__lists .page__text,
   .games-format-item-details .page__details .page__lists .page__list {
     width: 96.9%;
-  }
-
-  .battle-of-corporations .conditions .block-infoSlider__slider {
-    width: 53.56666667%;
-  }
-
-  .battle-of-corporations .conditions .block-infoSlider__slider {
-    margin-right: -5.11666667%;
   }
 }
 
@@ -3685,6 +3760,10 @@ details[open] summary::after {
   .page__number {
     font-size: 68px;
     line-height: 68px;
+  }
+
+  .page__on-main {
+    padding-bottom: 10%;
   }
 
   .bg-grid__line {
@@ -4192,24 +4271,48 @@ details[open] summary::after {
     font-size: 23px;
   }
 
-  .block-infoSlider__info {
-    padding-left: 1.55%;
+  .block-infoSlider {
+    margin: 0 -30px;
   }
 
-  .block-infoSlider__info-item {
+  .block-infoSlider__rigth {
     width: 96.9%;
   }
 
-  .block-infoSlider__info-item {
-    text-align: center;
+  .block-infoSlider__rigth {
+    margin-right: 1.55%;
   }
 
-  .block-infoSlider__info .page__btn {
+  .block-infoSlider__item {
     width: 96.9%;
+  }
+
+  .block-infoSlider__info::before {
+    display: none;
+  }
+
+  .block-infoSlider__slider {
+    -webkit-box-ordinal-group: 1;
+            order: 0;
   }
 
   .block-infoSlider__slider .slider-thumbnails {
-    top: -30px;
+    left: 33%;
+    bottom: 10%;
+  }
+
+  .sample-page .page__title-h1 {
+    font-size: 9vw;
+    line-height: 120%;
+  }
+
+  .sample-page .page__title-h1 span {
+    font-size: 9vw;
+    line-height: 120%;
+  }
+
+  .info-page .page-block .block-infoSlider__left {
+    padding: 0;
   }
 
   .games-format-item-img {
@@ -4339,40 +4442,9 @@ details[open] summary::after {
     margin-left: 1.55%;
   }
 
-  .battle-of-corporations .conditions .wrapper {
-    padding: 0;
-  }
-
   .battle-of-corporations .conditions .page__title-h3 {
     text-align: center;
     font-size: 8vw;
-  }
-
-  .battle-of-corporations .conditions .block-infoSlider__slider {
-    width: 96.9%;
-  }
-
-  .battle-of-corporations .conditions .block-infoSlider__slider {
-    margin-right: 1.55%;
-  }
-
-  .battle-of-corporations .conditions .block-infoSlider__slider {
-    -webkit-box-ordinal-group: 1;
-            order: 0;
-  }
-
-  .battle-of-corporations .conditions .block-infoSlider__info {
-    width: 96.9%;
-  }
-
-  .battle-of-corporations .conditions .block-infoSlider__info {
-    margin-left: 1.55%;
-  }
-
-  .battle-of-corporations .conditions .block-infoSlider__info {
-    -webkit-box-ordinal-group: 2;
-            order: 1;
-    padding: 8% 5%;
   }
 
   .battle-of-corporations .present {
@@ -4389,6 +4461,16 @@ details[open] summary::after {
 
   .battle-of-corporations .present-block__content .page__title-h3::before {
     display: none;
+  }
+
+  .games-of-corparations .page-block .block-infoSlider__info .page__title-h3,
+  .games-of-corparations .page-block .block-infoSlider__info .page__text,
+  .games-of-corparations .page-block .block-infoSlider__info .page__btn {
+    margin-left: 6.55%;
+  }
+
+  .games-of-corparations .page-block .block-infoSlider__info .page__text {
+    width: 96.9%;
   }
 }
 

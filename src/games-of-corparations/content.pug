@@ -1,0 +1,43 @@
+.wrapper
+        include ../blocks/shared/on-main
+        .page-block
+            h1.page__title-h1.page__title-h1_text-shadow_gray
+                span Корпоративные <br>  
+                span Игры
+            .page-block__description
+                p.page__text Досуг успешных людей должен быть достойным, особенно, если это корпоративный досуг. Задавая планку времяпрепровождению своих сотрудников или клиентов, вы задаете планку развитию бизнеса, становления коллектива и партнёрских отношений.
+                p.page__text.page__text_bottom Уникальный сценарий, полный азарта, эмоций и здоровой конкуренции, поможет наладить контакт между гостями вечера и надолго запомнится всем собравшимся. Игры могут быть разной механики, адаптированы под любое количество гостей и тематику мероприятия, а сама концепция вечера выстроена под любые задачи.
+        .page-block
+            .block-infoSlider
+                .block-infoSlider__slider.block-infoSlider__left
+                    .btn-play.page_hidden
+                    #sliderInfoSlider
+                        .page__img
+                            img(src="assets/img/img-about-page.png", alt="")
+                        .page__img
+                            img(src="assets/img/img-about-page.png", alt="")
+                        .page__img
+                            img(src="assets/img/img-about-page.png", alt="")
+                        .page__img
+                            img(src="assets/img/img-about-page.png", alt="")
+                    #customizeThumbnailsInfoSlider.slider-thumbnails
+                        .page__img_small
+                        .page__img_small
+                        .page__img_small
+                        .page__img_small
+                .block-infoSlider__info.block-infoSlider__rigth
+                    h3.page__title-h3 В прямом эфире
+                    p.page__text В сложившейся ситуации в мире, мы с удовольствием организуем онлайн игру, в не менее увлекательном формате.
+                    button.page__btn Принять участие 
+                    
+                
+                
+           
+        include ../blocks/mixins/mixin-blockquote
+        +blockquote('Тим-билдинги, клиентские мероприятия в нестандартном формате.')
+
+include ../blocks/mixins/mixin-next-section
++nextSection('Следующий раздел', 'Битва корпораций', '../')
+
+                
+
