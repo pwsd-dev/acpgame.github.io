@@ -1,3 +1,35 @@
 .contacts {
-    
+    &-block {
+        //.row-flex();
+        //flex-wrap: nowrap;
+        .page__title-h1_text-shadow_gray {
+            margin-bottom: 50px;
+        }
+
+        &-container {
+            .row-flex();
+            margin-bottom: 20px;
+            border: 1px solid #fafafa;
+            flex-wrap: nowrap;
+            &-item {
+                margin-right: 20px;
+
+                &__description {
+                    &_city, &_name, &_e-mail, &_phone-dom, &_phone-mob {
+                        .size(1);
+                        padding: 30px 0px 30px;
+                        background-color: @color_white;
+                        
+                        .page__text {
+                            //margin-right: 20px;
+                            //.shift-right(1);
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+        
+    }
 }
