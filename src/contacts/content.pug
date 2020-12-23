@@ -1,3 +1,16 @@
+mixin item(city, name, eMail, tel1, tel2 )
+    .contacts-block-container-item
+        .contacts-block-container-item__description_city
+            p.page__text= city 
+        .contacts-block-container-item__description_name
+            p.page__text= name
+        .contacts-block-container-item__description_e-mail
+            p.page__text= eMail
+        .contacts-block-container-item__description_phone-dom
+            p.page__text= tel1
+        .contacts-block-container-item__description_phone-mob
+            p.page__text= tel2
+
 section.contacts
     .wrapper
         include ../blocks/shared/on-main
@@ -6,15 +19,12 @@ section.contacts
                 span наши <br>
                 span контакты
             .contacts-block-container
-                .contacts-block-container-item__description_city
-                    p.page__text Москва
-                .contacts-block-container-item__description_name
-                    p.page__text Мария Жачева
-                .contacts-block-container-item__description_e-mail
-                    p.page__text ak@acpaige.ru 
-                .contacts-block-container-item__description_phone-dom
-                    p.page__text 8 (495) 941-83-25
-                .contacts-block-container-item__description_phone-mob
-                    p.page__text +7 (985) 774-32-40
-            
+                +item('Москва','Мария Жачева')
+                +item()
+                +item()
+                +item()
+                +item()
+                
+                    
+                
             

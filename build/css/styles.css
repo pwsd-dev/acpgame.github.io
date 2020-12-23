@@ -2278,10 +2278,15 @@ details[open] summary::after {
   margin-right: 0px;
   margin-bottom: 20px;
   border: 1px solid #fafafa;
-  flex-wrap: nowrap;
 }
 
 .contacts-block-container-item {
+  width: calc(100% - 0px);
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-right: 20px;
 }
 
