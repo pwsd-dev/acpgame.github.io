@@ -5,6 +5,8 @@
         
        
         .shift-padding-left(.5);
+        .shift-smm-padding-left(.1);
+        .shift-xs-padding-left(0);
         position: relative;
         margin-top: 6%;
         padding-top: 8%;
@@ -15,13 +17,21 @@
         align-self: flex-start;
         &-item{
             .size(2.6);
+            .size-xs(6);
             display: flex;
             align-items: center;
+            .smm-block({
+                flex-direction: column;
+            });
+            .xs-block({
+                text-align: center;
+            });
             .page__number{
                 margin-right: 6%;
             }
             .page__text{
                 .size(3);
+                .size-smm(6);
                 margin-bottom: 5%;
                 align-self: flex-end;
             }
@@ -39,7 +49,10 @@
         }
         .page__btn{
             .size(2.7);
+            .size-smm(4);
+            .size-xs(6);
             .shift-left(2);
+            .shift-smm-left(0);
             margin-top: 13%;
         }
     }
@@ -51,6 +64,11 @@
             justify-content: center;
             position: relative;
             top: -112px;
+      
+                .xs-block({
+                    top: -30px;
+                });
+        
         }
         .page__img_small{
             width: 10px;

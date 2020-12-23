@@ -2880,6 +2880,46 @@ details[open] summary::after {
   .games-format-item-details {
     width: calc(100% - 0px);
   }
+
+  .battle-of-corporations .banner .page__title-h1 {
+    font-size: 75px;
+  }
+
+  .battle-of-corporations .banner-block__content {
+    width: calc(66.66666666666667% - 0px);
+  }
+
+  .battle-of-corporations .banner-block__content-imgText .page__text_arrow::after {
+    bottom: -100px;
+  }
+
+  .battle-of-corporations .banner-block__img {
+    width: calc(50% - 0px);
+  }
+
+  .battle-of-corporations .content .page__title-h3 {
+    width: calc(50% - 0px);
+  }
+
+  .battle-of-corporations .conditions .block-infoSlider__slider {
+    width: calc(56.66666666666667% - 0px);
+  }
+
+  .battle-of-corporations .conditions .block-infoSlider__slider {
+    margin-right: calc(-6.666666666666668% + 0px);
+  }
+
+  .battle-of-corporations .conditions .block-infoSlider__info {
+    width: calc(56.66666666666667% - 0px);
+  }
+
+  .battle-of-corporations .conditions .block-infoSlider__info {
+    margin-left: calc(-6.666666666666668% + 0px);
+  }
+
+  .battle-of-corporations .present-block__content .page__text {
+    width: calc(66.66666666666667% - 0px);
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -3062,6 +3102,14 @@ details[open] summary::after {
 
   .modal-menu .modal__content-nav {
     padding: 56px 50px;
+  }
+
+  .battle-of-corporations .content-items .content-item:nth-of-type(odd) .content-item__img {
+    margin-left: calc(0% + 0px);
+  }
+
+  .battle-of-corporations .content-items .content-item__text {
+    margin-left: calc(16.666666666666668% + 0px);
   }
 }
 
@@ -3309,6 +3357,28 @@ details[open] summary::after {
     width: calc(100% - 0px);
   }
 
+  .block-infoSlider__info {
+    padding-left: calc(1.666666666666667% + 0px);
+  }
+
+  .block-infoSlider__info-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+
+  .block-infoSlider__info-item .page__text {
+    width: calc(100% - 0px);
+  }
+
+  .block-infoSlider__info .page__btn {
+    width: calc(66.66666666666667% - 0px);
+  }
+
+  .block-infoSlider__info .page__btn {
+    margin-left: calc(0% + 0px);
+  }
+
   .games-format-item {
     margin: 60px 0 50px;
   }
@@ -3330,8 +3400,73 @@ details[open] summary::after {
     margin: 16px 0;
   }
 
+  .battle-of-corporations .banner .page__title-h1 {
+    font-size: 5vw;
+    line-height: 100%;
+  }
+
+  .battle-of-corporations .banner-block__content {
+    width: calc(50% - 0px);
+  }
+
   .battle-of-corporations .banner-block__content-imgText .page__text_arrow::after {
     display: none;
+  }
+
+  .battle-of-corporations .banner-block__img {
+    margin-left: calc(3.333333333333334% + 0px);
+  }
+
+  .battle-of-corporations .conditions .block-infoSlider__slider {
+    width: calc(63.333333333333336% - 0px);
+  }
+
+  .battle-of-corporations .conditions .block-infoSlider__slider {
+    margin-right: calc(-13.333333333333336% + 0px);
+  }
+
+  .battle-of-corporations .conditions .block-infoSlider__info {
+    width: calc(63.333333333333336% - 0px);
+  }
+
+  .battle-of-corporations .conditions .block-infoSlider__info {
+    margin-left: calc(-13.333333333333336% + 0px);
+  }
+
+  .battle-of-corporations .present-block__img {
+    width: calc(100% - 0px);
+  }
+
+  .battle-of-corporations .present-block__img {
+    margin-left: calc(0% + 0px);
+  }
+
+  .battle-of-corporations .present-block__img {
+    margin: 0;
+    -webkit-box-ordinal-group: 2;
+            order: 1;
+  }
+
+  .battle-of-corporations .present-block__img img {
+    margin: 0 auto;
+  }
+
+  .battle-of-corporations .present-block__content {
+    margin-left: calc(0% + 0px);
+  }
+
+  .battle-of-corporations .present-block__content {
+    width: calc(100% - 0px);
+  }
+
+  .battle-of-corporations .present-block__content {
+    -webkit-box-ordinal-group: 1;
+            order: 0;
+    text-align: center;
+  }
+
+  .battle-of-corporations .present-block__content .page__text {
+    width: calc(100% - 0px);
   }
 }
 
@@ -3482,6 +3617,14 @@ details[open] summary::after {
   .games-format-item-details .page__details .page__lists .page__text,
   .games-format-item-details .page__details .page__lists .page__list {
     width: calc(100% - 0px);
+  }
+
+  .battle-of-corporations .conditions .block-infoSlider__slider {
+    width: calc(56.66666666666667% - 0px);
+  }
+
+  .battle-of-corporations .conditions .block-infoSlider__slider {
+    margin-right: calc(-6.666666666666668% + 0px);
   }
 }
 
@@ -3922,6 +4065,10 @@ details[open] summary::after {
   }
 
   .footer-block__img {
+    width: calc(100% - 0px);
+  }
+
+  .footer-block__img {
     -webkit-box-ordinal-group: 1;
             order: 0;
   }
@@ -4015,6 +4162,26 @@ details[open] summary::after {
     font-size: 23px;
   }
 
+  .block-infoSlider__info {
+    padding-left: calc(0% + 0px);
+  }
+
+  .block-infoSlider__info-item {
+    width: calc(100% - 0px);
+  }
+
+  .block-infoSlider__info-item {
+    text-align: center;
+  }
+
+  .block-infoSlider__info .page__btn {
+    width: calc(100% - 0px);
+  }
+
+  .block-infoSlider__slider .slider-thumbnails {
+    top: -30px;
+  }
+
   .games-format-item-img {
     width: calc(100% - 0px);
   }
@@ -4036,8 +4203,162 @@ details[open] summary::after {
     width: calc(100% - 0px);
   }
 
+  .battle-of-corporations {
+    padding-bottom: 0;
+  }
+
+  .battle-of-corporations .banner-block__content {
+    width: calc(100% - 0px);
+  }
+
+  .battle-of-corporations .banner-block__content-imgText {
+    flex-wrap: wrap;
+  }
+
+  .battle-of-corporations .banner-block__content-imgText .page__img {
+    width: calc(100% - 0px);
+  }
+
+  .battle-of-corporations .banner-block__content-imgText .page__text {
+    width: calc(100% - 0px);
+  }
+
+  .battle-of-corporations .banner-block__content-imgText .page__text {
+    text-align: center;
+  }
+
   .battle-of-corporations .banner-block__content-imgText .page__text {
     line-height: 20px;
+  }
+
+  .battle-of-corporations .banner-block__img {
+    width: calc(100% - 0px);
+  }
+
+  .battle-of-corporations .banner-block__img {
+    margin-left: calc(0% + 0px);
+  }
+
+  .battle-of-corporations .banner-block__img .page__title-h4 {
+    margin-left: calc(0% + 0px);
+  }
+
+  .battle-of-corporations .banner-block__img .page__text {
+    width: calc(100% - 0px);
+  }
+
+  .battle-of-corporations .banner-block__img .page__text {
+    margin-left: calc(0% + 0px);
+  }
+
+  .battle-of-corporations .content .page__title-h3 {
+    width: calc(100% - 0px);
+  }
+
+  .battle-of-corporations .content .page__title-h3 {
+    padding-top: 36%;
+    font-size: 9vw;
+    line-height: 122%;
+  }
+
+  .battle-of-corporations .content-items .content-item {
+    width: calc(100% - 0px);
+  }
+
+  .battle-of-corporations .content-items .content-item {
+    margin: 10% 0;
+  }
+
+  .battle-of-corporations .content-items .content-item:nth-of-type(1) .page__img::after {
+    display: none;
+  }
+
+  .battle-of-corporations .content-items .content-item:nth-of-type(2) {
+    margin-top: 0;
+  }
+
+  .battle-of-corporations .content-items .content-item:nth-of-type(2) .page__img::after {
+    display: none;
+  }
+
+  .battle-of-corporations .content-items .content-item:nth-of-type(3) {
+    margin-top: 0;
+  }
+
+  .battle-of-corporations .content-items .content-item:nth-of-type(3) .content-item__img .page__img::after {
+    display: none;
+  }
+
+  .battle-of-corporations .content-items .content-item:nth-of-type(4) {
+    margin-top: 0;
+  }
+
+  .battle-of-corporations .content-items .content-item__img {
+    width: calc(100% - 0px);
+  }
+
+  .battle-of-corporations .content-items .content-item__img {
+    margin-left: calc(0% + 0px);
+  }
+
+  .battle-of-corporations .content-items .content-item__text {
+    width: calc(100% - 0px);
+  }
+
+  .battle-of-corporations .content-items .content-item__text {
+    margin-left: calc(0% + 0px);
+  }
+
+  .battle-of-corporations .conditions .wrapper {
+    padding: 0;
+  }
+
+  .battle-of-corporations .conditions .page__title-h3 {
+    text-align: center;
+    font-size: 8vw;
+  }
+
+  .battle-of-corporations .conditions .block-infoSlider__slider {
+    width: calc(100% - 0px);
+  }
+
+  .battle-of-corporations .conditions .block-infoSlider__slider {
+    margin-right: calc(0% + 0px);
+  }
+
+  .battle-of-corporations .conditions .block-infoSlider__slider {
+    -webkit-box-ordinal-group: 1;
+            order: 0;
+  }
+
+  .battle-of-corporations .conditions .block-infoSlider__info {
+    width: calc(100% - 0px);
+  }
+
+  .battle-of-corporations .conditions .block-infoSlider__info {
+    margin-left: calc(0% + 0px);
+  }
+
+  .battle-of-corporations .conditions .block-infoSlider__info {
+    -webkit-box-ordinal-group: 2;
+            order: 1;
+    padding: 8% 5%;
+  }
+
+  .battle-of-corporations .present {
+    padding: 0;
+  }
+
+  .battle-of-corporations .present .wrapper {
+    padding: 0;
+  }
+
+  .battle-of-corporations .present-block {
+    margin: 0px;
+  }
+
+  .battle-of-corporations .present-block__content .page__title-h3::before {
+    display: none;
   }
 }
 
@@ -4056,6 +4377,10 @@ details[open] summary::after {
 
   .page__text {
     font-size: 1em;
+  }
+
+  .footer-block__col {
+    width: calc(100% - 0px);
   }
 
   .modal-menu .modal__content-nav .page__img {
