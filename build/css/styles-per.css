@@ -656,7 +656,7 @@ details[open] summary::after {
 
 .page__icon_facebook {
   background-image: url(../assets/icons/sprite.png);
-  background-position: -63px 0px;
+  background-position: 0px -47px;
   width: 41px;
   height: 41px;
 }
@@ -670,7 +670,7 @@ details[open] summary::after {
 
 .page__icon_instagram {
   background-image: url(../assets/icons/sprite.png);
-  background-position: 0px -47px;
+  background-position: -63px 0px;
   width: 41px;
   height: 41px;
 }
