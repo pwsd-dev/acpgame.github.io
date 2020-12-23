@@ -1,14 +1,29 @@
-section.team
-    .wrapper
-       include ../blocks/shared/on-main
-       .team-block
+mixin item(img,title,position)
+    .team-block__item
+                    .page__img
+                        img(src=img)
+                    .team-block__item-name
+                        h5.page__title-h5=title
+                        .page__text.position=position
+                    .team-block__item_bg.open-modal(data-modal="modal-team")
+.wrapper
+    include ../blocks/shared/on-main
+    .team-block
             h1.page__title-h1.page__title-h1_text-shadow_gray
-                span немного <br>
-                span О команде
+                span наша <br>
+                span Команда
             .team-block__description
                 p.page__text Вся команда ACP GAME ежедневно проводит масштабную работу для того, чтобы собрать единомышленников и увлечь качественным досугом с уникальным сценарием.
-            .page__img
-                img(src="assets/img/img-team.png")
+            .team-block-items
+                +item("assets/img/img-team-1.png","Юлиана константинова","Управляющий партнер")
+                +item("assets/img/img-team-2.png","МАРИЯ ЖАЧЕВА","Руководитель проекта ACP GAME")
+                +item("assets/img/img-team-3.png","ВИКА ЛЕБЕНСОН","PR-Директор")
+                +item("assets/img/img-team-4.png","ТАТЬЯНА БУДАЕВА","Партнер ACP GAME Казахстан")
+                +item("assets/img/img-team-2.png","ЗУЛЬФИЯ ХАЙБУЛЛИНА","Партнер ACP GAME Узбекистан")
+                +item("assets/img/img-team-6.png","НАНА МАРТИРОСЯН","Партнер ACP GAME Армения")
+                +item("assets/img/img-team-7.png","ЕКАТЕРИНА ЛОГИНОВА","Партнер ACP GAME г. Екатеринбург")
+                +item("assets/img/img-team-8.png","ОЛЬГА КУЗНЕЦОВА","Партнер ACP GAME г. Астана")
+                
 
 include ../blocks/mixins/mixin-blockquote
 +blockquote('Тим-билдинги, клиентские мероприятия в нестандартном формате.')

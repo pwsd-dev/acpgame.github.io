@@ -1,10 +1,14 @@
 .modal-menu{
+   
     color: @color_white;
     background-color: @color_dark;
+    .xxs-block({
+        overflow: scroll;
+    });
     .modal-container{
         height: 100%;
-        
     }
+
     .modal__content{
         height: 100%;
         .row-flex();
@@ -114,13 +118,10 @@
     }
     .modal__action{
         .page__btn_close{
-            padding: 0px 25px;
-            height: auto;
-            min-height: 45px;
+           
             &::before,
             &::after{
-                width: 32px;
-                height: 1.5px;
+               
                 background: @color_dark;      
                 .xs(background, @color_white);    
             }

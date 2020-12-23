@@ -484,6 +484,12 @@ details[open] summary::after {
   line-height: 35px;
 }
 
+.page__title-h5 {
+  font-family: "Noah-Bold";
+  font-size: 18px;
+  line-height: 174.33%;
+}
+
 .page__subtitle {
   font-size: 23px;
   line-height: 25.58px;
@@ -1825,6 +1831,11 @@ details[open] summary::after {
 
 .modal__action .page__btn_close {
   border: none;
+  padding: 0px 25px;
+  margin: 25px;
+  height: auto;
+  min-height: 45px;
+  border-radius: 100%;
 }
 
 .modal__action .page__btn_close::before,
@@ -1832,10 +1843,10 @@ details[open] summary::after {
   content: "";
   position: absolute;
   display: inline-block;
-  width: 18px;
-  height: 2px;
-  top: 20px;
-  right: 10px;
+  width: 32px;
+  height: 1.5px;
+  top: 22px;
+  right: 9.5px;
   background: #000000;
 }
 
@@ -2041,17 +2052,52 @@ details[open] summary::after {
   bottom: -50px;
 }
 
-.modal-menu .modal__action .page__btn_close {
-  padding: 0px 25px;
-  height: auto;
-  min-height: 45px;
-}
-
 .modal-menu .modal__action .page__btn_close::before,
 .modal-menu .modal__action .page__btn_close::after {
-  width: 32px;
-  height: 1.5px;
   background: #1c1c1c;
+}
+
+.modal-team {
+  background-color: #000000;
+}
+
+.modal-team .modal__action .page__btn::before,
+.modal-team .modal__action .page__btn::after {
+  background-color: #ffed5c;
+}
+
+.modal-team .modal__content {
+  flex-wrap: wrap;
+  height: 100vh;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  padding: 10% 0;
+}
+
+.modal-team .modal__content-img {
+  margin-left: -6%;
+}
+
+.modal-team .modal__content-img .page__img {
+  height: 204px;
+  width: 204px;
+}
+
+.modal-team .modal__content-text {
+  width: calc(33.333333333333336% - 0px);
+  margin-left: 3%;
+}
+
+.modal-team .modal__content-text .page__title-h2,
+.modal-team .modal__content-text .page__text {
+  margin-bottom: 6%;
+}
+
+.modal-team .modal__content-text .page__text {
+  font-size: 1.2vw;
+  line-height: 150%;
 }
 
 .social {
@@ -2507,26 +2553,97 @@ details[open] summary::after {
   padding: 6% 0 23%;
 }
 
-.team .on-main {
-  color: #000000;
-  position: relative;
-  padding: 20px 0 20px;
+.team-block__description {
+  margin-left: calc(16.666666666666668% + 0px);
+  padding: 6% 0 6%;
 }
 
 .team-block__description .page__text {
-  padding: 60px 0 150px;
   width: calc(66.66666666666667% - 0px);
-  margin-left: calc(16.666666666666668% + 0px);
+  font-family: "Noah-Bold";
   color: #000000;
+  line-height: 31.38px;
 }
 
-.team-block-events .page__title-h2 {
-  width: calc(33.333333333333336% - 0px);
-  margin-left: calc(33.333333333333336% + 0px);
-  text-align: center;
-  color: #000000;
-  margin-top: 220px;
-  margin-bottom: 180px;
+.team-block-items {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 8%;
+}
+
+.team-block__item {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  max-height: 360px;
+  max-width: 360px;
+  width: calc(28.333333333333336% - 0px);
+}
+
+.team-block__item:nth-of-type(4n+1) {
+  margin-left: calc(-7.500000000000001% + 0px);
+}
+
+.team-block__item:nth-of-type(4n+4) {
+  margin-right: calc(-7.500000000000001% + 0px);
+}
+
+.team-block__item:hover .page__img img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.team-block__item:hover .team-block__item-name {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.team-block__item .page__img {
+  display: -webkit-box;
+  display: flex;
+}
+
+.team-block__item .page__img img {
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team-block__item-name {
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  padding: 20px 16px 16px;
+  box-sizing: border-box;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.team-block__item-name .page__title-h5,
+.team-block__item-name .page__text {
+  color: #ffffff;
+}
+
+.team-block__item-name .page__title-h5 {
+  text-transform: uppercase;
+}
+
+.team-block__item-name .page__text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.team-block__item_bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .games-format-item {
@@ -2938,6 +3055,18 @@ details[open] summary::after {
     bottom: 25%;
   }
 
+  .team-block__item {
+    width: calc(30.000000000000004% - 0px);
+  }
+
+  .team-block__item:nth-of-type(4n+1) {
+    margin-left: calc(-10% + 0px);
+  }
+
+  .team-block__item:nth-of-type(4n+4) {
+    margin-right: calc(-10% + 0px);
+  }
+
   .games-format-item:nth-of-type(odd) .games-format-item-img {
     margin-right: calc(0% + 0px);
   }
@@ -3159,6 +3288,40 @@ details[open] summary::after {
 
   .modal-menu .modal__content-nav {
     padding: 56px 50px;
+  }
+
+  .modal-team .modal__content {
+    -webkit-box-pack: start;
+            justify-content: flex-start;
+    padding: 10%;
+  }
+
+  .modal-team .modal__content-img {
+    width: calc(100% - 0px);
+  }
+
+  .modal-team .modal__content-img {
+    align-self: flex-end;
+    margin: 0 0 6%;
+  }
+
+  .modal-team .modal__content-text {
+    width: calc(100% - 0px);
+  }
+
+  .modal-team .modal__content-text {
+    align-self: flex-start;
+    margin: 0;
+  }
+
+  .modal-team .modal__content-text .page__title-h2,
+  .modal-team .modal__content-text .page__text {
+    margin-bottom: 4%;
+  }
+
+  .modal-team .modal__content-text .page__text {
+    font-size: 3vw;
+    line-height: 150%;
   }
 
   .info-page .page-block__description .page__text_bottom {
@@ -3462,6 +3625,23 @@ details[open] summary::after {
     margin-left: calc(0% + 0px);
   }
 
+  .team-block-items {
+    -webkit-box-pack: center;
+            justify-content: center;
+  }
+
+  .team-block__item {
+    width: calc(50% - 0px);
+  }
+
+  .team-block__item:nth-of-type(4n+1) {
+    margin-left: calc(0% + 0px);
+  }
+
+  .team-block__item:nth-of-type(4n+4) {
+    margin-right: calc(0% + 0px);
+  }
+
   .games-format-item {
     margin: 60px 0 50px;
   }
@@ -3728,6 +3908,14 @@ details[open] summary::after {
     margin-top: 0;
   }
 
+  .team-block__description {
+    margin-left: calc(0% + 0px);
+  }
+
+  .team-block__description .page__text {
+    width: calc(100% - 0px);
+  }
+
   .games-format-item-details .page__details .page__lists {
     padding: 36px 10px;
   }
@@ -3760,6 +3948,10 @@ details[open] summary::after {
 
   .page__title-h3 {
     font-size: 2.2em;
+  }
+
+  .page__title-h5 {
+    font-size: 3vw;
   }
 
   .page__number {
@@ -4258,6 +4450,11 @@ details[open] summary::after {
     background: #ffffff;
   }
 
+  .modal-team .modal__content-text .page__text {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
   .page__img_small {
     width: 10px;
     height: 10px;
@@ -4318,6 +4515,11 @@ details[open] summary::after {
 
   .info-page .page-block .block-infoSlider__left {
     padding: 0;
+  }
+
+  .team-block__item-name .page__text {
+    font-size: 12px;
+    line-height: 18px;
   }
 
   .games-format-item-img {
@@ -4500,11 +4702,19 @@ details[open] summary::after {
     width: calc(100% - 0px);
   }
 
+  .modal-menu {
+    overflow: scroll;
+  }
+
   .modal-menu .modal__content-nav .page__img {
     width: 10%;
   }
 
   .modal-menu .modal__content-nav .page__nav .page__lists {
     display: none;
+  }
+
+  .modal-team {
+    overflow: scroll;
   }
 }

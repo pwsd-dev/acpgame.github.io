@@ -1,0 +1,70 @@
+.modal-team{
+    background-color: @color_black;
+    .xxs-block({
+        overflow: scroll;
+    });
+    .modal__action{
+        .page__btn{
+            &::before, 
+            &::after{
+                background-color: @color_yellow;
+            }
+        }
+       
+    }
+    .modal__content{
+        flex-wrap: wrap;
+        height: 100vh;
+        
+        justify-content: center;
+        align-items: flex-start;
+        padding: 10% 0;
+        .md-block({
+            justify-content: flex-start;
+            padding: 10%;
+
+        });
+     
+        &-img{
+            margin-left: -6%;
+            .size-md(6);
+            .md-block({
+                align-self: flex-end;
+                margin: 0 0 6%;
+            });
+            .page__img{
+                height: 204px;
+                width: 204px;
+            }
+            
+        }
+        &-text{
+            .size(2);
+            .size-md(6);
+            .md-block({
+                align-self: flex-start;
+                margin: 0;
+            });
+            margin-left: 3%;
+            .page__title-h2,
+            .page__text{
+                margin-bottom: 6%;
+                .md-block({
+                    margin-bottom: 4%;
+                });
+            }
+            .page__text{
+                font-size: 1.2vw;
+                line-height: 150%;
+                .md-block({
+                    font-size: 3vw;
+                    line-height: 150%;
+                });
+                .xs-block({
+                    font-size: 16px;
+                    line-height: 150%;
+                });
+            }
+        }
+    }
+}
