@@ -131,3 +131,96 @@ if(document.getElementById('sliderInfoSlider')){
     });
   }
   
+
+function addCurrentIndexOfSlider(sliderName, slider) {
+    let elementNavNumberActive = document.querySelector(`${sliderName} .page-nav__number.active`);
+    let elementNavNumbers = document.querySelectorAll(`${sliderName} .page-nav__number`);
+    elementNavNumberActive.innerHTML = '0' + slider.getInfo().displayIndex;
+    elementNavNumbers[1].innerHTML = '0' + slider.getInfo().slideCount;
+    let rationMenuBtns = document.querySelectorAll(`${sliderName} .page__btn_prev,${sliderName} .page__btn_next`);
+    rationMenuBtns.forEach((e) => {
+        e.onclick = function () {
+            elementNavNumberActive.innerHTML = '0' + slider.getInfo().displayIndex;
+        };
+    });
+}
+
+if(document.getElementById('sliderGallery')){
+    var sliderEmotions = tns({
+      container: "#sliderGallery",
+      // mode: "gallery",
+      items: 3,
+      // loop: true,
+      autoplay: false,
+      autoplayResetOnVisibility: false,
+      controls: true,
+      controlsPosition:"bottom",
+      prevButton: '.gallery-page .page__btn_prev',
+      nextButton: '.gallery-page .page__btn_next',
+      controlsText:[
+        "",
+        ""
+      ],
+      autoplayButton:false,
+      autoplayTimeout: 1800,
+      swipeAngle: true,
+      lazyload: false,
+      speed: 800,
+      
+    });
+    addCurrentIndexOfSlider('.gallery-page', sliderEmotions)
+  }
+if(document.getElementById('sliderSmi')){
+    var sliderEmotions = tns({
+      container: "#sliderSmi",
+      // mode: "gallery",
+      items: 1,
+      // loop: true,
+      autoplay: false,
+      autoplayResetOnVisibility: false,
+      controls: true,
+      controlsPosition:"bottom",
+      prevButton: '.smi .page__btn_prev',
+      nextButton: '.smi .page__btn_next',
+      controlsText:[
+        "",
+        ""
+      ],
+      autoplayButton:false,
+      autoplayTimeout: 1800,
+      swipeAngle: true,
+      lazyload: false,
+      speed: 800,
+      
+    });
+    addCurrentIndexOfSlider('.smi', sliderEmotions)
+  }
+ 
+if(document.getElementById('sliderVideo')){
+    var sliderEmotions = tns({
+      container: "#sliderVideo",
+      // mode: "gallery",
+      items: 1,
+      // loop: true,
+      autoplay: false,
+      autoplayResetOnVisibility: false,
+      controls: true,
+      controlsPosition:"bottom",
+      prevButton: '.video-page .page__btn_prev',
+      nextButton: '.video-page .page__btn_next',
+      controlsText:[
+        "",
+        ""
+      ],
+      autoplayButton:false,
+      autoplayTimeout: 1800,
+      swipeAngle: true,
+      lazyload: false,
+      speed: 800,
+      
+    });
+    addCurrentIndexOfSlider('.video-page', sliderEmotions)
+  }
+ 
+
+

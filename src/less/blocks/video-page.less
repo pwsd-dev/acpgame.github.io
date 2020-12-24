@@ -1,69 +1,66 @@
 .video-page {
     background-color: @color_black;
     //padding-bottom: 250px;
-    &-block {
-        //.row-flex();
-        padding-bottom: 100px;
-        .page__title-h1 {
-            color: @color_white;
-            margin-bottom: 50px;
-        }
-
+    .page__title-h1{
+        margin-bottom: 34px;
+        &_text-shadow_gray{
         
-
-        &__tabs {
-            .row-flex();
-        }
-
-       
-        &__item {
-            .size(3);
-            .row-flex();
-            display: flex;
-        }
-
-        &-wrapper {
-            .row-flex();
-            
-            &__tabs {
-                .row-flex();
-                .size(5);
-                flex-wrap: nowrap;
-                margin-bottom: 40px;
-                .page__btn_yellow {
-                    margin-right: 43px;
-                    //flex-wrap: nowrap;
-                    .size(6);
+            span{
+                &:nth-of-type(2){
+                    color:@color_yellow;
                     
-                    font-size: 16px;
                 }
-        
             }
+        }
+    }
+    .page-nav{
+        .row-flex();
+        margin-bottom: 70px;
+        .page-btn{
+            .size(1);
+            .size-md(1.5);
+            .size-smm(3);
+            .size-sm(2.5);
+            .size-xs(3);
+            .smm-block({
+                margin: 20px 0 20px;
+            });
+            .page__btn_gray-yellow{
+            .mmd-block({
+                
+                padding: 12px 14px;
+            });
+           }
+        }
+        .page__btn{
+            .shift-right(.5);
 
-            &__item {
-                .col();
-                .size(2.9);
-                .shift-right(0.1);
-                
-                
-            }
-            &__next-page {
-                color: @color_white;
-            
-                .sprite(@icon-arrow-outline);
-                position: relative;
-                left: 94%;
-                top: 50px;
-                //padding-top: 20px;
-                //text-align: end;
-            }
-            &__previous-page {
-                .sprite(@icon-arrow-outline);
-                position: relative;
-                transform: rotate(180deg);
-                left: 86%;
-                top: 50px;
-            }
+        }
+    }
+    .video-item-container{
+        position: relative;
+        margin-top: 16px;
+        .row-flex();
+        .page__img{
+            .size(3);
+            .size-xs(6);
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 410px;
+            height: 170px;
+            right: -16px;
+            top: -16px;
+            z-index: -1;
+            background-color: @color_yellow;
+        }
+    }
+    .slider.page-nav{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        .page-nav{
+            margin-bottom: 0;
         }
     }
 }

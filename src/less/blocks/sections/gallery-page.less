@@ -1,0 +1,46 @@
+.gallery-page{
+    background-color: transparent;
+    .page__title-h1{
+        margin-bottom: 34px;
+        &_text-shadow_gray{
+        
+            span{
+                &:nth-of-type(2){
+                    color:@color_yellow;
+                    
+                }
+            }
+        }
+    }
+    .page-nav{
+        display: flex;
+        margin-bottom: 34px;
+    }
+    .page-items{
+        .row-flex();
+    }
+    .page-content{
+        
+    }
+    .page-item{
+        .size(3);
+        &:nth-of-type(2){
+            .size(2);
+        }
+        .date,
+        .name{
+            color: @color_white;
+            font-weight: bold;
+        }
+        .date{
+            text-transform: uppercase;
+        }
+        .name {
+
+        }
+    }
+    .next-section{
+        margin-top: 65px;
+    }
+    
+}

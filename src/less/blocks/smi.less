@@ -1,58 +1,70 @@
 .smi {
-    background-color: @color_black;
-    .page__title-h1 {
-        margin-bottom: 60px;
-    }
-
-    &-block {
+    background-color: transparent;
+    .page__title-h1{
+        margin-bottom: 34px;
+        &_text-shadow_gray{
         
-        &-container {
-            padding-bottom: 200px;
-            //display: flex;
-            &__tabs {
-                .row-flex();
-                .page__btn_yellow {
-                    .size(1);
-                    .shift-right(.5);
+            span{
+                &:nth-of-type(2){
+                    color:@color_yellow;
+                    
                 }
             }
+        }
+    }
+    .page-nav{
+        .row-flex();
+        margin-bottom: 70px;
+        .page-btn{
+            .size(1);
+            .size-smm(3);
+            .size-sm(2.5);
+            .size-xs(3);
+            .smm-block({
+                margin: 20px 0 20px;
+            })
 
-            
+        }
+        .page__btn{
+            .shift-right(.5);
 
+        }
+    }
+    &-block {
+        &-container {
+            padding-bottom: 0;
+            .row-flex();
+            &-item{
+                .row-flex();
+            }
             &__video {
-                display: flex;
-                margin-top: 60px;
+                .size(3);
+                .size-smm(6);
                 &-description {
                     flex-direction: column;
-                    .page__text {
-                        &_yellow {
+                    .date {
+                            color: @color_white;
                             margin: 20px 0 20px;
-                            position: relative;
-                            top: 350px;
-                            left: -610px;
                         }
-
-                        &_white {
+                    .name {
+                            color: @color_white;
                             margin: 20px 0 20px;
-                            position: relative;
-                            top: 350px;
-                            left: -610px;
-                            .size(14);
-
                         }
-                    }
-
-                
+                   
                 }
             }
 
             &__article {
+                .size(2);
+                .size-smm(6);
+                .shift-left(1);
+                .shift-smm-left(0);
                 .page__text {
-                    color: @color_white;
+                    color: @color_gray;
+                    margin: 20px 0 20px;
                 }
-
-                
             }
         }
     }
+   
 }

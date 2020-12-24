@@ -40,32 +40,65 @@
 			</div>
 		</header>
 		<main class="page sample-page smi">
-			<section class="smi">
-				<div class="wrapper"><a class="page__on-main-yellow" href="../">На главную </a>
-					<div class="smi-block">
-						<h1 class="page__title-h1 page__title-h1_text-shadow_gray"><span>о нас <br></span><span>в сми</span></h1>
-						<div class="smi-block-container">
-							<div class="smi-block-container__tabs">
-								<btn class="page__btn_yellow">Все </btn>
-								<btn class="page__btn_yellow">Видео</btn>
-								<btn class="page__btn_yellow">Статья</btn>
-								<btn class="page__btn_yellow">Интервью</btn>
-							</div>
-							<div class="smi-block-container__video"><img class="page__img" src="assets/img/img-video-page.png">
-								<div class="smi-block-container__video-description">
-									<p class="page__text_yellow">23 ДЕК 2019</p>
-									<p class="page__text_white">Видео репортаж на телеканале Россия 24</p>
-								</div>
-								<div class="smi-block-container__article"><img class="page__img" src="assets/img/img-smi-article.png">
-									<p class="page__text_white_margin-top">5 НОЯ 2018</p>
-									<p class="page__text_white_margin-top">Статья в журнале РБК</p>
-									<div class="smi-block-container__article-description"></div>
-								</div>
-							</div>
-						</div>
+			<div class="wrapper"><a class="page__on-main page__on-main_yellow" href="../">На главную </a>
+				<h1 class="page__title-h1 page__title-h1_text-shadow_gray page__title-h1_text-shadow_gray-yellow"><span>о нас <br></span><span>в сми</span></h1>
+				<div class="page-nav">
+					<div class="page-btn">
+						<button class="page__btn page__btn_gray-yellow">Все </button>
+					</div>
+					<div class="page-btn">
+						<button class="page__btn page__btn_gray-yellow">Видео</button>
+					</div>
+					<div class="page-btn">
+						<button class="page__btn page__btn_gray-yellow">Статья</button>
+					</div>
+					<div class="page-btn">
+						<button class="page__btn page__btn_gray-yellow">Интервью</button>
 					</div>
 				</div>
-			</section>
+				<div class="page-items" id="sliderSmi">
+								<div class="smi-block-container">
+									<div class="smi-block-container-item">
+										<div class="smi-block-container__video">
+											<video class="page__img" poster="assets/img/img-video-page.png" src=""></video>
+											<div class="smi-block-container__video-description">
+												<p class="page__text page__text_yellow date">23 ДЕК 2019</p>
+												<p class="page__text page__text_white name">Видео репортаж на телеканале Россия 24</p>
+											</div>
+										</div>
+										<div class="smi-block-container__article"><img class="page__img" src="assets/img/img-smi-article.png">
+											<p class="page__text">5 НОЯ 2018</p>
+											<p class="page__text">Статья в журнале РБК</p>
+										</div>
+									</div>
+								</div>
+								<div class="smi-block-container">
+									<div class="smi-block-container-item">
+										<div class="smi-block-container__video">
+											<video class="page__img" poster="assets/img/img-video-page.png" src=""></video>
+											<div class="smi-block-container__video-description">
+												<p class="page__text page__text_yellow date">23 ДЕК 2019</p>
+												<p class="page__text page__text_white name">Видео репортаж на телеканале Россия 24</p>
+											</div>
+										</div>
+										<div class="smi-block-container__article"><img class="page__img" src="assets/img/img-smi-article.png">
+											<p class="page__text">5 НОЯ 2018</p>
+											<p class="page__text">Статья в журнале РБК</p>
+										</div>
+									</div>
+								</div>
+				</div>
+				<div class="slider sliderSmi page-nav">
+					<div class="slider__actions">
+						<button class="page__btn_prev" data-controls="prev"></button>
+						<button class="page__btn_next" data-controls="next"></button>
+					</div>
+					<div class="page-nav">
+						<div class="page-nav__number active">01</div>
+						<div class="page-nav__number">02</div>
+					</div>
+				</div>
+			</div>
 						<section class="next-section">
 							<div class="wrapper">
 								<h2 class="page__title-h2">Следующий раздел</h2>
@@ -98,10 +131,10 @@
 						<div class="page__img"><a href="../"><img src="assets/img/logo-big.png" alt=""></a></div>
 						<nav class="page__nav"><a class="page__link" href="about/about.html">О нас</a><a class="page__link" href="team/team.html">Команда</a><a class="page__link" href="games-of-corparations/games-of-corparations.html">Корпоративные игры</a><a class="page__link" href="games-format/games-format.html">Формат игр
 								<ul class="page__lists">
-									<li class="page__list"> <a class="page__link" href="">Угадать за 60 секунд</a></li>
-									<li class="page__list"> <a class="page__link" href="">Читай.Слушай.Смотри.</a></li>
-									<li class="page__list"> <a class="page__link" href="">Детские игры</a></li>
-								</ul></a><a class="page__link" href="battle-of-corporations/battle-of-corporations.html">Битва корпораций</a><a class="page__link" href="#">Фотоотчеты</a><a class="page__link" href="video-page/video-page.html">Видео</a><a class="page__link" href="smi/smi.html">СМИ о нас</a><a class="page__link" href="contacts/contacts.html">Контакты</a></nav>
+									<li class="page__list"> <a class="page__link" href="games-format/games-format.html">Угадать за 60 секунд</a></li>
+									<li class="page__list"> <a class="page__link" href="games-format/games-format.html">Читай.Слушай.Смотри.</a></li>
+									<li class="page__list"> <a class="page__link" href="games-format/games-format.html">Детские игры</a></li>
+								</ul></a><a class="page__link" href="battle-of-corporations/battle-of-corporations.html">Битва корпораций</a><a class="page__link" href="gallery-page/gallery-page.html">Фотоотчеты</a><a class="page__link" href="video-page/video-page.html">Видео</a><a class="page__link" href="smi/smi.html">СМИ о нас</a><a class="page__link" href="contacts/contacts.html">Контакты</a></nav>
 						<div class="page__links"><a class="page__link" href="tel:+7 (495) 941-83-25">8 (495) 941-83-25</a><a class="page__link" href="tel:+7 (985) 774-32-40">8 (985) 774-32-40</a></div>
 						<div class="social">
 							<button class="page__btn page__icon page__icon_facebook_white"></button>

@@ -36,12 +36,6 @@
                 }
             }
             &_text-shadow{
-                // .page{
-                //     &_yellow,
-                //     &_white{
-                //         text-shadow: none;
-                //     }
-                // }
                 &_white,
                 &_gray{
                     span{
@@ -76,6 +70,7 @@
                 @color_gray -1px 0px 0, 
                 @color_gray 0px -1px 0, 
                 @color_gray 0px 1px 0;
+               
                 span{
                     &:nth-of-type(1){
                         color:@color_white;
@@ -88,6 +83,7 @@
                     }
                 }
                }
+               
               
             }
         }
@@ -162,6 +158,7 @@
         line-height: 26.74px;
         color: @color_white;
         text-decoration: none;
+        transition: all .5s ease-out;
         &:hover{
             color: @color_yellow;
         }
@@ -230,67 +227,20 @@
                 top: 28px;
             }
         }
-    }
-    &__btn_yellow {
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-
-        border-radius: 2px;
-        // height: 55px;
-        height: 72px;
-        //eight: 45px;
-        box-sizing: border-box;
-        font-size: 16px;
-        // letter-spacing: 1px;
-        // line-height: 30px;
-        line-height: 174.33%;
-        // font-family: "@{Noah}-Bold";
-        font-family: '@{Noah}-ExtraBold';
-        text-transform: uppercase;
-        border: none;
-        color: @color_white;
-        background-color: transparent;
-        border: 2px solid @color_yellow;
-        transition: all ease-out 0.5s;
-        &_gray{
-            color: @color_gray;
-            border: 2px solid @color_gray;
-        }
-        &_yellow{
-            color: @color_white;
-            border: 2px solid @color_yellow;
-        }
-        &:hover{
-                    color: #262626;
-                    background-color: @color_white;
-                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-                    // filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
-                }
-        &_menu{
-            position: relative;
-            .line::before,
-            &::before,
-            &::after{
-                content: '';
-                display: inline-block;
-                width: 26px;
-                left: 10px;
-                height: 3px;
-                border-radius: 3px;
-                background-color: #405466;
-                position: absolute;
-            }
-            &::before{
-                top: 13.9px;
-            }
-            &::after{
-                top: 21px;
-            }
-            .line::before{
-                top: 28px;
+        &_gray-yellow{
+            font-family: "@{Noah}-Regular";
+            font-weight: bold;
+            height: 44px;
+            font-size: 16px;
+            line-height: 50px;
+            text-transform: none;
+            margin-right: 26px;
+            padding: 12px 25px;
+            border: 1px solid @color_gray;
+            &:hover{
+                color: @color_yellow;
+                border: 1px solid @color_yellow;
+                background-color: transparent;
             }
         }
     }
@@ -362,27 +312,12 @@
         &:hover {
             transform: scale(1.1);
         }
-    }
-    &__on-main-yellow {
-        display: flex;
-        text-decoration: none;
-        padding-top: 30px;
-        padding-bottom: 45px;
-        font-family: "@{Noah}-Regular";
-        font-size: 16px;
-        color: @color_white;
-            
-        padding: 40px 0;
-        transition: all .5s ease-out;
-        &::before {
-            content: '';
-            display: inline-block;
-            .sprite(@icon-arrow-middle-yellow);
-            margin-right: 20px;
-           
+        &_yellow{
+            color: @color_white;
+            &::before {
+                .sprite(@icon-arrow-middle-yellow);
+            }
         }
-
-      
     }
 
     &__list{

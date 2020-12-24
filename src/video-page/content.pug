@@ -1,31 +1,38 @@
-section.video-page
-    .wrapper
-       include ../blocks/shared/on-main-yellow
-       .video-page-block
-            h1.page__title-h1.page__title-h1_text-shadow_gray
-                span видео <br>
-                span наших игр
-            .video-page-block-wrapper
-                .video-page-block-wrapper__tabs
-                    btn.page__btn_yellow Все видео
-                    btn.page__btn_yellow Интервью
-                    btn.page__btn_yellow Промо-ролики
-                    btn.page__btn_yellow Турслет
-            .video-page-block-wrapper
-                .video-page-block-wrapper__item
-                    .page__img
-                        img(src="assets/img/img-video-page.png")
-                .video-page-block-wrapper__item
-                    .page__img
-                        img(src="assets/img/img-video-page.png")
-                .video-page-block-wrapper__item
-                    .page__img
-                            img(src="assets/img/img-video-page.png")
-                .video-page-block-wrapper__item
-                    .page__img
-                        img(src="assets/img/img-video-page.png")
-            .video-page-block-wrapper
-                .video-page-block-wrapper__next-page 01/02
-                .video-page-block-wrapper__previous-page
+mixin itemVideo()
+    .video-item
+        .video-item-container
+            .page__img
+                video(poster="assets/img/img-video-page.png" src="")
+            .page__img
+                video(poster="assets/img/img-video-page.png" src="")
+            .page__img
+                video(poster="assets/img/img-video-page.png" src="")
+            .page__img
+                video(poster="assets/img/img-video-page.png" src="")
+.wrapper
+        include ../blocks/shared/on-main-yellow
+        h1.page__title-h1.page__title-h1_text-shadow_gray
+            span видео <br>
+            span наших игр
+        .page-nav
+            .page-btn
+                button.page__btn.page__btn_gray-yellow Все видео
+            .page-btn
+                button.page__btn.page__btn_gray-yellow Интервью
+            .page-btn
+                button.page__btn.page__btn_gray-yellow Промо-ролики
+            .page-btn
+                button.page__btn.page__btn_gray-yellow Турслет
+        #sliderVideo.page-items
+                +itemVideo()
+                +itemVideo()
+                
+        .slider.sliderSmi.page-nav
+            .slider__actions
+                button.page__btn_prev(data-controls="prev")
+                button.page__btn_next(data-controls="next")
+            .page-nav
+                .page-nav__number.active 01
+                .page-nav__number 02
 include ../blocks/mixins/mixin-next-section
 +nextSection('Следующий раздел', 'сми о нас', '../')

@@ -11,7 +11,7 @@
         });
     }
     .page__text{
-        color: @color_black;
+        // color: @color_black;
 
     }
     .page__text_yellow{
@@ -22,9 +22,71 @@
         color: @color_white;
         &_margin-top {
             color: @color_white;
-            //padding-top: 200px;
-            position: relative;
-            top: 180px;
         }
+    }
+
+
+
+    .slider.page-nav{
+        color: @color_white;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-bottom: 0;
+        margin-top: 0;
+        .page-nav{
+            align-self: center;
+        } 
+        .page-nav__number{
+            &.active{
+                font-size: 28px;
+                line-height: 35px;
+            }
+
+            &:nth-of-type(2){
+                &::before {
+                    content: "/";
+                    padding: 0 5px;
+                }
+            }
+        }
+        
+        
+    }
+    .slider__actions{
+        // display: flex;
+        // justify-content: flex-end;
+        button{
+            width: 70px;
+            height: 70px;
+            position: relative;
+            top: 0;
+            right: 11%;
+            background-color: transparent;
+            border: 1px solid @color_gray;
+            &[data-controls="prev"],
+            &[data-controls="next"]  {
+                &::before{
+                    content: '';
+                    display: inline-block;
+                    .sprite(@icon-arrow-outline);
+                   
+                }
+            }
+            &[data-controls="prev"]{
+                &::before{
+                    transform: rotate(180deg);
+                    
+                }
+            }
+            &[data-controls="next"]{
+                &::before{
+                    transform: rotate(0deg);
+                }
+            }
+        }
+    }
+    .tns-nav{
+        display: none;
     }
 }
