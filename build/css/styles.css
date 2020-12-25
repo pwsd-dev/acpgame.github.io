@@ -171,7 +171,7 @@ img {
 
 ::-webkit-scrollbar {
   width: 5px;
-  height: 0px;
+  height: 5px;
 }
 
 ::-webkit-scrollbar-button {
@@ -2029,6 +2029,130 @@ details[open] summary::after {
   line-height: 150%;
 }
 
+.modal-gallery {
+  background-color: #000000;
+}
+
+.modal-gallery .modal__action {
+  z-index: 10;
+}
+
+.modal-gallery .modal__action .page__btn::before,
+.modal-gallery .modal__action .page__btn::after {
+  background-color: #ffed5c;
+}
+
+.modal-gallery .modal__content {
+  flex-wrap: wrap;
+  height: 100vh;
+  padding-top: 6%;
+}
+
+.modal-gallery .modal__content-text {
+  position: absolute;
+  left: 100px;
+}
+
+.modal-gallery .modal__content-text .page__text.date {
+  margin: 5px 0;
+  text-transform: uppercase;
+  color: #ffed5c;
+}
+
+.modal-gallery .modal__content-img {
+  width: calc(100% - 0px);
+  position: relative;
+  text-align: center;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.modal-gallery .modal__content-img-big {
+  width: calc(41.66666666666667% - 0px);
+  margin: 0 auto;
+}
+
+.modal-gallery .modal__content-img-big #sliderModalGallery {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.modal-gallery .modal__content-img-preview {
+  width: calc(100% - 0px);
+}
+
+.modal-gallery .modal__content-img-preview .slider-thumbnails {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  overflow-x: auto;
+}
+
+.modal-gallery .modal__content-img-preview .slider-thumbnails .page__img_small {
+  opacity: 0.6;
+  display: -webkit-box;
+  display: flex;
+}
+
+.modal-gallery .modal__content-img-preview .slider-thumbnails .page__img_small.tns-nav-active {
+  opacity: 1;
+  background-color: #ffed5c;
+  border: 1px solid #ffed5c;
+}
+
+.modal-gallery .modal__content-img-preview .slider-thumbnails .page__img_small img {
+  max-width: 204;
+  min-width: 117px;
+  width: auto;
+  height: 150px;
+}
+
+.modal-gallery .slider__actions {
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.modal-gallery .slider__actions button {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  top: 0;
+  background-color: transparent;
+  border: 1px solid #626262;
+}
+
+.modal-gallery .slider__actions button[data-controls="prev"]::before,
+.modal-gallery .slider__actions button[data-controls="next"]::before {
+  content: '';
+  display: inline-block;
+  background-image: url(../assets/icons/sprite.png);
+  background-position: -25px -127px;
+  width: 14px;
+  height: 23px;
+}
+
+.modal-gallery .slider__actions button[data-controls="prev"]::before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.modal-gallery .slider__actions button[data-controls="next"]::before {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
 .social {
   display: -webkit-box;
   display: flex;
@@ -3065,14 +3189,24 @@ details[open] summary::after {
   margin-bottom: 34px;
 }
 
-.gallery-page .page__title-h1_text-shadow_gray span:nth-of-type(2) {
-  color: #ffed5c;
+.gallery-page .page__title-h1_text-shadow_white span:nth-child(1) {
+  font-size: 50px;
+  line-height: 100%;
 }
 
 .gallery-page .page-nav {
   display: -webkit-box;
   display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-page .page-nav .page__btn {
   margin-bottom: 34px;
+}
+
+.gallery-page .page-nav .is-active {
+  color: #ffed5c;
+  border: 1px solid #ffed5c;
 }
 
 .gallery-page .page-items {
@@ -3081,6 +3215,65 @@ details[open] summary::after {
   flex-wrap: wrap;
   margin-left: 0px;
   margin-right: 0px;
+  min-height: 600px;
+}
+
+.gallery-page .page-content {
+  width: calc(50% - 0px);
+  margin-left: calc(50% + 0px);
+}
+
+.gallery-page .page-content .page-item {
+  position: relative;
+  pointer-events: none;
+  margin-top: 0;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  opacity: 0.5;
+}
+
+.gallery-page .page-content .page-item_bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-page .page-content .page-item.tns-slide-active {
+  cursor: pointer;
+  pointer-events: auto;
+  opacity: 1;
+  margin-top: 2%;
+  padding-left: calc(0% + 0px);
+}
+
+.gallery-page .page-content .page-item.tns-slide-active .date {
+  color: #ffed5c;
+}
+
+.gallery-page .page-content .page-item.tns-slide-active .value {
+  color: #ffffff;
+}
+
+.gallery-page .page-content .slider.page-nav {
+  position: relative;
+}
+
+.gallery-page .page-content .slider.page-nav .slider__actions {
+  display: -webkit-box;
+  display: flex;
+  position: absolute;
+  right: 19.5%;
+  top: -25px;
+}
+
+.gallery-page .page-content .slider.page-nav .page-nav {
+  margin-left: 9%;
+  margin-bottom: 0;
+}
+
+.gallery-page .page-content .tns-ovh {
+  overflow: inherit;
 }
 
 .gallery-page .page-item {
@@ -3092,7 +3285,7 @@ details[open] summary::after {
 }
 
 .gallery-page .page-item .date,
-.gallery-page .page-item .name {
+.gallery-page .page-item .value {
   color: #ffffff;
   font-weight: bold;
 }
@@ -3108,6 +3301,10 @@ details[open] summary::after {
 @media screen and (max-width: 1200px) {
   .header-block__links .page__link {
     width: calc(50% - 0px);
+  }
+
+  .modal-gallery .modal__content {
+    overflow-y: scroll;
   }
 
   .blockquote {
@@ -3203,6 +3400,26 @@ details[open] summary::after {
 
   .battle-of-corporations .present-block__content .page__text {
     width: calc(66.66666666666667% - 0px);
+  }
+
+  .gallery-page .page-content {
+    margin-left: calc(0% + 0px);
+  }
+
+  .gallery-page .page-content .page-item {
+    padding-left: calc(1.666666666666667% + 0px);
+  }
+
+  .gallery-page .page-content .slider.page-nav {
+    -webkit-box-pack: start;
+            justify-content: flex-start;
+    padding-left: 6%;
+  }
+
+  .gallery-page .page-content .slider.page-nav .slider__actions {
+    position: relative;
+    top: 0;
+    right: 0;
   }
 }
 
@@ -3470,6 +3687,18 @@ details[open] summary::after {
   .games-of-corparations .page-block .block-infoSlider__info .page__btn {
     margin-left: calc(10% + 0px);
   }
+
+  .gallery-page .page-content {
+    width: calc(100% - 0px);
+  }
+
+  .gallery-page .page-content .page-item {
+    text-align: center;
+  }
+
+  .gallery-page .page-content .tns-ovh {
+    overflow: hidden;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -3712,6 +3941,19 @@ details[open] summary::after {
     margin-bottom: 15px;
   }
 
+  .modal-gallery .modal__content {
+    overflow: hidden;
+  }
+
+  .modal-gallery .modal__content-img-big {
+    width: calc(66.66666666666667% - 0px);
+  }
+
+  .modal-gallery .slider__actions {
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+  }
+
   .blockquote {
     width: calc(100% - 0px);
   }
@@ -3887,6 +4129,20 @@ details[open] summary::after {
 
   .battle-of-corporations .present-block__content .page__text {
     width: calc(100% - 0px);
+  }
+
+  .gallery-page .page-content .slider.page-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+
+  .gallery-page .page-content .slider.page-nav .page-nav {
+    margin: 20px auto;
   }
 }
 
@@ -4543,6 +4799,19 @@ details[open] summary::after {
     width: calc(100% - 0px);
   }
 
+  .trust-block__img .page__img-container .page__img {
+    width: calc(100% - 0px);
+  }
+
+  .trust-block__img .page__img-container .page__img {
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .trust-block__img .page__img-container .page__img:nth-child(4n + 4) {
+    margin-right: calc(0% + 0px);
+  }
+
   .next-section .page__title-h2 {
     font-size: 18px;
   }
@@ -4570,22 +4839,22 @@ details[open] summary::after {
   }
 
   .footer-block__games {
-    -webkit-box-ordinal-group: 3;
-            order: 2;
-  }
-
-  .footer-block__corporation {
     -webkit-box-ordinal-group: 4;
             order: 3;
   }
 
-  .footer-block__phones {
-    width: calc(100% - 0px);
+  .footer-block__corporation {
+    -webkit-box-ordinal-group: 6;
+            order: 5;
   }
 
   .footer-block__phones {
-    -webkit-box-ordinal-group: 5;
-            order: 4;
+    width: calc(50% - 0px);
+  }
+
+  .footer-block__phones {
+    -webkit-box-ordinal-group: 3;
+            order: 2;
   }
 
   .footer-block__phones .page__link {
@@ -4593,12 +4862,12 @@ details[open] summary::after {
   }
 
   .footer-block__soical {
-    width: calc(100% - 0px);
+    width: calc(50% - 0px);
   }
 
   .footer-block__soical {
-    -webkit-box-ordinal-group: 6;
-            order: 5;
+    -webkit-box-ordinal-group: 5;
+            order: 4;
   }
 
   .modal-menu .modal__content-nav {
@@ -4638,6 +4907,27 @@ details[open] summary::after {
   .modal-team .modal__content-text .page__text {
     font-size: 16px;
     line-height: 150%;
+  }
+
+  .modal-gallery .modal__content-text {
+    left: 10px;
+    position: relative;
+  }
+
+  .modal-gallery .modal__content-img-big {
+    width: calc(100% - 0px);
+  }
+
+  .modal-gallery .modal__content-img-preview .slider-thumbnails {
+    overflow: hidden;
+  }
+
+  .modal-gallery .modal__content-img-preview .slider-thumbnails .page__img_small {
+    background-color: #626262;
+  }
+
+  .modal-gallery .modal__content-img-preview .slider-thumbnails .page__img_small:nth-child(n + 6) {
+    display: none;
   }
 
   .page__img_small {
@@ -4880,6 +5170,14 @@ details[open] summary::after {
   .games-of-corparations .page-block .block-infoSlider__info .page__text {
     width: calc(100% - 0px);
   }
+
+  .gallery-page .page-items {
+    min-height: 500px;
+  }
+
+  .gallery-page .page-content .slider.page-nav .slider__actions {
+    margin-left: 5%;
+  }
 }
 
 @media screen and (max-width: 360px) {
@@ -4901,6 +5199,26 @@ details[open] summary::after {
 
   .footer-block__col {
     width: calc(100% - 0px);
+  }
+
+  .footer-block__games {
+    -webkit-box-ordinal-group: 3;
+            order: 2;
+  }
+
+  .footer-block__corporation {
+    -webkit-box-ordinal-group: 4;
+            order: 3;
+  }
+
+  .footer-block__phones {
+    -webkit-box-ordinal-group: 5;
+            order: 4;
+  }
+
+  .footer-block__soical {
+    -webkit-box-ordinal-group: 6;
+            order: 5;
   }
 
   .modal-menu {

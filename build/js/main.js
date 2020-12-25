@@ -149,8 +149,8 @@ if(document.getElementById('sliderGallery')){
     var sliderEmotions = tns({
       container: "#sliderGallery",
       // mode: "gallery",
-      items: 3,
-      // loop: true,
+      items: 1,
+      loop: true,
       autoplay: false,
       autoplayResetOnVisibility: false,
       controls: true,
@@ -166,6 +166,17 @@ if(document.getElementById('sliderGallery')){
       swipeAngle: true,
       lazyload: false,
       speed: 800,
+      responsive: {
+        1025: {
+          items: 1
+        },
+        768:{
+          items: 2
+        },
+        620:{
+          items: 1
+        },
+      }
       
     });
     addCurrentIndexOfSlider('.gallery-page', sliderEmotions)
@@ -224,3 +235,32 @@ if(document.getElementById('sliderVideo')){
  
 
 
+  if(document.getElementById('sliderModalGallery')){
+    var sliderBanner = tns({
+      container: "#sliderModalGallery",
+      // mode: "gallery",
+      items: 1,
+      loop: true,
+      navContainer: "#customizeThumbnailsModalGallery",
+      navAsThumbnails: true,
+      autoplay: false,
+      autoplayResetOnVisibility: false,
+      controls: true,
+      prevButton: '.modal-gallery .page__btn_prev',
+      nextButton: '.modal-gallery .page__btn_next',
+      autoplayPosition: "bottom",
+      autoplayButton:".btn-play",
+      autoplayHoverPause:true,
+      autoplayText: [
+          "▶",
+          "❚❚"
+        ],
+      autoplayTimeout: 1800,
+      swipeAngle: true,
+      animateIn: "jello",
+      animateOut: "rollOut",
+      lazyload: false,
+      speed: 800,
+      
+    });
+  }

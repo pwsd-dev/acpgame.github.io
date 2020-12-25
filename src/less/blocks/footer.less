@@ -44,22 +44,31 @@
         }
         &__games{
             .xs-block({
-                order: 2;
+                order: 3;
             });
+            .xxs-block({
+                order: 2;
+            })
         }
         &__corporation{
             .xs-block({
-                order: 3;
+                order: 5;
             });
+            .xxs-block({
+                order: 3;
+            })
         }
         &__phones {
-            .size-xs(6);
+            .size-xs(3);
             .xs-block({
-                order: 4;
+                order: 2;
                 .page__link{
                     text-align: center;
                 }
                
+            });
+            .xxs-block({
+                order: 4;
             });
             .shift-md-left(1.5);
             .shift-smm-left(0);
@@ -75,8 +84,11 @@
         }
 
         &__soical {
-            .size-xs(6);
+            .size-xs(3);
             .xs-block({
+                order: 4;
+            });
+            .xxs-block({
                 order: 5;
             });
             .page__link {

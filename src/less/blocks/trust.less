@@ -19,8 +19,14 @@
                 .page__img{
                     display: inline-block;
                     .size(1.5);
+                    .size-xs(6);
+                    .xs-block({
+                        text-align: center;
+                        margin: 20px auto;
+                    });
                     &:nth-child(4n + 4){
                        .shift-right(-1.5);
+                       .shift-xs-right(0);
                     }
                 }
             }

@@ -3,15 +3,16 @@ mixin item(img,date,name)
         .page__img
             img(src=img, alt="")
         .page__text.date=date
-        .page__text.name=name
+        .page__text.value=name
+        .page-item_bg.open-modal(data-modal="modal-gallery")
 
 .wrapper
     include ../blocks/shared/on-main-yellow
-    h1.page__title-h1.page__title-h1_text-shadow_gray
+    h1.page__title-h1.page__title-h1_text-shadow_white
                 span смотрите <br>
                 span как ЭМОЦИОНАЛЬНО
     .page-nav
-        button.page__btn.page__btn_gray-yellow Наши игры
+        button.page__btn.page__btn_gray-yellow.is-active Наши игры
         button.page__btn.page__btn_gray-yellow Битва Корпораций
     .page-nav
         button.page__btn.page__btn_gray-yellow Москва
@@ -19,7 +20,7 @@ mixin item(img,date,name)
         button.page__btn.page__btn_gray-yellow Екатеринбург
         button.page__btn.page__btn_gray-yellow Алматы
         button.page__btn.page__btn_gray-yellow Нур-Султан
-        button.page__btn.page__btn_gray-yellow Ереван
+        button.page__btn.page__btn_gray-yellow.is-active Ереван
         button.page__btn.page__btn_gray-yellow Ташкент
     .page-content
        
@@ -27,11 +28,10 @@ mixin item(img,date,name)
             +item("assets/img/img-gallery-1.png",'15 ОКТ 2020','Угадать за 60 секунд')
             +item("assets/img/img-gallery-2.png",'15 ОКТ 2020','Угадать за 60 секунд')
             +item("assets/img/img-gallery-2.png",'15 ОКТ 2020','Угадать за 60 секунд')
+            +item("assets/img/img-gallery-1.png",'15 ОКТ 2020','Угадать за 60 секунд')
             +item("assets/img/img-gallery-2.png",'15 ОКТ 2020','Угадать за 60 секунд')
             +item("assets/img/img-gallery-2.png",'15 ОКТ 2020','Угадать за 60 секунд')
-            +item("assets/img/img-gallery-2.png",'15 ОКТ 2020','Угадать за 60 секунд')
-        .slider.sliderEmotions.page-nav
-            
+        .slider.page-nav
             .slider__actions
                 button.page__btn_prev(data-controls="prev")
                 button.page__btn_next(data-controls="next")

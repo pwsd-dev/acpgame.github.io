@@ -1,0 +1,60 @@
+- var n = 2;
+mixin imgBig()
+    each _, i in Array(n)
+        .page__img
+            img(src="assets/img/img-modal-gallery-1.png", alt="")
+        .page__img
+            img(src="assets/img/img-modal-gallery-2.png", alt="")
+        .page__img
+            img(src="assets/img/img-modal-gallery-1.png", alt="")
+        .page__img
+            img(src="assets/img/img-modal-gallery-2.png", alt="")
+        .page__img
+            img(src="assets/img/img-modal-gallery-1.png", alt="")
+        .page__img
+            img(src="assets/img/img-modal-gallery-2.png", alt="")
+        .page__img
+            img(src="assets/img/img-modal-gallery-1.png", alt="")
+        .page__img
+            img(src="assets/img/img-modal-gallery-2.png", alt="")
+mixin imgThumbnails()
+    each _, i in Array(n)
+        .page__img_small
+            img(src="assets/img/img-modal-gallery-1.png", alt="")
+        .page__img_small
+            img(src="assets/img/img-modal-gallery-2.png", alt="")
+        .page__img_small
+            img(src="assets/img/img-modal-gallery-1.png", alt="")
+        .page__img_small
+            img(src="assets/img/img-modal-gallery-2.png", alt="")
+        .page__img_small
+            img(src="assets/img/img-modal-gallery-1.png", alt="")
+        .page__img_small
+            img(src="assets/img/img-modal-gallery-2.png", alt="")
+        .page__img_small
+            img(src="assets/img/img-modal-gallery-1.png", alt="")
+        .page__img_small
+            img(src="assets/img/img-modal-gallery-2.png", alt="")
+section#modal-gallery.modal.modal-gallery.page_hidden
+    .modal-container
+        
+            .modal__action
+                button.page__btn.page__btn_close.close-modal(data-modal="modal-gallery")
+            .modal__content
+                .modal__content-text
+                    h2.page__title-h2 ЕРЕВАН
+                    .page__text.date 25 ОКТ 2020
+                    .page__text Угадать за 60 секунд
+                .modal__content-img
+                    .slider__actions
+                            button.page__btn_prev(data-controls="prev")
+                            button.page__btn_next(data-controls="next")
+                    .modal__content-img-big
+                        .btn-play.page_hidden
+                        #sliderModalGallery
+                            +imgBig()
+                           
+                .modal__content-img-preview
+                    #customizeThumbnailsModalGallery.slider-thumbnails
+                        +imgThumbnails()
+                        
