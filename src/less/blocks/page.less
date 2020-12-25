@@ -319,7 +319,101 @@
             }
         }
     }
+    &-form{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-label{
+        margin-bottom: 30px;
+        &.checkbox{
+            .page-input-checkbox{
+                position: absolute !important; 
+                clip: rect(1px, 1px, 1px, 1px); 
+                padding: 0 !important; 
+                border: 0 !important; 
+                height: 1px !important; 
+                width: 1px !important; 
+                overflow: hidden;
+            }
+            label{
+                color: @color_white;
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                line-height: 24px;
+                margin: 0;
+            }
+            label:before {
+                content: ''; 
+                width: 10px; 
+                height: 10px; 
+            
+                background: #f2f2f2; 
+                border: 1px solid rgba(75, 101, 132, 0.3); 
+                display: inline-block; 
+                margin-right: 16px;
+            }
+            input[type="checkbox"]:checked ~ label:before {
+                background: @color_yellow;
+            }
+        }
+    }
+    &-input{
 
+        color: @color_white;
+        border: 2px solid #FFED5C;
+        box-sizing: border-box;
+        background: transparent;
+        height: 72px;
+        font-size: 18px;
+        line-height: 174.33%;
+        width: 100%;
+        padding-left: 78px;
+       
+        &_user,
+        &_phone{
+            position: relative;
+            &::before,
+            &::after{
+                content: '';
+                display: inline-block;
+               
+                position: absolute;
+            }
+            &::before{
+                top: 20px;
+                left: 20px;
+            }
+            &::after{
+                top: 14px;
+                left: 64px;
+                // height: 100%;
+                height: 42px;
+                width: 2px;
+                background: yellow;
+            }
+        }
+       
+        &_user{
+            &::before{
+                .sprite(@icon-user);
+            }
+            &::after{
+
+            }
+        }
+        &_phone{
+            &::before{
+                .sprite(@icon-phone-white);
+            }
+            &::after{
+                
+            }
+        }
+        &-checkbox{
+            
+        }
+    }
     &__list{
         font-family: "@{Noah}-Regular";
     }

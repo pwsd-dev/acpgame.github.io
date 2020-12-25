@@ -1,0 +1,19 @@
+mixin modalCallbackName(name)
+    section#modal-callback.modal.modal-callback.page_hidden
+        .modal-container
+                .modal__action
+                    button.page__btn.page__btn_close.close-modal(data-modal="modal-callback")
+                .modal__content
+                    .modal__content-block
+                        .modal__content-text
+                            h3.page__title-h3=name
+                            p.page__text Желаете заказать игру для сотрудников или их детей, мы с удовольствием организуем для вас интеллектуальное мероприятие с уникальным сценарием.
+                        form.page-form
+                            label.page-label.page-input_user
+                                input.page-input(type="text" required placeholder='Имя')
+                            label.page-label.page-input_phone
+                                input.page-input(type="phone" required placeholder="Телефон")
+                            .page-label.checkbox
+                                input#checkbox.page-input-checkbox(type="checkbox" required)
+                                label.page-label(for='checkbox') Согласен на обработку персональных данных
+                            button.page__btn.page__btn_gray Отправить заявку

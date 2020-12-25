@@ -1,0 +1,28 @@
+mixin itemVideo()
+    .page-item
+        .page__img
+            img(src="assets/img/img-gallery-2.png")
+        .page-item_bg.open-modal(data-modal="modal-gallery")
+
+.wrapper
+        include ../blocks/shared/on-main-yellow
+        h1.page__title-h1.page__title-h1_text-shadow_white
+            span Фотоальбом <br>
+            span наших игр
+        
+        .page-items
+                +itemVideo()
+                +itemVideo()
+                +itemVideo()
+                +itemVideo()
+                +itemVideo()
+                
+        .slider.page-nav
+            .slider__actions
+                button.page__btn_prev(data-controls="prev")
+                button.page__btn_next(data-controls="next")
+            .page-nav
+                .page-nav__number.active 01
+                .page-nav__number 02
+include ../blocks/mixins/mixin-next-section
++nextSection('Следующий раздел', 'сми о нас', '../')
