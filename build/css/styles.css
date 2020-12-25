@@ -2731,38 +2731,78 @@ details[open] summary::after {
   margin-bottom: 0;
 }
 
-.contacts-block .page__title-h1_text-shadow_gray {
+.contacts .page__title-h1 {
   margin-bottom: 50px;
 }
 
-.contacts-block-container {
+.contacts .page__text {
+  color: #000000;
+}
+
+.contacts .page-items {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
   margin-left: 0px;
   margin-right: 0px;
+}
+
+.contacts-block-items {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.contacts-block-items .page-item {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: calc(83.33333333333334% - 0px);
+  -webkit-box-align: center;
+          align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 2.3% 0;
+  padding-left: 2.3%;
   margin-bottom: 20px;
-  border: 1px solid #fafafa;
+  box-sizing: border-box;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
-.contacts-block-container-item {
-  width: calc(100% - 0px);
-  display: -webkit-box;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-right: 20px;
+.contacts-block-items .page-item:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffed5c;
 }
 
-.contacts-block-container-item__description_city,
-.contacts-block-container-item__description_name,
-.contacts-block-container-item__description_e-mail,
-.contacts-block-container-item__description_phone-dom,
-.contacts-block-container-item__description_phone-mob {
-  width: calc(16.666666666666668% - 0px);
-  padding: 30px 0px 30px;
-  background-color: #ffffff;
+.contacts-block-items .page-item .page__text {
+  width: calc(20% - 0px);
+}
+
+.contacts-block-items .page-item .page__text.city,
+.contacts-block-items .page-item .page__text.tel {
+  font-family: "Noah-Bold";
+}
+
+.contacts-block-items .page-item .page__text.city {
+  font-size: 18px;
+  line-height: 174.33%;
+}
+
+.contacts-block-items .page-item .page__text.name,
+.contacts-block-items .page-item .page__text.eMail {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.contacts-block-items .page-item .page__text.tel {
+  font-size: 22px;
+  line-height: 27px;
 }
 
 .battle-of-corporations .page__text {
@@ -3126,6 +3166,21 @@ details[open] summary::after {
     padding: 12px 14px;
   }
 
+  .contacts-block-items .page-item .page__text.city {
+    font-size: 1.3vw;
+  }
+
+  .contacts-block-items .page-item .page__text.name,
+  .contacts-block-items .page-item .page__text.eMail {
+    font-size: 1.15vw;
+    line-height: 24px;
+  }
+
+  .contacts-block-items .page-item .page__text.tel {
+    font-size: 1.52vw;
+    line-height: 130%;
+  }
+
   .battle-of-corporations .banner .page__title-h1 {
     font-size: 75px;
   }
@@ -3373,6 +3428,33 @@ details[open] summary::after {
 
   .video-page .page-nav .page-btn {
     width: calc(25% - 0px);
+  }
+
+  .contacts-block-items .page-item {
+    width: calc(100% - 0px);
+  }
+
+  .contacts-block-items .page-item .page__text {
+    width: calc(16.666666666666668% - 0px);
+  }
+
+  .contacts-block-items .page-item .page__text.city {
+    font-size: 18px;
+  }
+
+  .contacts-block-items .page-item .page__text.name,
+  .contacts-block-items .page-item .page__text.eMail {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .contacts-block-items .page-item .page__text.tel {
+    width: calc(25% - 0px);
+  }
+
+  .contacts-block-items .page-item .page__text.tel {
+    font-size: 22px;
+    line-height: 27px;
   }
 
   .battle-of-corporations .content-items .content-item:nth-of-type(odd) .content-item__img {
@@ -3738,6 +3820,22 @@ details[open] summary::after {
     margin: 20px 0 20px;
   }
 
+  .contacts-block-items .page-item {
+    width: calc(25% - 0px);
+  }
+
+  .contacts-block-items .page-item .page__text {
+    width: calc(100% - 0px);
+  }
+
+  .contacts-block-items .page-item .page__text {
+    margin-bottom: 20px;
+  }
+
+  .contacts-block-items .page-item .page__text.tel {
+    width: calc(100% - 0px);
+  }
+
   .battle-of-corporations .banner .page__title-h1 {
     font-size: 5vw;
     line-height: 100%;
@@ -4006,6 +4104,10 @@ details[open] summary::after {
 
   .video-page .page-nav .page-btn {
     width: calc(41.66666666666667% - 0px);
+  }
+
+  .contacts-block-items .page-item {
+    width: calc(33.333333333333336% - 0px);
   }
 }
 
@@ -4635,6 +4737,10 @@ details[open] summary::after {
   }
 
   .video-page .video-item-container .page__img {
+    width: calc(100% - 0px);
+  }
+
+  .contacts-block-items .page-item {
     width: calc(100% - 0px);
   }
 

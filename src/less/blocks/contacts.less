@@ -1,37 +1,99 @@
 .contacts {
+    .page__title-h1{
+        margin-bottom: 50px;
+        span{
+            // &:nth-of-type(1){
+            //     font-size: 40px;
+            //     line-height: 100%;
+            // }
+            // &:nth-of-type(2){
+            //     font-size: 68px;
+            //     line-height: 100%;
+            // }
+       }
+       
+    }
+    .page__text{
+        color: @color_black;
+    }
+    .page-items{
+        .row-flex();
+    }
     &-block {
-        //.row-flex();
-        //flex-wrap: nowrap;
-        .page__title-h1_text-shadow_gray {
-            margin-bottom: 50px;
-        }
-
-        &-container {
+       &-items {
             .row-flex();
-            margin-bottom: 20px;
-            border: 1px solid #fafafa;
-            //flex-wrap: nowrap;
-            &-item {
-                .size(6);
+            .page-item{
                 .row-flex();
-                margin-right: 20px;
-
-                &__description {
-                    &_city, &_name, &_e-mail, &_phone-dom, &_phone-mob {
-                        .size(1);
-                        padding: 30px 0px 30px;
-                        background-color: @color_white;
-                        
-                        .page__text {
-                            //margin-right: 20px;
-                            //.shift-right(1);
-                        }
-                    }
+                .size(5);
+                .size-md(6);
+                .size-smm(1.5);
+                .size-sm(2);
+                .size-xs(6);
+                align-items: center;
+                background: @color_white;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                padding: 2.3% 0;
+                padding-left: 2.3%;
+                margin-bottom: 20px;
+                box-sizing: border-box;
+                transition: all 0.5s ease-out;
+                &:hover{
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                    background-color: @color_yellow;
                 }
-                
+                .page__text{
+                    .size(1.2);
+                    .size-md(1);
+                    .size-smm(6);
+                    .smm-block({
+                        margin-bottom: 20px;
+                    });
+                    &.city,
+                    &.tel{
+                        font-family: "@{Noah}-Bold";
+                    }
+                    &.city{
+                        font-size: 18px;
+                        line-height: 174.33%;
+                        .mmd-block({
+                            font-size: 1.3vw;
+                        });
+                        .md-block({
+                            font-size: 18px;
+                        });
+                    }
+                    &.name,
+                    &.eMail{
+                        font-size: 16px;
+                        line-height: 24px;    
+                        font-weight: 600;  
+                        .mmd-block({
+                            font-size: 1.15vw;
+                            line-height: 24px;
+                        });
+                        .md-block({
+                            font-size: 16px;
+                            line-height: 24px;    
+                        });
+                    }
+                    &.tel{
+                        .size-md(1.5);
+                        .size-smm(6);
+                        font-size: 22px;
+                        line-height: 27px;
+                        .mmd-block({
+                            font-size: 1.52vw;
+                            line-height: 130%;
+                        });
+                        .md-block({
+                            font-size: 22px;
+                            line-height: 27px;
+                        });
+                      
+                    }
+                  
+                }
             }
-            
         }
-        
     }
 }
