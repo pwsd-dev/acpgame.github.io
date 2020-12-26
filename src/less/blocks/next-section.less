@@ -2,10 +2,21 @@
     // padding: 5% 0;
     padding: 9% 0px 5%;
     background-color: #ededed;
+    transition: all 0.5s ease-out;
+    height: 100%;
+    &:hover{
+        background-color:@color_yellow;
+        .page__title-h3{
+            opacity: 0;
+            height: 50%;
+            margin: 0;
+        }
+    }
     .page__title-h2,
     .page__title-h3 {
         text-align: center;
         font-family: '@{Noah}-ExtraBold';
+        
     }
     .page__title-h2 {
         color: @color_dark;
@@ -17,6 +28,9 @@
         font-size: 50px;
         line-height: 100%;
         margin-bottom: 3.5%;
+        height: 100%;
+        opacity: 1;
+        transition: all 0.5s ease-out;
         .xs(font-size, 24px);
        
     }

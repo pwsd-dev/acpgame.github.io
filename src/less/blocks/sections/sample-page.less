@@ -64,6 +64,7 @@
             right: 11%;
             background-color: transparent;
             border: 1px solid @color_gray;
+            transition: all 0.5s ease-out;
             &[data-controls="prev"],
             &[data-controls="next"]  {
                 &::before{
@@ -71,6 +72,9 @@
                     display: inline-block;
                     .sprite(@icon-arrow-outline);
                    
+                }
+                &:hover{
+                    background-color: @color_yellow;
                 }
             }
             &[data-controls="prev"]{

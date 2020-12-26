@@ -1738,6 +1738,19 @@ details[open] summary::after {
 .next-section {
   padding: 9% 0px 5%;
   background-color: #ededed;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  height: 100%;
+}
+
+.next-section:hover {
+  background-color: #ffed5c;
+}
+
+.next-section:hover .page__title-h3 {
+  opacity: 0;
+  height: 50%;
+  margin: 0;
 }
 
 .next-section .page__title-h2,
@@ -1755,6 +1768,10 @@ details[open] summary::after {
   font-size: 50px;
   line-height: 100%;
   margin-bottom: 3.5%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .next-section .page__btn {
@@ -2469,6 +2486,8 @@ details[open] summary::after {
   top: -41px;
   background-color: #ffffff;
   border: none;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .block-infoSlider__slider .tns-controls button[data-controls="prev"]::before,
@@ -2479,6 +2498,11 @@ details[open] summary::after {
   background-position: -161px -67px;
   width: 23px;
   height: 14px;
+}
+
+.block-infoSlider__slider .tns-controls button[data-controls="prev"]:hover,
+.block-infoSlider__slider .tns-controls button[data-controls="next"]:hover {
+  background-color: #ffed5c;
 }
 
 .block-infoSlider__slider .tns-controls button[data-controls="prev"]::before {
@@ -2562,6 +2586,8 @@ details[open] summary::after {
   right: 11%;
   background-color: transparent;
   border: 1px solid #626262;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .sample-page .slider__actions button[data-controls="prev"]::before,
@@ -2572,6 +2598,11 @@ details[open] summary::after {
   background-position: -198px 0px;
   width: 14px;
   height: 23px;
+}
+
+.sample-page .slider__actions button[data-controls="prev"]:hover,
+.sample-page .slider__actions button[data-controls="next"]:hover {
+  background-color: #ffed5c;
 }
 
 .sample-page .slider__actions button[data-controls="prev"]::before {
@@ -2884,6 +2915,18 @@ details[open] summary::after {
   background-color: transparent;
 }
 
+.smi .slider.page-nav {
+  position: relative;
+}
+
+.smi .slider.page-nav .slider__actions {
+  display: -webkit-box;
+  display: flex;
+  position: absolute;
+  right: 120px;
+  top: -17px;
+}
+
 .smi .page__title-h1 {
   margin-bottom: 34px;
 }
@@ -3017,6 +3060,18 @@ details[open] summary::after {
 
 .video-page .slider.page-nav .page-nav {
   margin-bottom: 0;
+}
+
+.video-page .slider.page-nav {
+  position: relative;
+}
+
+.video-page .slider.page-nav .slider__actions {
+  display: -webkit-box;
+  display: flex;
+  position: absolute;
+  right: 120px;
+  top: -17px;
 }
 
 .contacts .page__title-h1 {
