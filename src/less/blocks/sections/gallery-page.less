@@ -1,5 +1,6 @@
 .gallery-page{
     background-color: transparent;
+    
     .page__title-h1{
         margin-bottom: 34px;
         &_text-shadow_white{
@@ -11,7 +12,7 @@
             }
         }
     }
-    
+   
     .page-nav{
         display: flex;
         flex-wrap: wrap;
@@ -46,11 +47,47 @@
             margin-top: 0;
             transition: all 0.5s ease-out;
             opacity: 0.5;
+            .page__img{
+                position: relative;
+                max-width: 500px;
+                display: inline-block;
+                .page__link{
+                    display: block;
+                }
+                .nav{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    padding: 30px 6%;
+                    width: 100%;
+                    background: rgba(0,0,0,.5);
+                    box-sizing: border-box;
+                    opacity: 0;
+                    transition: all 0.5s ease-out;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+                img:hover + .nav{
+                    opacity: 1;
+                }
+                .page__link{
+                   
+                    // transform: translate(-50%, -50%);
+                    &:nth-child(2){
+                        bottom: 50px;
+                        // transform: translate(-50%, -25%); 
+                    }
+                    &:hover{
+                        border-color: @color_yellow;
+                    }
+                }
+            }
             &_bg{
-                position: absolute;
-                top: 0;
-                width: 100%;
-                height: 100%;
+                // position: absolute;
+                // top: 0;
+                // width: 100%;
+                // height: 100%;
             }
             .md-block({
                 text-align: center;

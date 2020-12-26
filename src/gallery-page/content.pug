@@ -2,9 +2,13 @@ mixin item(img,date,name)
     .page-item
         .page__img
             img(src=img, alt="")
+            div.nav
+                a.page__link(href="../gallery/gallery.html") Смотреть фотоальбом
+                .page__link.open-modal( data-modal="modal-gallery") Быстрый просмотр
         .page__text.date=date
         .page__text.value=name
-        .page-item_bg.open-modal(data-modal="modal-gallery")
+        .page-item_bg
+        
 
 .wrapper
     include ../blocks/shared/on-main-yellow

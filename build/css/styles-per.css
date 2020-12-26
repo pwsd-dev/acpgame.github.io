@@ -3451,11 +3451,43 @@ details[open] summary::after {
   opacity: 0.5;
 }
 
-.gallery-page .page-content .page-item_bg {
+.gallery-page .page-content .page-item .page__img {
+  position: relative;
+  max-width: 500px;
+  display: inline-block;
+}
+
+.gallery-page .page-content .page-item .page__img .page__link {
+  display: block;
+}
+
+.gallery-page .page-content .page-item .page__img .nav {
   position: absolute;
-  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 30px 6%;
   width: 100%;
-  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.gallery-page .page-content .page-item .page__img .nav:hover {
+  opacity: 1;
+}
+
+.gallery-page .page-content .page-item .page__img img:hover + .nav {
+  opacity: 1;
+}
+
+.gallery-page .page-content .page-item .page__img .page__link:nth-child(2) {
+  bottom: 50px;
+}
+
+.gallery-page .page-content .page-item .page__img .page__link:hover {
+  border-color: #ffed5c;
 }
 
 .gallery-page .page-content .page-item.tns-slide-active {
